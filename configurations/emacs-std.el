@@ -2,10 +2,12 @@
 ;;Emacs standard features
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Turn off mouse interface early in startup to avoid momentary display
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+;; Turn off tool-bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; Scrollbar right
+(setq scroll-bar-mode-explicit t)
+(set-scroll-bar-mode `right)
 
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)

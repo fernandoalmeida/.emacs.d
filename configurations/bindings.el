@@ -2,6 +2,9 @@
 ;;Custom Bindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Undo
+(global-set-key (kbd "C-z")  'undo)
+
 ;; Save
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-S-s") 'save-some-buffers)
@@ -15,23 +18,25 @@
 ;; Replace
 (global-set-key (kbd "C-M-r") 'grep-query-replace)
 
-;; File browser
-(global-set-key [f4] 'ide-skel-proj-find-files-by-regexp)
-(global-set-key [f5] 'ide-skel-proj-grep-files-by-regexp)
-(global-set-key [f10] 'ide-skel-toggle-left-view-window)
-(global-set-key [f11] 'ide-skel-toggle-bottom-view-window)
-(global-set-key [f12] 'ide-skel-toggle-right-view-window)
+;; File browser panel
+(global-set-key [f9] 'ide-skel-toggle-left-view-window)
+
+;; Message panel
+(global-set-key [f10] 'ide-skel-toggle-bottom-view-window)
+
+;; Buffer navigation
 (global-set-key [C-next] 'tabbar-backward)
 (global-set-key [C-prior]  'tabbar-forward)
 
-;; File
-(global-set-key [C-o]  'find-file)
+;; File open/close
+(global-set-key (kbd "C-o")  'find-file)
+(global-set-key [C-f4] 'kill-buffer-and-window)
 
-;; Directories
-(global-set-key [C-S-n]  'mkdir)
+;; Close emacs
+(global-set-key [M-f4] 'save-buffers-kill-emacs)
 
-;; Undo
-(global-set-key [C-z]  'undo)
+;; Make dir
+(global-set-key (kbd "C-S-n")  'mkdir)
 
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
