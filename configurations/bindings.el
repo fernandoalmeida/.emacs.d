@@ -44,3 +44,6 @@
 
 ;; Git
 (global-set-key (kbd "C-S-g") 'magit-status)
+
+;; Paste pop
+(global-set-key (kbd "C-S-v") 'cua-paste-pop)
