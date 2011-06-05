@@ -47,3 +47,9 @@
 
 ;; Paste pop
 (global-set-key (kbd "C-S-v") 'cua-paste-pop)
+
+;; Scolling
+(global-set-key (kbd "C-<left>") 'scroll-right)
+(global-set-key (kbd "C-<right>") 'scroll-left)
+(global-set-key (kbd "C-<up>") 'scroll-down)
+(global-set-key (kbd "C-<down>") 'scroll-up)

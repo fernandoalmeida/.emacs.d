@@ -9,6 +9,9 @@
 (setq scroll-bar-mode-explicit t)
 (set-scroll-bar-mode `right)
 
+;; Horizontal scrolling
+(put 'scroll-left 'disabled nil)
+
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)
 
