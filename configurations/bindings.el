@@ -27,6 +27,7 @@
 ;; Buffer navigation
 (global-set-key [C-next] 'tabbar-backward)
 (global-set-key [C-prior]  'tabbar-forward)
+(global-set-key [C-tab]  'tabbar-forward)
 
 ;; File open/close
 (global-set-key (kbd "C-o")  'find-file)
@@ -53,3 +54,6 @@
 (global-set-key (kbd "C-<right>") 'scroll-left)
 (global-set-key (kbd "C-<up>") 'scroll-down)
 (global-set-key (kbd "C-<down>") 'scroll-up)
+
+;; Selection
+(global-set-key (kbd "C-a") 'mark-whole-buffer)
