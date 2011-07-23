@@ -11,6 +11,10 @@
 ;; nXhtml
 (load "~/.emacs.d/extensions/nxhtml/autostart.el")
 
+;; Haml-Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
+(require 'haml-mode)
+
 ;; Ido - Interactively do things
 (add-to-list 'load-path "~/.emacs.d/extensions/ido")
 (require 'ido)
