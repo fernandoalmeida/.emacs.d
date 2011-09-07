@@ -7,6 +7,3 @@
 [submodule "extensions/haml-mode"]
 	path = extensions/haml-mode
 	url = git://github.com/nex3/haml-mode.git
-[submodule "extensions/textmate"]
-	path = extensions/textmate
-	url = git://github.com/defunkt/textmate.el.git
