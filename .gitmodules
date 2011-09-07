@@ -1,15 +1,12 @@
-[submodule "extensions/nxhtml"]
-	path = extensions/nxhtml
-	url = https://github.com/emacsmirror/nxhtml.git
 [submodule "extensions/ide-skel"]
 	path = extensions/ide-skel
-	url = https://github.com/emacsmirror/ide-skel.git
+	url = git://github.com/emacsmirror/ide-skel.git
 [submodule "extensions/magit"]
 	path = extensions/magit
-	url = https://github.com/magit/magit.git
+	url = git://github.com/magit/magit.git
 [submodule "extensions/haml-mode"]
 	path = extensions/haml-mode
-	url = https://github.com/nex3/haml-mode.git
+	url = git://github.com/nex3/haml-mode.git
 [submodule "extensions/textmate"]
 	path = extensions/textmate
-	url = https://github.com/defunkt/textmate.el.git
+	url = git://github.com/defunkt/textmate.el.git

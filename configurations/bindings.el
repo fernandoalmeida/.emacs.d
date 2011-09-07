@@ -30,7 +30,7 @@
 (global-set-key [C-tab]  'tabbar-forward)
 
 ;; File open/close
-(global-set-key (kbd "C-o")  'find-file)
+(global-set-key (kbd "C-o")  'ido-find-file)
 (global-set-key [C-f4] 'kill-buffer-and-window)
 
 ;; Close emacs
