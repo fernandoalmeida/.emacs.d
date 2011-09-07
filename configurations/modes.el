@@ -17,3 +17,6 @@
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
+
+;; Textile mode
+(add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))

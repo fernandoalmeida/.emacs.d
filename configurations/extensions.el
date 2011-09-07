@@ -12,6 +12,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
 (require 'haml-mode)
 
+;; Textile Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/textile-mode")
+(require 'textile-mode)
+
 ;; Ido - Interactively do things
 (add-to-list 'load-path "~/.emacs.d/extensions/ido")
 (require 'ido)

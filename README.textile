@@ -35,6 +35,11 @@ h2. Haml Mode
 For Haml views
 "Doc":http://www.emacswiki.org/emacs/HamlMode
 
+h2. Textile Mode
+
+For Textile documents
+"Doc":http://www.emacswiki.org/emacs/TextileMode
+
 h1. Customizations
 
 h2. pt-BR spell checker
