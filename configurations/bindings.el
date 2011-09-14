@@ -2,16 +2,17 @@
 ;;Custom Bindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Undo
-(global-set-key (kbd "C-z")  'undo)
+;; Undo / Redo
+(global-set-key (kbd "C-z")  'undo-tree-undo)
+(global-set-key (kbd "C-S-z")  'undo-tree-redo)
 
 ;; Save
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-S-s") 'save-some-buffers)
 
-;; Search
-(global-set-key (kbd "C-f") 'isearch-forward)
-(global-set-key (kbd "C-S-f") 'isearch-backward)
+;; Use regex searches by default.
+(global-set-key (kbd "C-f") 'isearch-forward-regexp)
+(global-set-key (kbd "C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-f") 'find-grep)
 (global-set-key (kbd "C-l") 'goto-line)
 
