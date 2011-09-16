@@ -10,9 +10,14 @@
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-S-s") 'save-some-buffers)
 
-;; Use regex searches by default.
+;; Use regex searches by default
 (global-set-key (kbd "C-f") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
+
+;; Repeat searches with F3
+(define-key isearch-mode-map [f3] 'isearch-repeat-forward)
+(define-key isearch-mode-map [S-f3] 'isearch-repeat-backward)
+
 (global-set-key (kbd "C-M-f") 'find-grep)
 (global-set-key (kbd "C-l") 'goto-line)
 
