@@ -10,3 +10,9 @@
 [submodule "extensions/flymake"]
 	path = extensions/flymake
 	url = git://github.com/illusori/emacs-flymake.git
+[submodule "extensions/anything-config"]
+	path = extensions/anything-config
+	url = git://repo.or.cz/anything-config.git
+[submodule "extensions/undo-tree"]
+	path = extensions/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git

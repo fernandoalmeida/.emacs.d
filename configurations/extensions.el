@@ -20,6 +20,15 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/ido")
 (require 'ido)
 
+;; Anything
+(add-to-list 'load-path "~/.emacs.d/extensions/anything-config")
+(require 'anything-config)
+
+;; UndoTree
+(add-to-list 'load-path "~/.emacs.d/extensions/undo-tree")
+(require 'undo-tree)
+(global-undo-tree-mode)
+
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/extensions/magit")
 (require 'magit)
