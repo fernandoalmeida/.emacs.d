@@ -7,3 +7,6 @@
 [submodule "extensions/haml-mode"]
 	path = extensions/haml-mode
 	url = git://github.com/nex3/haml-mode.git
+[submodule "extensions/flymake"]
+	path = extensions/flymake
+	url = git://github.com/illusori/emacs-flymake.git
