@@ -16,3 +16,9 @@
 [submodule "extensions/undo-tree"]
 	path = extensions/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "extensions/flymake-ruby"]
+	path = extensions/flymake-ruby
+	url = git://github.com/purcell/flymake-ruby.git
+[submodule "extensions/flymake-haml"]
+	path = extensions/flymake-haml
+	url = git://github.com/purcell/flymake-haml.git

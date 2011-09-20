@@ -47,28 +47,17 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/flymake")
 (require 'flymake)
 (add-hook 'find-file-hook 'flymake-find-file-hook)
-;; Copies in the system temp dir
 (setq flymake-run-in-place nil)
 (setq temporary-file-directory "/tmp/")
-;; Ruby checking
-(defun flymake-ruby-init ()
-  (let* ((temp-file   (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-	 (local-file  (file-relative-name
-                       temp-file
-                       (file-name-directory buffer-file-name))))
-    (list "ruby" (list "-c" local-file))))
-
-(push '(".+\\.rb$" flymake-ruby-init) flymake-allowed-file-name-masks)
-(push '("Rakefile$" flymake-ruby-init) flymake-allowed-file-name-masks)
-
-(push '("^\\(.*\\):\\([0-9]+\\): \\(.*\\)$" 1 2 nil 3) flymake-err-line-patterns)
-
-(add-hook 'ruby-mode-hook
-          '(lambda ()
-	     (if (and (not (null buffer-file-name)) (file-writable-p buffer-file-name))
-		 (flymake-mode))
-	     ))
+;; Flymake Ruby
+(add-to-list 'load-path "~/.emacs.d/extensions/flymake-ruby")
+(require 'flymake-ruby)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+;; Flymake Haml
+(add-to-list 'load-path "~/.emacs.d/extensions/flymake-haml")
+(require 'flymake-haml)
+(add-hook 'haml-mode-hook 'flymake-haml-load)
+(add-hook 'sass-mode-hook 'flymake-sass-load)
 ;; ERB templates checking
 (defun flymake-erb-init ()
   (let* ((check-buffer (current-buffer))
