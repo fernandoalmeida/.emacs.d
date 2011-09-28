@@ -70,3 +70,7 @@
 
 ;; Selection
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
+
+;; Comments
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-M-/") 'comment-box)
