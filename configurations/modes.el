@@ -20,3 +20,6 @@
 
 ;; Textile mode
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
+
+;; Yaml mode
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))

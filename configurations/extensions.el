@@ -12,6 +12,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
 (require 'haml-mode)
 
+;; Yaml-Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/yaml-mode")
+(require 'yaml-mode)
+
 ;; Textile Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/textile-mode")
 (require 'textile-mode)
