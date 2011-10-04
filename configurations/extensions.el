@@ -16,6 +16,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/yaml-mode")
 (require 'yaml-mode)
 
+;; PHP Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/php-mode")
+(require 'php-mode)
+
 ;; Textile Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/textile-mode")
 (require 'textile-mode)
