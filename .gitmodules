@@ -22,3 +22,9 @@
 [submodule "extensions/flymake-haml"]
 	path = extensions/flymake-haml
 	url = git://github.com/purcell/flymake-haml.git
+[submodule "extensions/yaml-mode"]
+	path = extensions/yaml-mode
+	url = git://github.com/yoshiki/yaml-mode.git
+[submodule "extensions/php-mode"]
+	path = extensions/php-mode
+	url = git://github.com/ejmr/php-mode.git

@@ -12,6 +12,14 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
 (require 'haml-mode)
 
+;; Yaml-Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/yaml-mode")
+(require 'yaml-mode)
+
+;; PHP Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/php-mode")
+(require 'php-mode)
+
 ;; Textile Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/textile-mode")
 (require 'textile-mode)
@@ -32,6 +40,12 @@
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/extensions/magit")
 (require 'magit)
+
+;; Auto Complete
+(add-to-list 'load-path "~/.emacs.d/extensions/auto-complete/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/extensions/auto-complete/ac-dict")
+(ac-config-default)
 
 ;; Ide-skel
 (add-to-list 'load-path "~/.emacs.d/extensions/ide-skel")
