@@ -20,3 +20,6 @@
 
 ;; Textile mode
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
+
+;; Javascript
+(add-to-list 'auto-mode-alist '("\\.js.erb$" . javascript-mode))
