@@ -1,0 +1,3 @@
+#name : f.input
+# --
+<%= f.input :${1:field} %>
