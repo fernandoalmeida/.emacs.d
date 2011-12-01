@@ -28,3 +28,6 @@
 [submodule "extensions/php-mode"]
 	path = extensions/php-mode
 	url = git://github.com/ejmr/php-mode.git
+[submodule "extensions/flymake-cursor"]
+	path = extensions/flymake-cursor
+	url = git://github.com/emacsmirror/flymake-cursor.git
