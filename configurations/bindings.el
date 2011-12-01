@@ -18,11 +18,14 @@
 (define-key isearch-mode-map [f3] 'isearch-repeat-forward)
 (define-key isearch-mode-map [S-f3] 'isearch-repeat-backward)
 
-(global-set-key (kbd "C-M-f") 'find-grep)
-(global-set-key (kbd "C-l") 'goto-line)
+;; Find in files (grep)
+(global-set-key (kbd "C-S-f") 'find-grep)
 
 ;; Replace
-(global-set-key (kbd "C-M-r") 'grep-query-replace)
+(global-set-key (kbd "C-S-r") 'grep-query-replace)
+
+;; Go to line
+(global-set-key (kbd "C-l") 'goto-line)
 
 ;; File browser panel
 (global-set-key [f9] 'ide-skel-toggle-left-view-window)
