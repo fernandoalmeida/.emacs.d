@@ -46,6 +46,8 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/extensions/auto-complete/ac-dict")
 (ac-config-default)
+(setq ac-auto-start 2)
+(setq ac-ignore-case nil)
 
 ;; Ide-skel
 (add-to-list 'load-path "~/.emacs.d/extensions/ide-skel")
