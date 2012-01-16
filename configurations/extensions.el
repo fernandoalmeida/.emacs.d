@@ -65,6 +65,9 @@
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 (setq flymake-run-in-place nil)
 (setq temporary-file-directory "/tmp/")
+;; Flymake Cursor
+(add-to-list 'load-path "~/.emacs.d/extensions/flymake-cursor")
+(require 'flymake-cursor)
 ;; Flymake Ruby
 (add-to-list 'load-path "~/.emacs.d/extensions/flymake-ruby")
 (require 'flymake-ruby)
