@@ -22,7 +22,7 @@
 (global-set-key (kbd "C-S-f") 'find-grep)
 
 ;; Replace
-(global-set-key (kbd "C-S-r") 'grep-query-replace)
+(global-set-key (kbd "C-S-r") 'query-replace-regexp)
 
 ;; Go to line
 (global-set-key (kbd "C-l") 'goto-line)
