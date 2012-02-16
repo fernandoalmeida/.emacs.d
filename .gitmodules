@@ -31,3 +31,6 @@
 [submodule "extensions/flymake-cursor"]
 	path = extensions/flymake-cursor
 	url = git://github.com/emacsmirror/flymake-cursor.git
+[submodule "extensions/js2-mode"]
+	path = extensions/js2-mode
+	url = git://github.com/mooz/js2-mode.git

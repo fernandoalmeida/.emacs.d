@@ -20,6 +20,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/php-mode")
 (require 'php-mode)
 
+;; Javascript JS2 Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/js2-mode")
+(require 'js2-mode)
+
 ;; Textile Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/textile-mode")
 (require 'textile-mode)

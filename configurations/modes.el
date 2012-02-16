@@ -22,7 +22,9 @@
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
 
 ;; Javascript
-(add-to-list 'auto-mode-alist '("\\.js.erb$" . javascript-mode))
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ;; Yaml mode
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
