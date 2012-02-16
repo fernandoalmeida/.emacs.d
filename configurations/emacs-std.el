@@ -70,3 +70,81 @@
 
 ;; Save Sessions on Exit
 (desktop-save-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Hide/Show blocks
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load-library "hideshow")
+
+(defun toggle-selective-display (column)
+  (interactive "P")
+  (set-selective-display
+   (or column
+       (unless selective-display
+	 (1+ (current-column))))))
+
+(defun toggle-hiding (column)
+  (interactive "P")
+  (if hs-minor-mode
+      (if (condition-case nil
+	      (hs-toggle-hiding)
+	    (error t))
+	  (hs-show-all))
+    (toggle-selective-display column)))
+
+(defun display-code-line-counts (ov)
+  (when (eq 'code (overlay-get ov 'hs))
+    (overlay-put ov 'help-echo
+		 (buffer-substring (overlay-start ov)
+				   (overlay-end ov)))))
+
+(setq hs-set-up-overlay 'display-code-line-counts)
+
+(defadvice goto-line (after expand-after-goto-line
+			    activate compile)
+  "hideshow-expand affected block when using goto-line in a collapsed buffer"
+  (save-excursion
+    (hs-show-block)))
+
+;; hideshow on ruby-mode
+(add-to-list 'hs-special-modes-alist
+	     '(ruby-mode
+	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
+	       (lambda (arg) (ruby-end-of-block)) nil))
+
+;; hideshow all comments
+(defun hs-hide-all-comments ()
+  "Hide all top level blocks, if they are comments, displaying only first line.
+Move point to the beginning of the line, and run the normal hook
+`hs-hide-hook'.  See documentation for `run-hooks'."
+  (interactive)
+  (hs-life-goes-on
+   (save-excursion
+     (unless hs-allow-nesting
+       (hs-discard-overlays (point-min) (point-max)))
+     (goto-char (point-min))
+     (let ((spew (make-progress-reporter "Hiding all comment blocks..."
+                                         (point-min) (point-max)))
+           (re (concat "\\(" hs-c-start-regexp "\\)")))
+       (while (re-search-forward re (point-max) t)
+         (if (match-beginning 1)
+	     ;; found a comment, probably
+	     (let ((c-reg (hs-inside-comment-p)))
+	       (when (and c-reg (car c-reg))
+		 (if (> (count-lines (car c-reg) (nth 1 c-reg)) 1)
+		     (hs-hide-block-at-point t c-reg)
+		   (goto-char (nth 1 c-reg))))))
+         (progress-reporter-update spew (point)))
+       (progress-reporter-done spew)))
+   (beginning-of-line)
+   (run-hooks 'hs-hide-hook)))
+
+;; automatic activate for modes
+(add-hook 'c-mode-common-hook   'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'java-mode-hook       'hs-minor-mode)
+(add-hook 'lisp-mode-hook       'hs-minor-mode)
+(add-hook 'perl-mode-hook       'hs-minor-mode)
+(add-hook 'sh-mode-hook         'hs-minor-mode)
+(add-hook 'js2-mode-hook 'hs-minor-mode)
+(add-hook 'ruby-mode-hook 'hs-minor-mode)

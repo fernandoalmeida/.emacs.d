@@ -77,3 +77,7 @@
 ;; Comments
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-M-/") 'comment-box)
+
+;; Show/Hide
+(global-set-key (kbd "C-\|") 'toggle-hiding)
+(global-set-key (kbd "C-\\") 'toggle-selective-display)
