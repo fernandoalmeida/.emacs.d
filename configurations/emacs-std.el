@@ -74,23 +74,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Hide/Show blocks
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; automatic activation
 (load-library "hideshow")
-
-(defun toggle-selective-display (column)
-  (interactive "P")
-  (set-selective-display
-   (or column
-       (unless selective-display
-	 (1+ (current-column))))))
-
-(defun toggle-hiding (column)
-  (interactive "P")
-  (if hs-minor-mode
-      (if (condition-case nil
-	      (hs-toggle-hiding)
-	    (error t))
-	  (hs-show-all))
-    (toggle-selective-display column)))
+(add-hook 'c-mode-common-hook   'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'java-mode-hook       'hs-minor-mode)
+(add-hook 'lisp-mode-hook       'hs-minor-mode)
+(add-hook 'perl-mode-hook       'hs-minor-mode)
+(add-hook 'sh-mode-hook         'hs-minor-mode)
+(add-hook 'js2-mode-hook        'hs-minor-mode)
+(add-hook 'ruby-mode-hook       'hs-minor-mode)
 
 (defun display-code-line-counts (ov)
   (when (eq 'code (overlay-get ov 'hs))
@@ -100,6 +93,7 @@
 
 (setq hs-set-up-overlay 'display-code-line-counts)
 
+;; expand block using goto-line
 (defadvice goto-line (after expand-after-goto-line
 			    activate compile)
   "hideshow-expand affected block when using goto-line in a collapsed buffer"
@@ -109,7 +103,7 @@
 ;; hideshow on ruby-mode
 (add-to-list 'hs-special-modes-alist
 	     '(ruby-mode
-	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
+	       "\\(module\\|class\\|def\\|if\\|unless\\|do\\|{\\)" "\\(end\\|end\\|end\\|end\\|end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
 ;; hideshow all comments
@@ -138,13 +132,3 @@ Move point to the beginning of the line, and run the normal hook
        (progress-reporter-done spew)))
    (beginning-of-line)
    (run-hooks 'hs-hide-hook)))
-
-;; automatic activate for modes
-(add-hook 'c-mode-common-hook   'hs-minor-mode)
-(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
-(add-hook 'java-mode-hook       'hs-minor-mode)
-(add-hook 'lisp-mode-hook       'hs-minor-mode)
-(add-hook 'perl-mode-hook       'hs-minor-mode)
-(add-hook 'sh-mode-hook         'hs-minor-mode)
-(add-hook 'js2-mode-hook 'hs-minor-mode)
-(add-hook 'ruby-mode-hook 'hs-minor-mode)

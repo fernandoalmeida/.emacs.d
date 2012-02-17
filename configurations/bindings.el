@@ -37,9 +37,8 @@
 (global-set-key [f11] 'delete-other-windows)
 
 ;; Buffer navigation
-(global-set-key [C-next] 'tabbar-backward)
-(global-set-key [C-prior]  'tabbar-forward)
 (global-set-key [C-tab]  'tabbar-forward)
+(global-set-key [C-S-iso-lefttab] 'tabbar-backward)
 
 ;; File open/close
 (global-set-key (kbd "C-o")  'ido-find-file)
@@ -56,8 +55,8 @@
 (define-key global-map (kbd "C-<kp-add>") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 (define-key global-map (kbd "C-<kp-subtract>") 'text-scale-decrease)
-(define-key global-map (kbd "C-0") 'text-scale-adjust)
-(define-key global-map (kbd "C-<kp-0>") 'text-scale-adjust)
+(define-key global-map (kbd "C-0") 'text-scale-mode)
+(define-key global-map (kbd "C-<kp-0>") 'text-scale-mode)
 
 ;; Git
 (global-set-key (kbd "C-S-g") 'magit-status)
@@ -78,6 +77,8 @@
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-M-/") 'comment-box)
 
-;; Show/Hide
-(global-set-key (kbd "C-\|") 'toggle-hiding)
-(global-set-key (kbd "C-\\") 'toggle-selective-display)
+;; Hide/Show
+(global-set-key (kbd "C-.") 'hs-toggle-hiding)
+(global-set-key (kbd "C->") 'hs-show-all)
+(global-set-key (kbd "C-<") 'hs-hide-all)
+(global-set-key (kbd "C-,") 'hs-hide-all-comments)
