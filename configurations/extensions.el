@@ -12,6 +12,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
 (require 'haml-mode)
 
+;; WhiteSpace Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/whitespace")
+(require 'whitespace)
+
 ;; Yaml-Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/yaml-mode")
 (require 'yaml-mode)

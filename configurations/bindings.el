@@ -82,3 +82,7 @@
 (global-set-key (kbd "C->") 'hs-show-all)
 (global-set-key (kbd "C-<") 'hs-hide-all)
 (global-set-key (kbd "C-,") 'hs-hide-all-comments)
+
+;; WhiteSpace
+(global-set-key (kbd "C-\\") 'whitespace-mode)
+(global-set-key (kbd "C-\|") 'global-whitespace-mode)
