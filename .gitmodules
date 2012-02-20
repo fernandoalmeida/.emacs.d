@@ -37,3 +37,6 @@
 [submodule "extensions/git-emacs"]
 	path = extensions/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
+[submodule "extensions/anything-git-goto"]
+	path = extensions/anything-git-goto
+	url = git://github.com/jpablobr/anything-git-goto.git

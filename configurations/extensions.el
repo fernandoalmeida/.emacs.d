@@ -49,6 +49,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
 (require 'git-emacs)
 
+;; Anything Git GoTo
+(add-to-list 'load-path "~/.emacs.d/extensions/anything-git-goto")
+(require 'anything-git-goto)
+
 ;; Auto Complete
 (add-to-list 'load-path "~/.emacs.d/extensions/auto-complete/")
 (require 'auto-complete-config)
