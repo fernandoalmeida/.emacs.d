@@ -16,7 +16,11 @@
 
 ;; Repeat searches with F3
 (define-key isearch-mode-map [f3] 'isearch-repeat-forward)
+(define-key isearch-mode-map [<tab>] 'isearch-repeat-forward)
 (define-key isearch-mode-map [S-f3] 'isearch-repeat-backward)
+(define-key isearch-mode-map [S-<tab>] 'isearch-repeat-backward)
+(define-key isearch-mode-map [<up>] 'isearch-ring-advance)
+(define-key isearch-mode-map [<down>] 'isearch-ring-retreat)
 
 ;; Find in files (grep)
 (global-set-key (kbd "C-S-f") 'find-grep)
@@ -86,3 +90,6 @@
 ;; WhiteSpace
 (global-set-key (kbd "C-\\") 'whitespace-mode)
 (global-set-key (kbd "C-\|") 'global-whitespace-mode)
+
+;; Git
+(global-set-key (kbd "C-g") 'git-status)

@@ -34,3 +34,6 @@
 [submodule "extensions/js2-mode"]
 	path = extensions/js2-mode
 	url = git://github.com/mooz/js2-mode.git
+[submodule "extensions/git-emacs"]
+	path = extensions/git-emacs
+	url = git://github.com/tsgates/git-emacs.git

@@ -45,9 +45,9 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 
-;; Magit
-(add-to-list 'load-path "~/.emacs.d/extensions/magit")
-(require 'magit)
+;; Git Emacs
+(add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
+(require 'git-emacs)
 
 ;; Auto Complete
 (add-to-list 'load-path "~/.emacs.d/extensions/auto-complete/")
