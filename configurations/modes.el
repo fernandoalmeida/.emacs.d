@@ -30,3 +30,6 @@
 
 ;; PHP mode
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+
+;; Scss mode
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))

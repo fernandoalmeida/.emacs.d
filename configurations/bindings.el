@@ -45,7 +45,8 @@
 (global-set-key [C-S-iso-lefttab] 'tabbar-backward)
 
 ;; File open/close
-(global-set-key (kbd "C-o")  'ido-find-file)
+(global-set-key (kbd "C-o")   'anything-git-goto)
+(global-set-key (kbd "C-S-o") 'ido-find-file)
 (global-set-key [C-f4] 'kill-buffer-and-window)
 
 ;; Close emacs
@@ -61,9 +62,6 @@
 (define-key global-map (kbd "C-<kp-subtract>") 'text-scale-decrease)
 (define-key global-map (kbd "C-0") 'text-scale-mode)
 (define-key global-map (kbd "C-<kp-0>") 'text-scale-mode)
-
-;; Git
-(global-set-key (kbd "C-S-g") 'magit-status)
 
 ;; Paste pop
 (global-set-key (kbd "C-S-v") 'cua-paste-pop)

@@ -40,3 +40,6 @@
 [submodule "extensions/anything-git-goto"]
 	path = extensions/anything-git-goto
 	url = git://github.com/jpablobr/anything-git-goto.git
+[submodule "extensions/scss-mode"]
+	path = extensions/scss-mode
+	url = git://github.com/antonj/scss-mode.git

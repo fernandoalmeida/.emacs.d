@@ -12,6 +12,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/haml-mode")
 (require 'haml-mode)
 
+;; Scss-Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/scss-mode")
+(autoload 'scss-mode "scss-mode")
+
 ;; WhiteSpace Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/whitespace")
 (require 'whitespace)
