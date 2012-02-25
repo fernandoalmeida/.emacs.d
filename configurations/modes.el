@@ -33,3 +33,6 @@
 
 ;; Scss mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+;; Less CSS mode
+(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))

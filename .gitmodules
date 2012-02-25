@@ -43,3 +43,9 @@
 [submodule "extensions/scss-mode"]
 	path = extensions/scss-mode
 	url = git://github.com/antonj/scss-mode.git
+[submodule "extensions/less-css-mode"]
+	path = extensions/less-css-mode
+	url = git://github.com/purcell/less-css-mode.git
+[submodule "extensions/flymake-css"]
+	path = extensions/flymake-css
+	url = git://github.com/purcell/flymake-css.git

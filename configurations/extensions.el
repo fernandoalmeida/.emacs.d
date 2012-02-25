@@ -14,7 +14,12 @@
 
 ;; Scss-Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/scss-mode")
-(autoload 'scss-mode "scss-mode")
+(require 'scss-mode)
+(setq scss-compile-at-save nil)
+
+;; Less-CSS-Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/less-css-mode")
+(require 'less-css-mode)
 
 ;; WhiteSpace Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/whitespace")
@@ -88,6 +93,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/flymake-ruby")
 (require 'flymake-ruby)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
+;; Flymake CSS
+(add-to-list 'load-path "~/.emacs.d/extensions/flymake-css")
+(require 'flymake-css)
+(add-hook 'css-mode-hook 'flymake-css-load)
 ;; Flymake Haml
 (add-to-list 'load-path "~/.emacs.d/extensions/flymake-haml")
 (require 'flymake-haml)
