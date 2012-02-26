@@ -91,6 +91,14 @@
 (require 'color-theme-solarized)
 (color-theme-solarized-light)
 
+;; Rainbow Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/rainbow-mode")
+(require 'rainbow-mode)
+(add-hook 'css-mode-hook      'rainbow-turn-on)
+(add-hook 'scss-mode-hook     'rainbow-turn-on)
+(add-hook 'less-css-mode-hook 'rainbow-turn-on)
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Flymake
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -58,3 +58,6 @@
 [submodule "extensions/color-theme-zenburn"]
 	path = extensions/color-theme-zenburn
 	url = git://github.com/bbatsov/zenburn-emacs.git
+[submodule "extensions/rainbow-mode"]
+	path = extensions/rainbow-mode
+	url = git://github.com/emacsmirror/rainbow-mode.git
