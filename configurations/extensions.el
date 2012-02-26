@@ -78,6 +78,19 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/tabbar")
 (require 'tabbar)
 
+;; Color Theme - Tango 2
+(add-to-list 'load-path "~/.emacs.d/extensions/color-theme-tango-2")
+(require 'color-theme-tango-2)
+
+;; Color Theme - Zenburn
+(add-to-list 'load-path "~/.emacs.d/extensions/color-theme-zenburn")
+(require 'color-theme-zenburn)
+
+;; Color Theme - Solarized
+(add-to-list 'load-path "~/.emacs.d/extensions/color-theme-solarized")
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Flymake
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
