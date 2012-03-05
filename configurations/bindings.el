@@ -72,7 +72,7 @@
 (global-set-key [C-S-iso-lefttab] 'tabbar-backward)
 
 ;; File open/close
-
+(global-set-key (kbd "C-o")   'anything-git-goto)
 (global-set-key (kbd "C-S-o") 'ido-find-file)
 (global-set-key [C-f4] 'kill-buffer-and-window)
 
@@ -93,11 +93,9 @@
 ;; Paste pop
 (global-set-key (kbd "C-S-v") 'cua-paste-pop)
 
-;; Scolling
-(global-set-key (kbd "C-<left>") 'scroll-right)
-(global-set-key (kbd "C-<right>") 'scroll-left)
-(global-set-key (kbd "C-<up>") 'scroll-down)
-(global-set-key (kbd "C-<down>") 'scroll-up)
+;; Mark Word
+(global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
+(global-set-key (kbd "C-S-<right>") 'my-mark-word)
 
 ;; Selection
 (global-set-key (kbd "C-a") 'mark-whole-buffer)

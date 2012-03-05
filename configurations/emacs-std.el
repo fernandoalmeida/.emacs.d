@@ -132,3 +132,20 @@ Move point to the beginning of the line, and run the normal hook
        (progress-reporter-done spew)))
    (beginning-of-line)
    (run-hooks 'hs-hide-hook)))
+
+(defun my-mark-word (N)
+  (interactive "p")
+  (if (and 
+       (not (eq last-command this-command))
+       (not (eq last-command 'my-mark-word-backward)))
+      (set-mark (point)))
+  (forward-word N))
+
+
+(defun my-mark-word-backward (N)
+  (interactive "p")
+  (if (and
+       (not (eq last-command this-command))
+       (not (eq last-command 'my-mark-word)))
+      (set-mark (point)))
+  (backward-word N))
