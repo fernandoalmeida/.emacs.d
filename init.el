@@ -20,7 +20,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(tabbar-button-highlight ((t (:inherit tabbar-button))))
- '(tabbar-default ((t (:inherit variable-pitch :background "gray82" :foreground "gray50" :height 0.8))))
+ '(tabbar-default ((t (:inherit variable-pitch :background "gray82" :foreground "white" :height 0.8))))
  '(tabbar-highlight ((t nil)))
  '(tabbar-selected ((t (:inherit tabbar-default :background "white" :foreground "blue" :box (:line-width 1 :color "black")))))
  '(tabbar-separator ((t (:inherit tabbar-default :height 0.2))))

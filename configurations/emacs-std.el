@@ -83,6 +83,7 @@
 (add-hook 'perl-mode-hook       'hs-minor-mode)
 (add-hook 'sh-mode-hook         'hs-minor-mode)
 (add-hook 'js2-mode-hook        'hs-minor-mode)
+(add-hook 'javascript-mode-hook        'hs-minor-mode)
 (add-hook 'ruby-mode-hook       'hs-minor-mode)
 
 (defun display-code-line-counts (ov)
