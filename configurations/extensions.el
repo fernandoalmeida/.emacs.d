@@ -21,6 +21,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/less-css-mode")
 (require 'less-css-mode)
 
+;; Zen Coding Mode
+(add-to-list 'load-path "~/.emacs.d/extensions/zencoding-mode")
+(require 'zencoding-mode)
+
 ;; WhiteSpace Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/whitespace")
 (require 'whitespace)

@@ -36,3 +36,7 @@
 
 ;; Less CSS mode
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+
+;; Zen Coding mode
+(add-hook 'sgml-mode-hook 'zencoding-mode)
+(add-hook 'haml-mode-hook 'zencoding-mode)

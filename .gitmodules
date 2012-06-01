@@ -61,3 +61,6 @@
 [submodule "extensions/rainbow-mode"]
 	path = extensions/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git
+[submodule "extensions/zencoding-mode"]
+	path = extensions/zencoding-mode
+	url = https://github.com/rooney/zencoding.git
