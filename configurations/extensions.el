@@ -194,3 +194,24 @@ The overlay used is stored in `chosig-background'."
 	(overlay-put o 'chosig t)))))
 
 (add-hook'after-change-major-mode-hook 'chosig-choose-background)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; JS2 Mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(eval-after-load "js2-mode"
+  '(progn
+     (setq js2-missing-semi-one-line-override t)
+     (setq-default js2-basic-offset 2) ; 2 spaces for indentation (if you prefer 2 spaces instead of default 4 spaces for tab)
+
+     ;; following is from http://www.emacswiki.org/emacs/Js2Mode
+     (add-hook 'js2-post-parse-callbacks 'my-js2-parse-global-vars-decls)
+     (defun my-js2-parse-global-vars-decls ()
+       (let ((btext (replace-regexp-in-string
+                     ": *true" " "
+                     (replace-regexp-in-string "[\n\t ]+" " " (buffer-substring-no-properties 1 (buffer-size)) t t))))
+         (setq js2-additional-externs
+               (split-string
+                (if (string-match "/\\* *global *\\(.*?\\) *\\*/" btext) (match-string-no-properties 1 btext) "")
+                " *, *" t))
+         ))
+     ))
