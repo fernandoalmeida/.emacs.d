@@ -23,7 +23,7 @@
 
 ;; Javascript
 ;; (autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.js.*$" . js2-mode))
 
 ;; Yaml mode
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
@@ -32,11 +32,17 @@
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 
 ;; Scss mode
-(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(add-to-list 'auto-mode-alist '("\\.scss.*\\'" . scss-mode))
 
 ;; Less CSS mode
-(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+(add-to-list 'auto-mode-alist '("\\.less.*\\'" . less-css-mode))
 
 ;; Zen Coding mode
 (add-hook 'sgml-mode-hook 'zencoding-mode)
 (add-hook 'haml-mode-hook 'zencoding-mode)
+
+;; Highlight Indentation mode
+(add-hook 'sgml-mode-hook 'highlight-indentation-current-column-mode)
+(add-hook 'haml-mode-hook 'highlight-indentation-current-column-mode)
+(add-hook 'ruby-mode-hook 'highlight-indentation-current-column-mode)
+(add-hook 'emacs-lisp-mode-hook 'highlight-indentation-current-column-mode)

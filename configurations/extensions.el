@@ -106,6 +106,11 @@
 (add-hook 'scss-mode-hook     'rainbow-turn-on)
 (add-hook 'less-css-mode-hook 'rainbow-turn-on)
 
+;; Highlight Indentation
+(add-to-list 'load-path "~/.emacs.d/extensions/highlight-indentation")
+(require 'highlight-indentation)
+(set-face-background 'highlight-indentation-face "#e3e3d3")
+(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Flymake

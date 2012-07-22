@@ -64,3 +64,6 @@
 [submodule "extensions/zencoding-mode"]
 	path = extensions/zencoding-mode
 	url = https://github.com/rooney/zencoding.git
+[submodule "extensions/highlight-indentation"]
+	path = extensions/highlight-indentation
+	url = https://github.com/antonj/Highlight-Indentation-for-Emacs.git
