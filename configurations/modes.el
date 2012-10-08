@@ -46,3 +46,9 @@
 (add-hook 'haml-mode-hook 'highlight-indentation-current-column-mode)
 (add-hook 'ruby-mode-hook 'highlight-indentation-current-column-mode)
 (add-hook 'emacs-lisp-mode-hook 'highlight-indentation-current-column-mode)
+
+;; HAML mode
+(add-hook 'haml-mode-hook
+	  (lambda ()
+	    (setq indent-tabs-mode nil)
+	    (define-key haml-mode-map "\C-m" 'newline-and-indent)))
