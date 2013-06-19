@@ -52,3 +52,5 @@
 	  (lambda ()
 	    (setq indent-tabs-mode nil)
 	    (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
+(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))

@@ -67,3 +67,6 @@
 [submodule "extensions/highlight-indentation"]
 	path = extensions/highlight-indentation
 	url = https://github.com/antonj/Highlight-Indentation-for-Emacs.git
+[submodule "extensions/puppet-mode"]
+	path = extensions/puppet-mode
+	url = https://github.com/puppetlabs/puppet-syntax-emacs.git
