@@ -76,6 +76,9 @@
 (global-set-key (kbd "C-S-o") 'ido-find-file)
 (global-set-key [C-f4] 'kill-buffer-and-window)
 
+;; File reload
+(global-set-key [f5] 'revert-buffer)
+
 ;; Close emacs
 (global-set-key [M-f4] 'save-buffers-kill-emacs)
 
