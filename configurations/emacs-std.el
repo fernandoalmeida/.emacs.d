@@ -168,3 +168,10 @@ Move point to the beginning of the line, and run the normal hook
   ;; Use event-end in case called from mouse-drag-region.
   ;; If EVENT is a click, event-end and event-start give same value.
   (posn-set-point (event-end event)))
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Flymake Errline ;;
+;;;;;;;;;;;;;;;;;;;;;
+(custom-set-faces
+ '(flymake-errline ((((class color)) (:background "#FFCFD5"))))
+ '(flymake-warnline ((((class color)) (:background "#FFEBCF")))))
