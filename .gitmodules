@@ -79,3 +79,6 @@
 [submodule "extensions/web-mode"]
 	path = extensions/web-mode
 	url = https://github.com/fxbois/web-mode.git
+[submodule "extensions/rinari"]
+	path = extensions/rinari
+	url = https://github.com/eschulte/rinari.git
