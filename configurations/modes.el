@@ -63,3 +63,14 @@
 (add-to-list 'auto-mode-alist '("\\.markdown$\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md$\\'" . markdown-mode))
 
+;; 80 Columns Indicator
+(setq-default fci-rule-column 80)
+(setq fci-handle-truncate-lines nil)
+(add-hook 'after-change-major-mode-hook 'auto-fci-mode)
+(add-hook 'window-size-change-functions 'auto-fci-mode)
+
+(defun auto-fci-mode (&optional unused)
+  (if (> (frame-width) 80)
+      (fci-mode 1)
+    (fci-mode 0))
+  )

@@ -73,3 +73,6 @@
 [submodule "extensions/markdown-mode"]
 	path = extensions/markdown-mode
 	url = https://github.com/emacsmirror/markdown-mode.git
+[submodule "extensions/fill-column-indicator"]
+	path = extensions/fill-column-indicator
+	url = https://github.com/alpaker/Fill-Column-Indicator.git
