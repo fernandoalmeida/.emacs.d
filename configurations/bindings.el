@@ -127,8 +127,8 @@
 (global-set-key (kbd "C-,") 'hs-hide-all-comments)
 
 ;; WhiteSpace
-(global-set-key (kbd "C-\\") 'whitespace-mode)
-(global-set-key (kbd "C-\|") 'global-whitespace-mode)
+(global-set-key (kbd "C-\\") 'global-whitespace-mode)
+(global-set-key (kbd "C-\|") 'whitespace-cleanup)
 
 ;; Git
 (global-set-key (kbd "C-g") 'git-status)

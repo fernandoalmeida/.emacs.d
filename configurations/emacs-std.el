@@ -30,6 +30,9 @@
                (let ((mark-even-if-inactive transient-mark-mode))
                  (indent-region (region-beginning) (region-end) nil))))))
 
+;; Show trailing whitespace by default
+(setq-default show-trailing-whitespace t)
+
 ;; Clear whitespaces on backspaced line
 (defun kill-and-join-forward (&optional arg)
   (interactive "P")
