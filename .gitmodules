@@ -76,3 +76,6 @@
 [submodule "extensions/fill-column-indicator"]
 	path = extensions/fill-column-indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "extensions/web-mode"]
+	path = extensions/web-mode
+	url = https://github.com/fxbois/web-mode.git

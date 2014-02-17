@@ -232,3 +232,8 @@ The overlay used is stored in `chosig-background'."
 ;; 80 Columns Indicator - Vertical Bar
 (add-to-list 'load-path "~/.emacs.d/extensions/fill-column-indicator")
 (require 'fill-column-indicator)
+
+;; Web Mode
+;; HTML files embedding parts (CSS/JavaScript) and blocks (client/server side)
+(add-to-list 'load-path "~/.emacs.d/extensions/web-mode")
+(require 'web-mode)

@@ -74,3 +74,9 @@
       (fci-mode 1)
     (fci-mode 0))
   )
+
+;; Web Mode
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(set-face-foreground 'web-mode-symbol-face "#10a3c3")
