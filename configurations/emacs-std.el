@@ -31,7 +31,7 @@
                  (indent-region (region-beginning) (region-end) nil))))))
 
 ;; Show trailing whitespace by default
-(setq-default show-trailing-whitespace t)
+(setq-default show-trailing-whitespace nil)
 
 ;; Clear whitespaces on backspaced line
 (defun kill-and-join-forward (&optional arg)
