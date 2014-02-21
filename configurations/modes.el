@@ -26,6 +26,24 @@
 ;; Javascript
 ;; (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js.*$" . js2-mode))
+(setq-default js2-idle-timer-delay 0.5)
+(setq-default js2-global-externs '("module"
+				   "require"
+				   "buster"
+				   "sinon"
+				   "assert"
+				   "refute"
+				   "setTimeout"
+				   "clearTimeout"
+				   "setInterval"
+				   "clearInterval"
+				   "location"
+				   "__dirname"
+				   "console"
+				   "JSON"
+				   "$"
+				   "Backbone"
+				   "_"))
 
 ;; Yaml mode
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
