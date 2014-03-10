@@ -5,9 +5,9 @@
 ;; Turn off tool-bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
-;; Scrollbar right
+;; Scrollbar disabled
 (setq scroll-bar-mode-explicit t)
-(set-scroll-bar-mode `right)
+(set-scroll-bar-mode nil)
 
 ;; Horizontal scrolling
 (put 'scroll-left 'disabled nil)
