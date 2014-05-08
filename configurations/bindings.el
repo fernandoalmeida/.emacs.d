@@ -72,25 +72,29 @@
 (global-set-key [C-f6] 'split-window-vertically)
 
 ;; Switch Window
-;; (global-set-key [C-M-left] 'other-window)
-;; (global-set-key [C-M-right] 'other-window)
+(global-set-key [C-tab] 'other-window)
 
 ;; Scroll Window
 ;; (global-set-key [C-M-up] 'scroll-other-window-up)
 ;; (global-set-key [C-M-down] 'scoll-other-window-down)
 
 ;; Buffer navigation
-(global-set-key [C-tab]  'tabbar-forward)
-(global-set-key [C-S-iso-lefttab] 'tabbar-backward)
+(global-set-key [C-next]  'tabbar-forward)
+(global-set-key [C-prior] 'tabbar-backward)
 
 ;; File open/close
 (global-set-key (kbd "C-o")   'anything-git-goto)
 (global-set-key (kbd "C-S-o") 'ido-find-file)
+(global-set-key (kbd "C-M-o") 'anything-mini)
+
 (global-set-key [C-f4] 'kill-buffer-and-window)
 (global-set-key [C-S-f4] 'delete-window)
 
 ;; File reload
 (global-set-key [f5] 'revert-buffer)
+
+;; File rename
+(global-set-key [f2] 'rename-file)
 
 ;; Close emacs
 (global-set-key [M-f4] 'save-buffers-kill-emacs)
