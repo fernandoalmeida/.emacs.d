@@ -2,6 +2,12 @@
 ;;Emacs standard features
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Disable backup
+(setq backup-inhibited t)
+
+;; Disable auto save
+(setq auto-save-default nil)
+
 ;; Turn off tool-bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
