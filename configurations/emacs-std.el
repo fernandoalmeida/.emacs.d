@@ -18,26 +18,42 @@
 ;; Horizontal scrolling
 (put 'scroll-left 'disabled nil)
 
+;; Highlight matching parentheses, braces and brackets.
+(show-paren-mode t)
+
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)
 
+;; Indent all
+(defun indent-all()
+  (interactive)
+  (save-excursion
+    (let ()
+      (goto-char (point-min))
+      (while (< (point) (point-max))
+        (c-indent-command)
+        (next-line 1))))
+  (delete-trailing-whitespace))
+(global-set-key (kbd "C-I") 'indent-all)
+
 ;; Auto Indentation
+(setq-default indent-tabs-mode nil)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (dolist (command '(yank yank-pop))
- (eval `(defadvice ,command (after indent-region activate)
-          (and (not current-prefix-arg)
-               (member major-mode '(emacs-lisp-mode lisp-mode
-                                                    clojure-mode    scheme-mode
-                                                    haskell-mode    ruby-mode
-                                                    rspec-mode      python-mode
-                                                    c-mode          c++-mode
-                                                    objc-mode       latex-mode
-                                                    plain-tex-mode	html-mode))
-               (let ((mark-even-if-inactive transient-mark-mode))
-                 (indent-region (region-beginning) (region-end) nil))))))
+  (eval `(defadvice ,command (after indent-region activate)
+           (and (not current-prefix-arg)
+                (member major-mode '(emacs-lisp-mode lisp-mode
+                                                     clojure-mode    scheme-mode
+                                                     haskell-mode    ruby-mode
+                                                     rspec-mode      python-mode
+                                                     c-mode          c++-mode
+                                                     objc-mode       latex-mode
+                                                     plain-tex-mode  html-mode))
+                (let ((mark-even-if-inactive transient-mark-mode))
+                  (indent-region (region-beginning) (region-end) nil))))))
 
 ;; Show trailing whitespace by default
-(setq-default show-trailing-whitespace nil)
+(setq-default show-trailing-whitespace t)
 
 ;; Clear whitespaces on backspaced line
 (defun kill-and-join-forward (&optional arg)
@@ -71,7 +87,7 @@
    (overwrite-mode
     (set-cursor-color djcb-overwrite-color)
     (setq cursor-type djcb-overwrite-cursor-type))
-   (t 
+   (t
     (set-cursor-color djcb-normal-color)
     (setq cursor-type djcb-normal-cursor-type))))
 
@@ -116,6 +132,27 @@
 	       "\\(module\\|class\\|def\\|if\\|unless\\|do\\|{\\)" "\\(end\\|end\\|end\\|end\\|end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
+;; Ruby hash/array indentation
+(setq ruby-deep-indent-paren nil)
+(setq ruby-deep-indent-paren-style nil)
+(setq ruby-deep-arglist nil)
+
+;; Fix closing parentheses indentation
+(defadvice ruby-indent-line (after unindent-closing-paren activate)
+  (let ((column (current-column))
+        indent offset)
+    (save-excursion
+      (back-to-indentation)
+      (let ((state (syntax-ppss)))
+        (setq offset (- column (current-column)))
+        (when (and (eq (char-after) ?\))
+                   (not (zerop (car state))))
+          (goto-char (cadr state))
+          (setq indent (current-indentation)))))
+    (when indent
+      (indent-line-to indent)
+      (when (> offset 0) (forward-char offset)))))
+
 ;; hideshow all comments
 (defun hs-hide-all-comments ()
   "Hide all top level blocks, if they are comments, displaying only first line.
@@ -145,7 +182,7 @@ Move point to the beginning of the line, and run the normal hook
 
 (defun my-mark-word (N)
   (interactive "p")
-  (if (and 
+  (if (and
        (not (eq last-command this-command))
        (not (eq last-command 'my-mark-word-backward)))
       (set-mark (point)))

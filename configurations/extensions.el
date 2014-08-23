@@ -74,13 +74,13 @@
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
-;; Ide-skel
-(add-to-list 'load-path "~/.emacs.d/extensions/ide-skel")
-(require 'ide-skel)
-
 ;; Tabbar
 (add-to-list 'load-path "~/.emacs.d/extensions/tabbar")
 (require 'tabbar)
+
+;; Ide-skel
+(add-to-list 'load-path "~/.emacs.d/extensions/ide-skel")
+(require 'ide-skel)
 
 ;; Color Theme - Tango 2
 (add-to-list 'load-path "~/.emacs.d/extensions/color-theme-tango-2")
@@ -109,8 +109,8 @@
 ;; Highlight Indentation
 (add-to-list 'load-path "~/.emacs.d/extensions/highlight-indentation")
 (require 'highlight-indentation)
-(set-face-background 'highlight-indentation-face "#e3e3d3")
-(set-face-background 'highlight-indentation-current-column-face "#c3b3b3")
+(set-face-background 'highlight-indentation-face "#e3e3e3")
+(set-face-background 'highlight-indentation-current-column-face "#fdf5c0")
 
 ;; Puppet Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/puppet-mode")
