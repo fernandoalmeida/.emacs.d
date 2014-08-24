@@ -89,11 +89,12 @@
 ;; Color Theme - Zenburn
 (add-to-list 'load-path "~/.emacs.d/extensions/color-theme-zenburn")
 (require 'color-theme-zenburn)
+(color-theme-zenburn)
 
 ;; Color Theme - Solarized
 (add-to-list 'load-path "~/.emacs.d/extensions/color-theme-solarized")
 (require 'color-theme-solarized)
-(color-theme-solarized-light)
+;;(color-theme-solarized-light)
 
 ;; Buffer Background
 (add-to-list 'load-path "~/.emacs.d/extensions/buffer-bg")
@@ -110,7 +111,7 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/highlight-indentation")
 (require 'highlight-indentation)
 (set-face-background 'highlight-indentation-face "#e3e3e3")
-(set-face-background 'highlight-indentation-current-column-face "#fdf5c0")
+(set-face-background 'highlight-indentation-current-column-face "#393939")
 
 ;; Puppet Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/puppet-mode")
@@ -241,3 +242,4 @@ The overlay used is stored in `chosig-background'."
 ;; Rinari - Rails Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/rinari")
 (require 'rinari)
+(setq rinari-tags-file-name "tmp/TAGS")
