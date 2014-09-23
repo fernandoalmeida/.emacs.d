@@ -71,8 +71,12 @@
 (global-set-key [f6] 'split-window-horizontally)
 (global-set-key [C-f6] 'split-window-vertically)
 
-;; Switch Window
+;; Window Navigation
 (global-set-key [C-tab] 'other-window)
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(global-set-key [M-down] 'windmove-down)
+(global-set-key [M-up] 'windmove-up)
 
 ;; Scroll Window
 ;; (global-set-key [C-M-up] 'scroll-other-window-up)
