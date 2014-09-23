@@ -219,8 +219,8 @@ Move point to the beginning of the line, and run the normal hook
 ;; Flymake Errline ;;
 ;;;;;;;;;;;;;;;;;;;;;
 (custom-set-faces
- '(flymake-errline ((((class color)) (:background "#FFCFD5"))))
- '(flymake-warnline ((((class color)) (:background "#FFEBCF")))))
+ '(flymake-errline ((((class color)) (:background "#5E0000"))))
+ '(flymake-warnline ((((class color)) (:background "#5E0000")))))
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Custom Faces    ;;
