@@ -33,7 +33,7 @@
 ;; least of text you've pasted into it in the first place.
 ;; (setq yank-pop-change-selection t)  ; makes rotating the kill ring change the X11 clipboard.
 (global-set-key (kbd "C-c") 'kill-ring-save)
-(global-set-key (kbd "C-x") 'kill-region)
+;; (global-set-key (kbd "C-x") 'kill-region)
 (global-set-key (kbd "C-v") 'cua-paste)
 (global-set-key (kbd "C-S-v") 'cua-paste-pop)
 
@@ -135,4 +135,4 @@
 (global-set-key (kbd "C-\|") 'whitespace-cleanup)
 
 ;; Git
-(global-set-key (kbd "C-g") 'git-status)
+(global-set-key (kbd "C-x g") 'magit-status)

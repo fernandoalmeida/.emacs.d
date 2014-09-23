@@ -62,6 +62,10 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
 (require 'git-emacs)
 
+;; Magit
+(add-to-list 'load-path "~/.emacs.d/extensions/magit")
+(require 'magit)
+
 ;; Anything Git GoTo
 (add-to-list 'load-path "~/.emacs.d/extensions/anything-git-goto")
 (require 'anything-git-goto)
