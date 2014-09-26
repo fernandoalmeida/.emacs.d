@@ -2,24 +2,10 @@
 ;;Custom Bindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Undo / Redo
-(global-set-key (kbd "C-z")  'undo-tree-undo)
-(global-set-key (kbd "C-S-z")  'undo-tree-redo)
-
-;; Save
-(global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-S-s") 'save-some-buffers)
-
 ;; Copy - Paste
-;; (transient-mark-mode 1)    ; Now on by default: makes the region act quite like the text "highlight" in many apps.
-;; (setq shift-select-mode t) ; Now on by default: allows shifted cursor-keys to control the region.
 (setq mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
 (setq x-select-enable-primary nil) ; stops killing/yanking interacting with primary X11 selection
 (setq x-select-enable-clipboard t) ; makes killing/yanking interact with clipboard X11 selection
-
-;; these will probably be already set to these values, leave them that way if so!
-;; (setf interprogram-cut-function 'x-select-text)
-;; (setf interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
 ;; You need an emacs with bug #902 fixed for this to work properly. It has now been fixed in CVS HEAD.
 ;; it makes "highlight/middlebutton" style (X11 primary selection based) copy-paste work as expected
@@ -28,14 +14,6 @@
 ;; text with the mouse if you want to)
 (setq select-active-regions t) ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
-
-;; with this, doing an M-y will also affect the X11 clipboard, making emacs act as a sort of clipboard history, at
-;; least of text you've pasted into it in the first place.
-;; (setq yank-pop-change-selection t)  ; makes rotating the kill ring change the X11 clipboard.
-(global-set-key (kbd "C-c") 'kill-ring-save)
-;; (global-set-key (kbd "C-x") 'kill-region)
-(global-set-key (kbd "C-v") 'cua-paste)
-(global-set-key (kbd "C-S-v") 'cua-paste-pop)
 
 ;; Use regex searches by default
 (global-set-key (kbd "C-f") 'isearch-forward-regexp)
@@ -78,10 +56,6 @@
 (global-set-key [M-down] 'windmove-down)
 (global-set-key [M-up] 'windmove-up)
 
-;; Scroll Window
-;; (global-set-key [C-M-up] 'scroll-other-window-up)
-;; (global-set-key [C-M-down] 'scoll-other-window-down)
-
 ;; Buffer navigation
 (global-set-key [C-next]  'tabbar-forward)
 (global-set-key [C-prior] 'tabbar-backward)
@@ -113,9 +87,6 @@
 (define-key global-map (kbd "C-<kp-subtract>") 'text-scale-decrease)
 (define-key global-map (kbd "C-0") 'text-scale-mode)
 (define-key global-map (kbd "C-<kp-0>") 'text-scale-mode)
-
-;; Paste pop
-(global-set-key (kbd "C-S-v") 'cua-paste-pop)
 
 ;; Mark Word
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
