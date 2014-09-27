@@ -15,10 +15,6 @@
 (setq select-active-regions t) ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
-;; Use regex searches by default
-(global-set-key (kbd "C-f") 'isearch-forward-regexp)
-(global-set-key (kbd "C-r") 'isearch-backward-regexp)
-
 ;; Repeat searches with F3
 (define-key isearch-mode-map [f3] 'isearch-repeat-forward)
 (define-key isearch-mode-map [<tab>] 'isearch-repeat-forward)
@@ -41,13 +37,6 @@
 
 ;; Message panel
 (global-set-key [f8] 'ide-skel-toggle-bottom-view-window)
-
-;; Maximize Current Window
-(global-set-key [f11] 'delete-other-windows)
-
-;; Split Window
-(global-set-key [f6] 'split-window-horizontally)
-(global-set-key [C-f6] 'split-window-vertically)
 
 ;; Window Navigation
 (global-set-key [C-tab] 'other-window)
