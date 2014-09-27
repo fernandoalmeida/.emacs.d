@@ -24,7 +24,7 @@
 (define-key isearch-mode-map [<down>] 'isearch-ring-retreat)
 
 ;; Find in files (grep)
-(global-set-key (kbd "C-S-f") 'find-grep)
+(global-set-key (kbd "C-S-f") 'git-grep)
 
 ;; Replace
 (global-set-key (kbd "C-S-r") 'query-replace-regexp)
