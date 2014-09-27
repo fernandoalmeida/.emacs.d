@@ -108,7 +108,7 @@
 (add-hook 'perl-mode-hook       'hs-minor-mode)
 (add-hook 'sh-mode-hook         'hs-minor-mode)
 (add-hook 'js2-mode-hook        'hs-minor-mode)
-(add-hook 'javascript-mode-hook        'hs-minor-mode)
+(add-hook 'javascript-mode-hook 'hs-minor-mode)
 (add-hook 'ruby-mode-hook       'hs-minor-mode)
 
 (defun display-code-line-counts (ov)
@@ -214,28 +214,6 @@ Move point to the beginning of the line, and run the normal hook
   ;; Use event-end in case called from mouse-drag-region.
   ;; If EVENT is a click, event-end and event-start give same value.
   (posn-set-point (event-end event)))
-
-;;;;;;;;;;;;;;;;;;;;;
-;; Flymake Errline ;;
-;;;;;;;;;;;;;;;;;;;;;
-(custom-set-faces
- '(flymake-errline ((((class color)) (:background "#5E0000"))))
- '(flymake-warnline ((((class color)) (:background "#5E0000")))))
-
-;;;;;;;;;;;;;;;;;;;;;
-;; Custom Faces    ;;
-;;;;;;;;;;;;;;;;;;;;;
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(tabbar-button-highlight ((t (:inherit tabbar-button))))
- '(tabbar-default ((t (:inherit variable-pitch :background "gray82" :foreground "white" :height 0.8))))
- '(tabbar-highlight ((t nil)))
- '(tabbar-selected ((t (:inherit tabbar-default :background "white" :foreground "blue" :box (:line-width 1 :color "black")))))
- '(tabbar-separator ((t (:inherit tabbar-default :height 0.2))))
- '(tabbar-unselected ((t (:inherit tabbar-default :background "gray72" :foreground "black" :box (:line-width 1 :color "black"))))))
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Initalize       ;;
