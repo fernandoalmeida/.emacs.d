@@ -7,3 +7,4 @@ auto-save-list
 tramp
 ac-comphist.dat
 session\.*
+/bookmarks
