@@ -24,34 +24,6 @@
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)
 
-;; Indent all
-(defun indent-all()
-  (interactive)
-  (save-excursion
-    (let ()
-      (goto-char (point-min))
-      (while (< (point) (point-max))
-        (c-indent-command)
-        (next-line 1))))
-  (delete-trailing-whitespace))
-(global-set-key (kbd "C-I") 'indent-all)
-
-;; Auto Indentation
-(setq-default indent-tabs-mode nil)
-(define-key global-map (kbd "RET") 'newline-and-indent)
-(dolist (command '(yank yank-pop))
-  (eval `(defadvice ,command (after indent-region activate)
-           (and (not current-prefix-arg)
-                (member major-mode '(emacs-lisp-mode lisp-mode
-                                                     clojure-mode    scheme-mode
-                                                     haskell-mode    ruby-mode
-                                                     rspec-mode      python-mode
-                                                     c-mode          c++-mode
-                                                     objc-mode       latex-mode
-                                                     plain-tex-mode  html-mode))
-                (let ((mark-even-if-inactive transient-mark-mode))
-                  (indent-region (region-beginning) (region-end) nil))))))
-
 ;; Show trailing whitespace by default
 (setq-default show-trailing-whitespace t)
 
