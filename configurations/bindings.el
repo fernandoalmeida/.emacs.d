@@ -69,14 +69,6 @@
 ;; Make dir
 (global-set-key (kbd "C-S-n")  'mkdir)
 
-;; Font size
-(define-key global-map (kbd "C-=") 'text-scale-increase)
-(define-key global-map (kbd "C-<kp-add>") 'text-scale-increase)
-(define-key global-map (kbd "C--") 'text-scale-decrease)
-(define-key global-map (kbd "C-<kp-subtract>") 'text-scale-decrease)
-(define-key global-map (kbd "C-0") 'text-scale-mode)
-(define-key global-map (kbd "C-<kp-0>") 'text-scale-mode)
-
 ;; Mark Word
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
 (global-set-key (kbd "C-S-<right>") 'my-mark-word)
