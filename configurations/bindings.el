@@ -73,9 +73,6 @@
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
 (global-set-key (kbd "C-S-<right>") 'my-mark-word)
 
-;; Selection
-(global-set-key (kbd "C-a") 'mark-whole-buffer)
-
 ;; Comments
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-M-/") 'comment-box)
