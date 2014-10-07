@@ -18,9 +18,6 @@
 ;; Find in files (grep)
 (global-set-key (kbd "C-S-f") 'git-grep)
 
-;; Replace
-(global-set-key (kbd "C-S-r") 'query-replace-regexp)
-
 ;; File browser panel
 (global-set-key [f9] 'ide-skel-toggle-left-view-window)
 
