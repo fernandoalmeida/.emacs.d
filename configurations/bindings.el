@@ -37,7 +37,6 @@
 
 ;; File open/close
 (global-set-key (kbd "C-o")   'anything-git-goto)
-(global-set-key (kbd "C-S-o") 'ido-find-file)
 (global-set-key (kbd "C-M-o") 'anything-mini)
 
 (global-set-key [C-f4] 'kill-buffer-and-window)
