@@ -21,9 +21,6 @@
 ;; Replace
 (global-set-key (kbd "C-S-r") 'query-replace-regexp)
 
-;; Go to line
-(global-set-key (kbd "C-l") 'goto-line)
-
 ;; File browser panel
 (global-set-key [f9] 'ide-skel-toggle-left-view-window)
 
