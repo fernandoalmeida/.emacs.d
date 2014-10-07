@@ -15,14 +15,6 @@
 (setq select-active-regions t) ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
-;; Repeat searches with F3
-(define-key isearch-mode-map [f3] 'isearch-repeat-forward)
-(define-key isearch-mode-map [<tab>] 'isearch-repeat-forward)
-(define-key isearch-mode-map [S-f3] 'isearch-repeat-backward)
-(define-key isearch-mode-map [S-<tab>] 'isearch-repeat-backward)
-(define-key isearch-mode-map [<up>] 'isearch-ring-advance)
-(define-key isearch-mode-map [<down>] 'isearch-ring-retreat)
-
 ;; Find in files (grep)
 (global-set-key (kbd "C-S-f") 'git-grep)
 
