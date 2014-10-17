@@ -51,9 +51,6 @@
 ;; Close emacs
 (global-set-key [M-f4] 'save-buffers-kill-emacs)
 
-;; Make dir
-(global-set-key (kbd "C-S-n")  'mkdir)
-
 ;; Mark Word
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
 (global-set-key (kbd "C-S-<right>") 'my-mark-word)
