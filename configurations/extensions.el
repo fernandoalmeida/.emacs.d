@@ -238,11 +238,6 @@ The overlay used is stored in `chosig-background'."
 (add-to-list 'load-path "~/.emacs.d/extensions/fill-column-indicator")
 (require 'fill-column-indicator)
 
-;; Web Mode
-;; HTML files embedding parts (CSS/JavaScript) and blocks (client/server side)
-(add-to-list 'load-path "~/.emacs.d/extensions/web-mode")
-(require 'web-mode)
-
 ;; Rinari - Rails Mode
 (add-to-list 'load-path "~/.emacs.d/extensions/rinari")
 (require 'rinari)
