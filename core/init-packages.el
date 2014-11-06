@@ -8,6 +8,8 @@
 
 (defvar required-packages
   '(
+    helm
+    helm-ls-git
   ) "required packages list")
 
 ; check if all packages are installed
