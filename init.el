@@ -1,3 +1,4 @@
+(load "~/.emacs.d/core/init-packages.el")
 (setq load-path
   (cons "~/.emacs.d/configurations"
     (cons "~/.emacs.d/extensions" load-path)))
