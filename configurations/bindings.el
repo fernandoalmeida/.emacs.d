@@ -33,9 +33,6 @@
 (global-set-key [C-prior] 'tabbar-backward)
 
 ;; File open/close
-(global-set-key (kbd "C-o")   'anything-git-goto)
-(global-set-key (kbd "C-M-o") 'anything-mini)
-
 (global-set-key [C-f4] 'kill-buffer-and-window)
 (global-set-key [C-S-f4] 'delete-window)
 
