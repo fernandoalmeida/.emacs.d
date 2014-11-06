@@ -204,3 +204,6 @@ Move point to the beginning of the line, and run the normal hook
  '(initial-major-mode (quote lisp-interaction-mode))
  '(initial-scratch-message "")
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
