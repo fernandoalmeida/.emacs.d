@@ -1,4 +1,6 @@
-(load "~/.emacs.d/core/init-packages.el")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Old configs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq load-path
   (cons "~/.emacs.d/configurations"
     (cons "~/.emacs.d/extensions" load-path)))
@@ -7,3 +9,8 @@
 (load "emacs-std")
 (load "modes")
 (load "bindings")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; New configs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load "~/.emacs.d/core/init-packages.el")
