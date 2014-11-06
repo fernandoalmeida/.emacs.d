@@ -15,9 +15,6 @@
 (setq select-active-regions t) ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
-;; Find in files (grep)
-(global-set-key (kbd "C-S-f") 'git-grep)
-
 ;; File browser panel
 (global-set-key [f9] 'ide-skel-toggle-left-view-window)
 
@@ -71,3 +68,7 @@
 
 ;; Git
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Find in files (grep)
+(global-set-key (kbd "C-x C-g") 'find-grep)
+(global-set-key (kbd "C-c C-g") 'git-grep)
