@@ -9,7 +9,6 @@
 (icomplete-mode)
 (cua-mode t)
 (ido-mode t)
-(global-rinari-mode)
 
 ;; Ruby mode files
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
