@@ -22,7 +22,6 @@
 (global-set-key [f8] 'ide-skel-toggle-bottom-view-window)
 
 ;; Window Navigation
-(global-set-key [C-tab] 'other-window)
 (global-set-key [M-left] 'windmove-left)
 (global-set-key [M-right] 'windmove-right)
 (global-set-key [M-down] 'windmove-down)
