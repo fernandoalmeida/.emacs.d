@@ -10,6 +10,7 @@
   '(
     helm
     helm-ls-git
+    zenburn-theme
   ) "required packages list")
 
 ; check if all packages are installed
