@@ -1,6 +1,5 @@
 ;; Helm setup
 (setq helm-quick-update                      t ; do not display invisible candidates
-      helm-split-window-in-side-p            t ; open helm buffer inside current window, not occupy whole other window
       helm-buffers-fuzzy-matching            t
       helm-move-to-line-cycle-in-source      t
       helm-ff-search-library-in-sexp         t
@@ -9,6 +8,7 @@
       helm-exit-idle-delay                   0.01 ; small value preventing fast typing issue
       helm-ff-transformer-show-only-basename nil  ; preventing hidden matching issue
       helm-ls-git-show-abs-or-relative       'relative
+      helm-full-frame                        t
       helm-buffer-max-length                 50)
 
 ;; Custom bingings
