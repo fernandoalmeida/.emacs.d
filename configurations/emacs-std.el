@@ -71,10 +71,6 @@
 ;; Save Sessions on Exit
 (desktop-save-mode 1)
 
-;; Custom faces
-(set-face-background 'isearch "brown")
-(set-face-background 'lazy-highlight "burlywood4")
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Hide/Show blocks
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
