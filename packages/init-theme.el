@@ -10,3 +10,4 @@
 (add-to-list 'default-frame-alist '(top . 0))
 (add-to-list 'default-frame-alist '(height . 45))
 (add-to-list 'default-frame-alist '(width . 190))
+(add-to-list 'default-frame-alist '(font . "Monospace 9"))
