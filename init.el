@@ -14,5 +14,6 @@
 ;; New configs
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load "~/.emacs.d/core/init-packages.el")
+(load "~/.emacs.d/packages/init-projectile.el")
 (load "~/.emacs.d/packages/init-helm.el")
 (load "~/.emacs.d/packages/init-theme.el")

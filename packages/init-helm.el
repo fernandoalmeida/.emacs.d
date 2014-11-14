@@ -11,11 +11,12 @@
       helm-ls-git-show-abs-or-relative       'relative
       helm-buffer-max-length                 50)
 
-;; Bingings
+;; Custom bingings
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x f") 'helm-ls-git-ls)
+(global-set-key (kbd "C-x f") 'helm-projectile)
+(global-set-key (kbd "C-c f") 'helm-ls-git-ls)

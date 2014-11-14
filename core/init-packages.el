@@ -9,7 +9,9 @@
 (defvar required-packages
   '(
     ggtags
+    projectile
     helm
+    helm-projectile
     helm-ls-git
     zenburn-theme
   ) "required packages list")
