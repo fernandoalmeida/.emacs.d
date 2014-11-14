@@ -8,6 +8,7 @@
 
 (defvar required-packages
   '(
+    ggtags
     helm
     helm-ls-git
     zenburn-theme
