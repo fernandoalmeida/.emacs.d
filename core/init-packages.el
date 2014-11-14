@@ -13,6 +13,7 @@
     helm
     helm-projectile
     helm-ls-git
+    rspec-mode
     zenburn-theme
   ) "required packages list")
 
