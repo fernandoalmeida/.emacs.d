@@ -82,10 +82,6 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/tabbar")
 (require 'tabbar)
 
-;; Ide-skel
-(add-to-list 'load-path "~/.emacs.d/extensions/ide-skel")
-(require 'ide-skel)
-
 ;; Buffer Background
 (add-to-list 'load-path "~/.emacs.d/extensions/buffer-bg")
 (require 'buffer-bg)

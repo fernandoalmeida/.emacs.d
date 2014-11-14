@@ -5,7 +5,6 @@
 (global-linum-mode 1)
 (setq-default column-number-mode t)
 (global-hl-line-mode t)
-(partial-completion-mode)
 (icomplete-mode)
 (cua-mode t)
 (ido-mode t)
