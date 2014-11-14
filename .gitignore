@@ -9,3 +9,6 @@ ac-comphist.dat
 session\.*
 /bookmarks
 elpa
+filesets-cache.el
+projectile.cache
+projectile-bookmarks.eld
