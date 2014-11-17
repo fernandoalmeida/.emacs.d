@@ -10,6 +10,7 @@
   '(
     ggtags
     projectile
+    neotree
     helm
     helm-projectile
     helm-ls-git
