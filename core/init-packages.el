@@ -15,6 +15,7 @@
     helm-projectile
     helm-ls-git
     rspec-mode
+    iedit
     multiple-cursors
     zenburn-theme
   ) "required packages list")
