@@ -18,4 +18,5 @@
 (load "~/.emacs.d/packages/init-neotree.el")
 (load "~/.emacs.d/packages/init-helm.el")
 (load "~/.emacs.d/packages/init-ruby.el")
+(load "~/.emacs.d/packages/init-multiple-cursors.el")
 (load "~/.emacs.d/packages/init-theme.el")
