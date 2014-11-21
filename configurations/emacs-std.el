@@ -155,3 +155,5 @@ Move point to the beginning of the line, and run the normal hook
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
+
+(which-function-mode t)
