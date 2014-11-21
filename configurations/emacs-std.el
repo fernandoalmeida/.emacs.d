@@ -30,16 +30,6 @@
 ;; Show trailing whitespace by default
 (setq-default show-trailing-whitespace t)
 
-;; Clear whitespaces on backspaced line
-(defun kill-and-join-forward (&optional arg)
-  (interactive "P")
-  (if (and (eolp) (not (bolp)))
-      (progn (forward-char 1)
-             (just-one-space 0)
-             (backward-char 1)
-             (kill-line arg))
-    (kill-line arg)))
-
 ;; Save Sessions on Exit
 (desktop-save-mode 1)
 
