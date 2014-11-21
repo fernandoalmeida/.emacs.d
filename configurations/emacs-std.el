@@ -70,3 +70,4 @@
 
 (which-function-mode t)
 (electric-pair-mode t)
+(electric-indent-mode t)
