@@ -157,3 +157,4 @@ Move point to the beginning of the line, and run the normal hook
 (setq uniquify-buffer-name-style 'post-forward)
 
 (which-function-mode t)
+(electric-pair-mode t)
