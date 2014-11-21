@@ -79,27 +79,6 @@
 	       "\\(module\\|class\\|def\\|if\\|unless\\|do\\|{\\)" "\\(end\\|end\\|end\\|end\\|end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
-;; Ruby hash/array indentation
-(setq ruby-deep-indent-paren nil)
-(setq ruby-deep-indent-paren-style nil)
-(setq ruby-deep-arglist nil)
-
-;; Fix closing parentheses indentation
-(defadvice ruby-indent-line (after unindent-closing-paren activate)
-  (let ((column (current-column))
-        indent offset)
-    (save-excursion
-      (back-to-indentation)
-      (let ((state (syntax-ppss)))
-        (setq offset (- column (current-column)))
-        (when (and (eq (char-after) ?\))
-                   (not (zerop (car state))))
-          (goto-char (cadr state))
-          (setq indent (current-indentation)))))
-    (when indent
-      (indent-line-to indent)
-      (when (> offset 0) (forward-char offset)))))
-
 ;; hideshow all comments
 (defun hs-hide-all-comments ()
   "Hide all top level blocks, if they are comments, displaying only first line.
