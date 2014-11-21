@@ -33,10 +33,6 @@
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
 (global-set-key (kbd "C-S-<right>") 'my-mark-word)
 
-;; Comments
-(global-set-key (kbd "M-/") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-M-/") 'comment-box)
-
 ;; WhiteSpace
 (global-set-key (kbd "C-\\") 'global-whitespace-mode)
 (global-set-key (kbd "C-\|") 'whitespace-cleanup)
