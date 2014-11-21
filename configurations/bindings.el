@@ -23,12 +23,6 @@
 (global-set-key [C-f4] 'kill-buffer-and-window)
 (global-set-key [C-S-f4] 'delete-window)
 
-;; File reload
-(global-set-key [f5] 'revert-buffer)
-
-;; File rename
-(global-set-key [f2] 'rename-file)
-
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
