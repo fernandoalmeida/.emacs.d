@@ -50,32 +50,17 @@
       (set-mark (point)))
   (backward-word N))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Shift-Click select region ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Don't show a stupid font context menu when shift-clicking a buffer.
-(global-set-key [S-mouse-1] 'dave-shift-mouse-select)
+;; Shift-Click select region
 (global-set-key [S-down-mouse-1] 'ignore)
-
-(defun dave-shift-mouse-select (event)
-  "Set the mark and then move point to the position clicked on with the mouse.
-   This should be bound to a mouse click event type."
+(global-set-key [S-mouse-1] 'shift-mouse-select)
+(defun shift-mouse-select (event)
   (interactive "e")
   (mouse-minibuffer-check event)
   (if mark-active (exchange-point-and-mark))
   (set-mark-command nil)
-  ;; Use event-end in case called from mouse-drag-region.
-  ;; If EVENT is a click, event-end and event-start give same value.
   (posn-set-point (event-end event)))
 
-;;;;;;;;;;;;;;;;;;;;;
-;; Initalize       ;;
-;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(initial-major-mode (quote lisp-interaction-mode))
  '(initial-scratch-message "")
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
