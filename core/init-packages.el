@@ -17,6 +17,7 @@
     rspec-mode
     iedit
     multiple-cursors
+    expand-region
     zenburn-theme
   ) "required packages list")
 
