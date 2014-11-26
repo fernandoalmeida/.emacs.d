@@ -1,4 +1,5 @@
 (add-hook 'ruby-mode-hook 'rspec-mode)
+(setq rspec-use-rake-when-possible nil)
 
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
