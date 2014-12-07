@@ -12,3 +12,4 @@ elpa
 filesets-cache.el
 projectile.cache
 projectile-bookmarks.eld
+/.mc-lists.el
