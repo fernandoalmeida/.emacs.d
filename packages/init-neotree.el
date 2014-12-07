@@ -1,3 +1,3 @@
-(global-set-key [f8] 'neotree-toggle)
-(global-set-key [S-f8] 'neotree-find)
+(global-set-key (kbd "C-c d") 'neotree-projectile-action)
+(global-set-key (kbd "C-c C-d") 'neotree-find)
 (setq neo-persist-show nil)
