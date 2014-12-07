@@ -28,7 +28,7 @@
 (setq default-truncate-lines t)
 
 ;; Show trailing whitespace by default
-(setq-default show-trailing-whitespace t)
+(add-hook 'prog-mode-hook (setq show-trailing-whitespace t))
 
 ;; Save Sessions on Exit
 (desktop-save-mode 1)
