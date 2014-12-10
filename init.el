@@ -21,3 +21,4 @@
 (load "~/.emacs.d/packages/init-ruby.el")
 (load "~/.emacs.d/packages/init-multiple-cursors.el")
 (load "~/.emacs.d/packages/init-theme.el")
+(load "~/.emacs.d/packages/init-powerline.el")

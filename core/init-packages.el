@@ -20,7 +20,8 @@
     expand-region
     zenburn-theme
     magit
-  ) "required packages list")
+    powerline
+  ) "Required Packages list")
 
 ; check if all packages are installed
 (defun packages-installed-p ()
