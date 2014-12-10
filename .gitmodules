@@ -43,15 +43,6 @@
 [submodule "extensions/flymake-css"]
 	path = extensions/flymake-css
 	url = git://github.com/purcell/flymake-css.git
-[submodule "extensions/color-theme-solarized"]
-	path = extensions/color-theme-solarized
-	url = git://github.com/sellout/emacs-color-theme-solarized.git
-[submodule "extensions/color-theme-tango-2"]
-	path = extensions/color-theme-tango-2
-	url = git://github.com/wfarr/color-theme-tango-2.git
-[submodule "extensions/color-theme-zenburn"]
-	path = extensions/color-theme-zenburn
-	url = git://github.com/bbatsov/zenburn-emacs.git
 [submodule "extensions/rainbow-mode"]
 	path = extensions/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git
