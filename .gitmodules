@@ -1,6 +1,3 @@
-[submodule "extensions/magit"]
-	path = extensions/magit
-	url = git://github.com/magit/magit.git
 [submodule "extensions/haml-mode"]
 	path = extensions/haml-mode
 	url = git://github.com/nex3/haml-mode.git

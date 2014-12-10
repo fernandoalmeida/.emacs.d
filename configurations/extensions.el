@@ -58,10 +58,6 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
 (require 'git-emacs)
 
-;; Magit
-(add-to-list 'load-path "~/.emacs.d/extensions/magit")
-(require 'magit)
-
 ;; Auto Complete
 (add-to-list 'load-path "~/.emacs.d/extensions/auto-complete/")
 (require 'auto-complete-config)

@@ -34,9 +34,6 @@
 (global-set-key (kbd "C-\\") 'global-whitespace-mode)
 (global-set-key (kbd "C-\|") 'whitespace-cleanup)
 
-;; Git
-(global-set-key (kbd "C-x g") 'magit-status)
-
 ;; Find in files (grep)
 (global-set-key (kbd "C-x C-g") 'find-grep)
 (global-set-key (kbd "C-c C-g") 'git-grep)

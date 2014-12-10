@@ -19,6 +19,7 @@
     multiple-cursors
     expand-region
     zenburn-theme
+    magit
   ) "required packages list")
 
 ; check if all packages are installed
