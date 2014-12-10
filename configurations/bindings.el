@@ -26,9 +26,6 @@
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
-;; Close emacs
-(global-set-key [M-f4] 'save-buffers-kill-emacs)
-
 ;; Mark Word
 (global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
 (global-set-key (kbd "C-S-<right>") 'my-mark-word)
