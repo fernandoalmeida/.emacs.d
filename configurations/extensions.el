@@ -49,10 +49,6 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/ido")
 (require 'ido)
 
-;; Anything
-(add-to-list 'load-path "~/.emacs.d/extensions/anything-config")
-(require 'anything-config)
-
 ;; UndoTree
 (add-to-list 'load-path "~/.emacs.d/extensions/undo-tree")
 (require 'undo-tree)
@@ -65,10 +61,6 @@
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/extensions/magit")
 (require 'magit)
-
-;; Anything Git GoTo
-(add-to-list 'load-path "~/.emacs.d/extensions/anything-git-goto")
-(require 'anything-git-goto)
 
 ;; Auto Complete
 (add-to-list 'load-path "~/.emacs.d/extensions/auto-complete/")

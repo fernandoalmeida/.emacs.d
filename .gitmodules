@@ -10,9 +10,6 @@
 [submodule "extensions/flymake"]
 	path = extensions/flymake
 	url = git://github.com/illusori/emacs-flymake.git
-[submodule "extensions/anything-config"]
-	path = extensions/anything-config
-	url = git://repo.or.cz/anything-config.git
 [submodule "extensions/undo-tree"]
 	path = extensions/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
@@ -37,9 +34,6 @@
 [submodule "extensions/git-emacs"]
 	path = extensions/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
-[submodule "extensions/anything-git-goto"]
-	path = extensions/anything-git-goto
-	url = git://github.com/jpablobr/anything-git-goto.git
 [submodule "extensions/scss-mode"]
 	path = extensions/scss-mode
 	url = git://github.com/antonj/scss-mode.git
