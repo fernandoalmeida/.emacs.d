@@ -14,6 +14,7 @@
 ;; New configs
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load "~/.emacs.d/core/init-packages.el")
+(load "~/.emacs.d/core/init-defaults.el")
 (load "~/.emacs.d/packages/init-magit.el")
 (load "~/.emacs.d/packages/init-projectile.el")
 (load "~/.emacs.d/packages/init-neotree.el")
