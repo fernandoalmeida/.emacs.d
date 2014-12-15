@@ -26,10 +26,6 @@
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
-;; Mark Word
-(global-set-key (kbd "C-S-<left>") 'my-mark-word-backward)
-(global-set-key (kbd "C-S-<right>") 'my-mark-word)
-
 ;; WhiteSpace
 (global-set-key (kbd "C-\\") 'global-whitespace-mode)
 (global-set-key (kbd "C-\|") 'whitespace-cleanup)
