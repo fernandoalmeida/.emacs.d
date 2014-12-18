@@ -22,6 +22,7 @@
     magit
     powerline
     discover
+    anzu
   ) "Required Packages list")
 
 ; check if all packages are installed

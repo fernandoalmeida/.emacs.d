@@ -23,3 +23,4 @@
 (load "~/.emacs.d/packages/init-theme.el")
 (load "~/.emacs.d/packages/init-powerline.el")
 (load "~/.emacs.d/packages/init-discover.el")
+(load "~/.emacs.d/packages/init-anzu.el")
