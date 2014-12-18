@@ -23,6 +23,7 @@
     powerline
     discover
     anzu
+    smartscan
   ) "Required Packages list")
 
 ; check if all packages are installed

@@ -24,3 +24,4 @@
 (load "~/.emacs.d/packages/init-powerline.el")
 (load "~/.emacs.d/packages/init-discover.el")
 (load "~/.emacs.d/packages/init-anzu.el")
+(load "~/.emacs.d/packages/init-smartscan.el")
