@@ -21,6 +21,7 @@
     zenburn-theme
     magit
     powerline
+    discover
   ) "Required Packages list")
 
 ; check if all packages are installed
