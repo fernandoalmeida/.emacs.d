@@ -8,7 +8,6 @@
 
 (defvar required-packages
   '(
-    ggtags
     projectile
     neotree
     helm
