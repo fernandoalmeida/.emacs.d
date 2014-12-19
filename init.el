@@ -31,3 +31,4 @@
 (load "~/.emacs.d/packages/init-discover.el")
 (load "~/.emacs.d/packages/init-anzu.el")
 (load "~/.emacs.d/packages/init-smartscan.el")
+(load "~/.emacs.d/packages/init-dpkg-dev.el")
