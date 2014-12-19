@@ -5,7 +5,6 @@
   (cons "~/.emacs.d/configurations"
     (cons "~/.emacs.d/extensions" load-path)))
 (load "extensions")
-(load "macros")
 (load "modes")
 (load "bindings")
 
