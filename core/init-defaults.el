@@ -53,3 +53,6 @@
 
 ;; Auto indent on new line
 (electric-indent-mode t)
+
+;; Disable paging
+(setenv "PAGER" "cat")
