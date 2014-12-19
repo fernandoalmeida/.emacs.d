@@ -16,6 +16,7 @@
     helm-ls-git
     rbenv
     rspec-mode
+    rhtml-mode
     iedit
     multiple-cursors
     expand-region
