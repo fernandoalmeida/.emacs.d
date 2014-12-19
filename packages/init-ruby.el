@@ -10,6 +10,9 @@
 ;; Rbenv
 (global-rbenv-mode)
 
+;; Rubocop
+(add-hook 'ruby-mode-hook 'rubocop-mode)
+
 ;; Ruby mode files/extensions mapping
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))

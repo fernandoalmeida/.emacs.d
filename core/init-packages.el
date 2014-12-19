@@ -17,6 +17,7 @@
     robe
     rspec-mode
     rhtml-mode
+    rubocop
     iedit
     multiple-cursors
     expand-region
