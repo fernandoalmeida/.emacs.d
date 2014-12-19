@@ -1,6 +1,11 @@
+;; Rspec
 (add-hook 'ruby-mode-hook 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
 
+;; Rbenv
+(global-rbenv-mode)
+
+;; Ruby mode files/extensions mapping
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))

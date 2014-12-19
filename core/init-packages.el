@@ -14,6 +14,7 @@
     helm
     helm-projectile
     helm-ls-git
+    rbenv
     rspec-mode
     iedit
     multiple-cursors
