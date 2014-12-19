@@ -15,6 +15,7 @@
     helm-projectile
     helm-ls-git
     rbenv
+    robe
     rspec-mode
     rhtml-mode
     iedit
