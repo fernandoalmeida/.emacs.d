@@ -45,9 +45,6 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
 
-;; Displays current function name in the mode line
-(which-function-mode t)
-
 ;; Auto pair  parentheses, braces and brackets
 (electric-pair-mode t)
 
