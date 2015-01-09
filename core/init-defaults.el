@@ -30,7 +30,7 @@
 (show-paren-mode t)
 
 ;; Turn on line truncation to better visual identation
-(setq default-truncate-lines t)
+;; (setq default-truncate-lines t)
 
 ;; Show trailing whitespace by default
 (add-hook 'prog-mode-hook (setq show-trailing-whitespace t))
