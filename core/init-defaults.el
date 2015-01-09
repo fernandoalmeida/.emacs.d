@@ -53,3 +53,6 @@
 
 ;; Disable paging
 (setenv "PAGER" "cat")
+
+;; Reuse buffers between frames
+(setq-default display-buffer-reuse-frames t) 
