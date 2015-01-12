@@ -32,3 +32,4 @@
 (load "~/.emacs.d/packages/init-anzu.el")
 (load "~/.emacs.d/packages/init-smartscan.el")
 (load "~/.emacs.d/packages/init-dpkg-dev.el")
+(load "~/.emacs.d/packages/init-expand-region.el")
