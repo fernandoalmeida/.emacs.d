@@ -27,6 +27,7 @@
     discover
     anzu
     smartscan
+    diminish
   ) "Required Packages list")
 
 ; check if all packages are installed
