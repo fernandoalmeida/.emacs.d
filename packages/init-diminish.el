@@ -1,4 +1,3 @@
-(eval-after-load "projectile" '(diminish 'projectile-mode))
 (eval-after-load "yasnippet" '(diminish 'yas/minor-mode))
 (eval-after-load "flymake" '(diminish 'flymake-mode))
 (eval-after-load "undo-tree" '(diminish 'undo-tree-mode))
