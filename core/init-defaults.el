@@ -56,3 +56,13 @@
 
 ;; Reuse buffers between frames
 (setq-default display-buffer-reuse-frames t) 
+
+;; Buffer Navigation
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(global-set-key [M-down] 'windmove-down)
+(global-set-key [M-up] 'windmove-up)
+
+;; Frame Navigation
+(global-set-key [M-S-left] 'other-frame)
+(global-set-key [M-S-right] 'other-frame)

@@ -9,12 +9,6 @@
 (setq select-active-regions t)                 ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
-;; Window Navigation
-(global-set-key [M-left] 'windmove-left)
-(global-set-key [M-right] 'windmove-right)
-(global-set-key [M-down] 'windmove-down)
-(global-set-key [M-up] 'windmove-up)
-
 ;; Buffer navigation
 (global-set-key [C-next]  'tabbar-forward)
 (global-set-key [C-prior] 'tabbar-backward)
