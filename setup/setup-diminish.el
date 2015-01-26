@@ -1,5 +1,5 @@
 (eval-after-load "yasnippet" '(diminish 'yas/minor-mode))
-(eval-after-load "flymake" '(diminish 'flymake-mode))
+(eval-after-load "flycheck" '(diminish 'flycheck-mode))
 (eval-after-load "undo-tree" '(diminish 'undo-tree-mode))
 (eval-after-load "auto-complete" '(diminish 'auto-complete-mode))
 (eval-after-load "helm" '(diminish 'helm-mode))

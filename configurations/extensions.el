@@ -95,57 +95,6 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/markdown-mode")
 (require 'markdown-mode)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Flymake
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'load-path "~/.emacs.d/extensions/flymake")
-(require 'flymake)
-(add-hook 'find-file-hook 'flymake-find-file-hook)
-(setq flymake-run-in-place nil)
-(setq temporary-file-directory "/tmp/")
-;; Flymake Cursor
-(add-to-list 'load-path "~/.emacs.d/extensions/flymake-cursor")
-(require 'flymake-cursor)
-;; Flymake Ruby
-(add-to-list 'load-path "~/.emacs.d/extensions/flymake-ruby")
-(require 'flymake-ruby)
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
-;; Flymake CSS
-(add-to-list 'load-path "~/.emacs.d/extensions/flymake-css")
-(require 'flymake-css)
-(add-hook 'css-mode-hook 'flymake-css-load)
-;; Flymake Haml
-(add-to-list 'load-path "~/.emacs.d/extensions/flymake-haml")
-(require 'flymake-haml)
-(add-hook 'haml-mode-hook 'flymake-haml-load)
-(add-hook 'sass-mode-hook 'flymake-sass-load)
-;; ERB templates checking
-(defun flymake-erb-init ()
-  (let* ((check-buffer (current-buffer))
-         (temp-file (flymake-create-temp-inplace (buffer-file-name) "flymake"))
-         (local-file (file-relative-name
-                      temp-file
-                      (file-name-directory buffer-file-name))))
-    (save-excursion
-      (save-restriction
-        (widen)
-        (with-temp-file temp-file 
-          (let ((temp-buffer (current-buffer)))
-            (set-buffer check-buffer)
-            (call-process-region (point-min) (point-max) "erb" nil temp-buffer nil "-x"))))
-      (setq flymake-temp-source-file-name temp-file)
-      (list "ruby" (list "-c" local-file)))))
-
-(eval-after-load "flymake"
-  '(progn
-     (push '(".+\\.\\(rhtml\\|erb\\)$" flymake-erb-init) flymake-allowed-file-name-masks)
-     (push '("^\\(.*\\):\\([0-9]+\\): \\(.*\\)$" 1 2 nil 3) flymake-err-line-patterns)))
-
-(defun turn-on-flymake-for-erb-files ()
-  (when (string-match "\.erb$" (buffer-file-name))
-    (flymake-mode 1)))
-(add-hook 'find-file-hook 'turn-on-flymake-for-erb-files)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; buffer-bg
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

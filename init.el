@@ -35,3 +35,4 @@
 (load "~/.emacs.d/setup/setup-expand-region.el")
 (load "~/.emacs.d/setup/setup-diminish.el")
 (load "~/.emacs.d/setup/setup-shell.el")
+(load "~/.emacs.d/setup/setup-flycheck.el")

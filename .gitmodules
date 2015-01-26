@@ -1,27 +1,15 @@
 [submodule "extensions/haml-mode"]
 	path = extensions/haml-mode
 	url = git://github.com/nex3/haml-mode.git
-[submodule "extensions/flymake"]
-	path = extensions/flymake
-	url = git://github.com/illusori/emacs-flymake.git
 [submodule "extensions/undo-tree"]
 	path = extensions/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
-[submodule "extensions/flymake-ruby"]
-	path = extensions/flymake-ruby
-	url = git://github.com/purcell/flymake-ruby.git
-[submodule "extensions/flymake-haml"]
-	path = extensions/flymake-haml
-	url = git://github.com/purcell/flymake-haml.git
 [submodule "extensions/yaml-mode"]
 	path = extensions/yaml-mode
 	url = git://github.com/yoshiki/yaml-mode.git
 [submodule "extensions/php-mode"]
 	path = extensions/php-mode
 	url = git://github.com/ejmr/php-mode.git
-[submodule "extensions/flymake-cursor"]
-	path = extensions/flymake-cursor
-	url = git://github.com/emacsmirror/flymake-cursor.git
 [submodule "extensions/js2-mode"]
 	path = extensions/js2-mode
 	url = git://github.com/mooz/js2-mode.git
@@ -34,9 +22,6 @@
 [submodule "extensions/less-css-mode"]
 	path = extensions/less-css-mode
 	url = git://github.com/purcell/less-css-mode.git
-[submodule "extensions/flymake-css"]
-	path = extensions/flymake-css
-	url = git://github.com/purcell/flymake-css.git
 [submodule "extensions/rainbow-mode"]
 	path = extensions/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git

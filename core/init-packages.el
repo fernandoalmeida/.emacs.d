@@ -28,6 +28,7 @@
     anzu
     smartscan
     diminish
+    flycheck
   ) "Required Packages list")
 
 ; check if all packages are installed
