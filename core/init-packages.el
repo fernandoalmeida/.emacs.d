@@ -12,7 +12,6 @@
     neotree
     helm
     helm-projectile
-    helm-ls-git
     rbenv
     robe
     rspec-mode

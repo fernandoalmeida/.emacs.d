@@ -34,7 +34,6 @@
 (global-set-key   (kbd "C-x r l") 'helm-filtered-bookmarks)
 
 (global-set-key   (kbd "C-c h")   'helm-command-prefix)
-(global-set-key   (kbd "C-c f")   'helm-ls-git-ls)
 (global-set-key   (kbd "C-c r")   'helm-recentf)
 
 (global-set-key   (kbd "C-h a")   'helm-apropos)
