@@ -37,3 +37,4 @@
 (load "~/.emacs.d/setup/setup-shell.el")
 (load "~/.emacs.d/setup/setup-flycheck.el")
 (load "~/.emacs.d/setup/setup-text-scale.el")
+(load "~/.emacs.d/setup/setup-smartparens.el")

@@ -45,9 +45,6 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
 
-;; Auto pair  parentheses, braces and brackets
-(electric-pair-mode t)
-
 ;; Auto indent on new line
 (electric-indent-mode t)
 
