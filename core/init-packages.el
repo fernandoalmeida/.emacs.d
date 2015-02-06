@@ -29,6 +29,7 @@
     diminish
     flycheck
     smartparens
+    csharp-mode
   ) "Required Packages list")
 
 ; check if all packages are installed
