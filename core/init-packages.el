@@ -30,6 +30,7 @@
     flycheck
     smartparens
     csharp-mode
+    markdown-mode
   ) "Required Packages list")
 
 ; check if all packages are installed

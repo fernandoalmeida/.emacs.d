@@ -87,10 +87,6 @@
 (add-to-list 'load-path "~/.emacs.d/extensions/puppet-mode")
 (require 'puppet-mode)
 
-;; Markdown Mode
-(add-to-list 'load-path "~/.emacs.d/extensions/markdown-mode")
-(require 'markdown-mode)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; buffer-bg
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

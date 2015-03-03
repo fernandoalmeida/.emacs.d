@@ -34,9 +34,6 @@
 [submodule "extensions/puppet-mode"]
 	path = extensions/puppet-mode
 	url = https://github.com/puppetlabs/puppet-syntax-emacs.git
-[submodule "extensions/markdown-mode"]
-	path = extensions/markdown-mode
-	url = https://github.com/emacsmirror/markdown-mode.git
 [submodule "extensions/fill-column-indicator"]
 	path = extensions/fill-column-indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
