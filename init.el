@@ -18,6 +18,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; New configs
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load "~/.emacs.d/core/init-custom-functions.el")
 (load "~/.emacs.d/core/init-packages.el")
 (load "~/.emacs.d/core/init-defaults.el")
 (load "~/.emacs.d/setup/setup-magit.el")
