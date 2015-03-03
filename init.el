@@ -38,3 +38,4 @@
 (load "~/.emacs.d/setup/setup-flycheck.el")
 (load "~/.emacs.d/setup/setup-text-scale.el")
 (load "~/.emacs.d/setup/setup-smartparens.el")
+(load "~/.emacs.d/setup/setup-whitespace.el")
