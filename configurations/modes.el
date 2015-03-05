@@ -6,6 +6,7 @@
 (setq-default column-number-mode t)
 (global-hl-line-mode t)
 (icomplete-mode)
+(cua-mode t)
 (ido-mode t)
 
 ;; Textile mode
