@@ -31,6 +31,7 @@
     smartparens
     csharp-mode
     markdown-mode
+    restclient
   ) "Required Packages list")
 
 ; check if all packages are installed
