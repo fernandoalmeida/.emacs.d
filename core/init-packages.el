@@ -32,6 +32,7 @@
     csharp-mode
     markdown-mode
     restclient
+    dockerfile-mode
   ) "Required Packages list")
 
 ; check if all packages are installed
