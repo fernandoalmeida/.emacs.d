@@ -33,6 +33,7 @@
     markdown-mode
     restclient
     dockerfile-mode
+    w3m
   ) "Required Packages list")
 
 ; check if all packages are installed
