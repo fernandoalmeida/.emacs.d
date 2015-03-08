@@ -37,3 +37,6 @@
 [submodule "extensions/fill-column-indicator"]
 	path = extensions/fill-column-indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "extensions/evernote-mode"]
+	path = extensions/evernote-mode
+	url = https://github.com/pymander/evernote-mode.git
