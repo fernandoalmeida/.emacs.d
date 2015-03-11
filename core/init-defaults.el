@@ -61,6 +61,7 @@
 (global-set-key [M-up] 'windmove-up)
 
 ;; Frame Navigation
+(global-set-key (kbd "C-c o") 'other-frame)
 (global-set-key [M-S-left] 'other-frame)
 (global-set-key [M-S-right] 'other-frame)
 
