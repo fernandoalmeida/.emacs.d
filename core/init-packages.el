@@ -34,6 +34,7 @@
     restclient
     dockerfile-mode
     w3m
+    git-timemachine
   ) "Required Packages list")
 
 ; check if all packages are installed
