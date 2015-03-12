@@ -35,6 +35,7 @@
     dockerfile-mode
     w3m
     git-timemachine
+    lua-mode
   ) "Required Packages list")
 
 ; check if all packages are installed
