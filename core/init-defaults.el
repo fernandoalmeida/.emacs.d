@@ -10,9 +10,6 @@
 ;; Change yes/no questions to y/n only
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; Save Sessions on Exit
-(desktop-save-mode 1)
-
 ;; Disable backup
 (setq backup-inhibited t)
 
