@@ -75,13 +75,3 @@
 ;; Find in files (grep)
 (global-set-key (kbd "C-x C-g") 'find-grep)
 (global-set-key (kbd "C-c C-g") 'git-grep)
-
-;; Org mode
-(setq org-todo-keywords
-      '((sequence "TODO"
-                  "DOING"
-                  "VALIDATING"
-                  "VALIDATED"
-                  "|"
-                  "DONE"
-                  "DELEGATED")))
