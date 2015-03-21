@@ -38,7 +38,8 @@
     git-timemachine
     lua-mode
     clean-aindent-mode
-  ) "Required Packages list")
+    zygospore
+    ) "Required Packages list")
 
 ; check if all packages are installed
 (defun packages-installed-p ()
