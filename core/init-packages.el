@@ -12,6 +12,7 @@
     neotree
     helm
     helm-projectile
+    helm-swoop
     rbenv
     robe
     rspec-mode

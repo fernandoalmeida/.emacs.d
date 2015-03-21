@@ -46,3 +46,8 @@
   (if (char-equal ?/ (char-before))
       (helm-find-files-up-one-level 1)
     (backward-delete-char 1)))
+
+(global-set-key (kbd "C-c s") 'helm-swoop)
+(global-set-key (kbd "C-c C-s") 'helm-multi-swoop-all)
+(define-key isearch-mode-map (kbd "C-c s") 'helm-swoop-from-isearch)
+(define-key helm-swoop-map (kbd "C-c C-s") 'helm-multi-swoop-all-from-helm-swoop)
