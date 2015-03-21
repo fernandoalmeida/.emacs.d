@@ -1,3 +1,6 @@
+;;; setup-anzu --- Setup anzu package
+;;; Commentary:
+;;; Code:
 (global-anzu-mode 1)
 
 (set-face-attribute 'anzu-mode-line nil
@@ -11,3 +14,6 @@
 
 (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
 (global-set-key [remap query-replace] 'anzu-query-replace)
+
+(provide 'setup-anzu)
+;;; setup-anzu ends here

@@ -1,3 +1,6 @@
+;;; setup-text-scale --- Setup global text scale
+;;; Commentary:
+;;; Code:
 (define-globalized-minor-mode
   global-text-scale-mode
   text-scale-mode
@@ -18,3 +21,6 @@
 		'(lambda () (interactive) (global-text-scale-adjust 1)))
 (global-set-key (kbd "M--")
 		'(lambda () (interactive) (global-text-scale-adjust -1)))
+
+(provide 'setup-text-scale)
+;;; setup-text-scale ends here

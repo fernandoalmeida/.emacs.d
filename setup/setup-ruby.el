@@ -1,3 +1,7 @@
+;;; setup-ruby --- Setup ruby mode and relateds
+;;; Commentary:
+;;; Code:
+
 ;; Rspec
 (add-hook 'ruby-mode-hook 'rspec-mode)
 (add-hook 'magit-mode-hook 'rspec-mode)
@@ -48,3 +52,6 @@
     (when indent
       (indent-line-to indent)
       (when (> offset 0) (forward-char offset)))))
+
+(provide 'setup-ruby)
+;;; setup-ruby ends here

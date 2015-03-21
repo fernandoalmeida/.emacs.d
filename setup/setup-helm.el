@@ -1,19 +1,22 @@
+;;; setup-helm --- Setup helm mode and addons
+;;; Commentary:
+;;; Code:
 (helm-mode t)
 
-(setq helm-quick-update                      t ; do not display invisible candidates
-      helm-buffers-fuzzy-matching            t
-      helm-move-to-line-cycle-in-source      t
-      helm-ff-search-library-in-sexp         t
-      helm-scroll-amount                     4
-      helm-ff-file-name-history-use-recentf  t
-      helm-exit-idle-delay                   0.01 ; small value preventing fast typing issue
-      helm-ff-transformer-show-only-basename nil  ; preventing hidden matching issue
-      helm-ls-git-show-abs-or-relative       'relative
-      helm-full-frame                        t
-      helm-buffer-max-length                 50
-      helm-bookmark-show-location            t
-      helm-projectile-sources-list           '(helm-source-projectile-buffers-list
-					       helm-source-projectile-files-list))
+(setq helm-quick-update t
+      helm-buffers-fuzzy-matching t
+      helm-move-to-line-cycle-in-source t
+      helm-ff-search-library-in-sexp t
+      helm-scroll-amount 4
+      helm-ff-file-name-history-use-recentf t
+      helm-exit-idle-delay 0.01
+      helm-ff-transformer-show-only-basename nil
+      helm-ls-git-show-abs-or-relative 'relative
+      helm-full-frame t
+      helm-buffer-max-length 50
+      helm-bookmark-show-location t
+      helm-projectile-sources-list '(helm-source-projectile-buffers-list
+				     helm-source-projectile-files-list))
 
 (autoload 'helm-descbinds      "helm-descbinds" t)
 (autoload 'helm-eshell-history "helm-eshell"    t)
@@ -39,7 +42,7 @@
 (global-set-key   (kbd "C-h i")   'helm-info-emacs)
 (global-set-key   (kbd "C-h b")   'helm-descbinds)
 
-;; More familiar helm find-file navigation (from Renan Ranelli - github.com/rranelli)
+;; More familiar helm find-file navigation (from Renan Ranelli)
 (defun helm-find-files-sensitive-backspace ()
   "Deletes whole directory in helm find files mode on backspace."
   (interactive)
@@ -50,4 +53,6 @@
 (global-set-key (kbd "C-c s") 'helm-swoop)
 (global-set-key (kbd "C-c C-s") 'helm-multi-swoop-all)
 (define-key isearch-mode-map (kbd "C-c s") 'helm-swoop-from-isearch)
-(define-key helm-swoop-map (kbd "C-c C-s") 'helm-multi-swoop-all-from-helm-swoop)
+
+(provide 'setup-helm)
+;;; setup-helm ends here

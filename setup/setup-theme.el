@@ -1,3 +1,6 @@
+;;; setup-theme --- Setup theme
+;;; Commentary:
+;;; Code:
 (load-theme 'zenburn t)
 
 (set-face-background 'region "#000000")
@@ -11,3 +14,6 @@
 (add-to-list 'default-frame-alist '(height . 45))
 (add-to-list 'default-frame-alist '(width . 190))
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
+
+(provide 'setup-theme)
+;;; setup-theme ends here
