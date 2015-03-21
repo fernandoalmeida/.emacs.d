@@ -46,7 +46,3 @@
   (if (char-equal ?/ (char-before))
       (helm-find-files-up-one-level 1)
     (backward-delete-char 1)))
-
-(define-key helm-find-files-map (kbd "<backspace>") 'helm-find-files-sensitive-backspace)
-(define-key helm-find-files-map (kbd "<tab>")       'helm-execute-persistent-action)
-(define-key helm-find-files-map (kbd "<C-tab>")     'helm-select-action)
