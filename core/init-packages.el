@@ -36,6 +36,7 @@
     w3m
     git-timemachine
     lua-mode
+    clean-aindent-mode
   ) "Required Packages list")
 
 ; check if all packages are installed
