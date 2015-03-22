@@ -1,13 +1,6 @@
 ;;; init --- Setup Emacs initialization process
 ;;; Commentary:
 ;;; Code:
-(setq load-path
-      (cons "~/.emacs.d/configurations"
-	    (cons "~/.emacs.d/extensions" load-path)))
-(load "extensions")
-(load "modes")
-(load "bindings")
-
 (let ((default-directory "~/.emacs.d/vendor/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))

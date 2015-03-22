@@ -1,39 +1,6 @@
-[submodule "extensions/haml-mode"]
-	path = extensions/haml-mode
-	url = git://github.com/nex3/haml-mode.git
-[submodule "extensions/undo-tree"]
-	path = extensions/undo-tree
-	url = http://www.dr-qubit.org/git/undo-tree.git
-[submodule "extensions/yaml-mode"]
-	path = extensions/yaml-mode
-	url = git://github.com/yoshiki/yaml-mode.git
-[submodule "extensions/php-mode"]
-	path = extensions/php-mode
-	url = git://github.com/ejmr/php-mode.git
-[submodule "extensions/js2-mode"]
-	path = extensions/js2-mode
-	url = git://github.com/mooz/js2-mode.git
 [submodule "extensions/git-emacs"]
 	path = extensions/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
-[submodule "extensions/scss-mode"]
-	path = extensions/scss-mode
-	url = git://github.com/antonj/scss-mode.git
-[submodule "extensions/less-css-mode"]
-	path = extensions/less-css-mode
-	url = git://github.com/purcell/less-css-mode.git
-[submodule "extensions/rainbow-mode"]
-	path = extensions/rainbow-mode
-	url = git://github.com/emacsmirror/rainbow-mode.git
-[submodule "extensions/zencoding-mode"]
-	path = extensions/zencoding-mode
-	url = https://github.com/rooney/zencoding.git
-[submodule "extensions/highlight-indentation"]
-	path = extensions/highlight-indentation
-	url = https://github.com/antonj/Highlight-Indentation-for-Emacs.git
-[submodule "extensions/puppet-mode"]
-	path = extensions/puppet-mode
-	url = https://github.com/puppetlabs/puppet-syntax-emacs.git
 [submodule "extensions/fill-column-indicator"]
 	path = extensions/fill-column-indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git

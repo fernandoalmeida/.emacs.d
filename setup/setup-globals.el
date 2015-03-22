@@ -15,6 +15,13 @@
 ;; Change yes/no questions to y/n only
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(global-linum-mode 1)
+(setq-default column-number-mode t)
+(global-hl-line-mode t)
+(icomplete-mode)
+(cua-mode t)
+(ido-mode t)
+
 ;; Disable backup
 (setq backup-inhibited t)
 
@@ -71,6 +78,9 @@
 (setq select-active-regions t)                 ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
+;; Highlight Indentation mode
+(add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)
+
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
@@ -90,6 +100,10 @@
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+;; Git Emacs
+(add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
+(require 'git-emacs)
+
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
@@ -104,6 +118,18 @@
 
 ;; Smartparens
 (smartparens-global-mode t)
+
+;; UndoTree
+(global-undo-tree-mode)
+
+;; Yasnippet
+(yas-global-mode 1)
+
+;; Auto Complete
+(global-auto-complete-mode)
+
+;; Rainbow Mode
+(add-hook 'prog-mode-hook 'rainbow-mode)
 
 (provide 'setup-globals)
 ;;; setup-globals ends here

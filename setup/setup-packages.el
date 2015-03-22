@@ -26,6 +26,7 @@
     expand-region
     zenburn-theme
     magit
+    git-timemachine
     powerline
     discover
     anzu
@@ -35,13 +36,25 @@
     smartparens
     csharp-mode
     markdown-mode
+    textile-mode
     restclient
     dockerfile-mode
     w3m
-    git-timemachine
     lua-mode
     clean-aindent-mode
     zygospore
+    js2-mode
+    yaml-mode
+    php-mode
+    scss-mode
+    less-css-mode
+    puppet-mode
+    yasnippet
+    ido
+    undo-tree
+    auto-complete
+    rainbow-mode
+    highlight-indentation
     ) "Required Packages list")
 
 ; check if all packages are installed
