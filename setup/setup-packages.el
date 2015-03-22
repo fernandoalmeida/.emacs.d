@@ -55,6 +55,7 @@
     auto-complete
     rainbow-mode
     highlight-indentation
+    fill-column-indicator
     ) "Required Packages list")
 
 ; check if all packages are installed
