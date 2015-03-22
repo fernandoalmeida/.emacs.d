@@ -1,3 +1,6 @@
+;;; setup-packages --- Configure required packages
+;;; Commentary:
+;;; Code:
 (require 'cl)
 (require 'package)
 
@@ -53,3 +56,6 @@
   (dolist (p required-packages)
     (when (not (package-installed-p p))
       (package-install p))))
+
+(provide 'setup-packages)
+;;; setup-packages ends here

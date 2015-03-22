@@ -12,12 +12,9 @@
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
 
-(load "~/.emacs.d/core/init-custom-functions.el")
-(load "~/.emacs.d/core/init-packages.el")
-(load "~/.emacs.d/core/init-defaults.el")
-
 (add-to-list 'load-path "~/.emacs.d/setup")
 
+(require 'setup-packages)
 (require 'setup-globals)
 (require 'setup-anzu)
 (require 'setup-dpkg-dev)
