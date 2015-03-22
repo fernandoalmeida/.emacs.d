@@ -101,7 +101,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; Git Emacs
-(add-to-list 'load-path "~/.emacs.d/extensions/git-emacs")
+(add-to-list 'load-path "~/.emacs.d/vendor/git-emacs")
 (require 'git-emacs)
 
 ;; Magit

@@ -1,9 +1,9 @@
-[submodule "extensions/git-emacs"]
-	path = extensions/git-emacs
+[submodule "vendor/git-emacs"]
+	path = vendor/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
-[submodule "extensions/fill-column-indicator"]
-	path = extensions/fill-column-indicator
+[submodule "vendor/fill-column-indicator"]
+	path = vendor/fill-column-indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
-[submodule "extensions/evernote-mode"]
-	path = extensions/evernote-mode
+[submodule "vendor/evernote-mode"]
+	path = vendor/evernote-mode
 	url = https://github.com/pymander/evernote-mode.git

@@ -1,3 +1,0 @@
-#name : validates
-# --
-validates :${attribute}${, :presence => true}${, :uniqueness => true}${, :format => /^(.*)$/}

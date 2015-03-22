@@ -1,7 +1,7 @@
 ;;; setup-evernote --- Setup evernote package
 ;;; Commentary:
 ;;; Code:
-(add-to-list 'load-path "~/.emacs.d/extensions/evernote-mode")
+(add-to-list 'load-path "~/.emacs.d/vendor/evernote-mode")
 (require 'evernote-mode)
 (setq evernote-developer-token (getenv "EVERNOTE_DEVELOPER_TOKEN"))
 
