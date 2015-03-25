@@ -25,7 +25,7 @@
     iedit
     multiple-cursors
     expand-region
-    zenburn-theme
+    hc-zenburn-theme
     magit
     git-timemachine
     powerline
