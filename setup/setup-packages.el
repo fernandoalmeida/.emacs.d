@@ -12,6 +12,7 @@
 (defvar required-packages
   '(
     projectile
+    auto-package-update
     neotree
     helm
     helm-projectile
