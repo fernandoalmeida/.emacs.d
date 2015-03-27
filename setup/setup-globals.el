@@ -137,5 +137,11 @@
 (setq fci-rule-use-dashes t)
 (add-hook 'prog-mode-hook 'turn-on-fci-mode)
 
+;; Google translate
+(setq google-translate-default-source-language "en")
+(setq google-translate-default-target-language "pt")
+(global-set-key (kbd "C-c t t") 'google-translate-at-point)
+(global-set-key (kbd "C-c t r") 'google-translate-at-point-reverse)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here

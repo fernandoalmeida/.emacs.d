@@ -57,6 +57,7 @@
     rainbow-mode
     highlight-indentation
     fill-column-indicator
+    google-translate
     ) "Required Packages list")
 
 ; check if all packages are installed
