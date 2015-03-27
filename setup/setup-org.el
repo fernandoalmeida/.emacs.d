@@ -13,5 +13,11 @@
                   "DONE"
                   "DELEGATED")))
 
+(setq org-capture-templates
+      '(("t" "Task" entry (file+headline "~/.emacs.d/org/tasks.org" "Tasks")
+	 "* TODO %?\n %i\n %a")
+	("n" "Note" entry (file+datetree "~/.emacs.d/org/notes.org" "Notes")
+	 "* %?\nEntered on %U\n %i\n %a")))
+
 (provide 'setup-org)
 ;;; setup-org ends here
