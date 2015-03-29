@@ -3,6 +3,7 @@
 ;;; Code:
 (load-theme 'hc-zenburn t)
 
+(set-face-background 'region "burlywood4")
 (set-face-background 'isearch "brown")
 (set-face-background 'lazy-highlight "burlywood4")
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
