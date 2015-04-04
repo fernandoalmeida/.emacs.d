@@ -19,8 +19,13 @@
 (setq-default column-number-mode t)
 (global-hl-line-mode t)
 (icomplete-mode)
-(cua-mode t)
 (ido-mode t)
+
+;; CUA mode
+;; - delete-selection and better rectangle-mark-mode only
+;; - without CUA key bindings (C-x C-c C-v C-z)
+(cua-mode t)
+(setq cua-enable-cua-keys nil)
 
 ;; Disable backup
 (setq backup-inhibited t)
