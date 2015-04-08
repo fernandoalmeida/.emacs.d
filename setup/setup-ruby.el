@@ -1,3 +1,4 @@
+
 ;;; setup-ruby --- Setup ruby mode and relateds
 ;;; Commentary:
 ;;; Code:
@@ -7,6 +8,8 @@
 (add-hook 'magit-mode-hook 'rspec-mode)
 (add-hook 'shell-mode-hook 'rspec-mode)
 (add-hook 'dockerfile-mode-hook 'rspec-mode)
+(add-hook 'yaml-mode-hook 'rspec-mode)
+(add-hook 'markdown-mode-hook 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
 
 ;; Robe / Inf Ruby
