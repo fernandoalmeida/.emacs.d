@@ -33,23 +33,6 @@
 ;; Auto indent on new line
 (electric-indent-mode t)
 
-;; Disable paging
-(setenv "PAGER" "cat")
-
-;; Reuse buffers between frames
-(setq-default display-buffer-reuse-frames t) 
-
-;; Buffer Navigation
-(global-set-key [M-left] 'windmove-left)
-(global-set-key [M-right] 'windmove-right)
-(global-set-key [M-down] 'windmove-down)
-(global-set-key [M-up] 'windmove-up)
-
-;; Frame Navigation
-(global-set-key (kbd "C-c o") 'other-frame)
-(global-set-key [M-S-left] 'other-frame)
-(global-set-key [M-S-right] 'other-frame)
-
 ;; Copy - Paste
 (setq mouse-drag-copy-region nil)              ; stops selection with a mouse being immediately injected to the kill ring
 (setq x-select-enable-primary nil)             ; stops killing/yanking interacting with primary X11 selection
@@ -63,9 +46,6 @@
 ;; Find in files (grep)
 (global-set-key (kbd "C-x C-g") 'find-grep)
 (global-set-key (kbd "C-c C-g") 'git-grep)
-
-;; Reversible C-x 1
-(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
 
 ;; Discover mode
 (global-discover-mode 1)
