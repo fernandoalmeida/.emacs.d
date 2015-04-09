@@ -105,13 +105,6 @@
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-;; Git Emacs
-(add-to-list 'load-path "~/.emacs.d/vendor/git-emacs")
-(require 'git-emacs)
-
-;; Magit
-(global-set-key (kbd "C-x g") 'magit-status)
-
 ;; Powerline
 (powerline-default-theme)
 
