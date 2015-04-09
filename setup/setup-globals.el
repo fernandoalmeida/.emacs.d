@@ -15,9 +15,6 @@
 ;; Change yes/no questions to y/n only
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(global-linum-mode 1)
-(setq-default column-number-mode t)
-(global-hl-line-mode t)
 (icomplete-mode)
 (ido-mode t)
 
@@ -32,29 +29,6 @@
 
 ;; Disable auto save
 (setq auto-save-default nil)
-
-;; Scrollbar disabled
-(setq scroll-bar-mode-explicit t)
-(set-scroll-bar-mode nil)
-
-;; Horizontal scrolling
-(put 'scroll-left 'disabled nil)
-
-;; Highlight matching parentheses, braces and brackets
-(show-paren-mode t)
-
-;; Show trailing whitespace by default
-(add-hook 'prog-mode-hook (setq show-trailing-whitespace t))
-
-;; Turn off tool bar
-(tool-bar-mode -1)
-
-;; Turn off menu bar
-(menu-bar-mode -1)
-
-;; Uniquify buffer names
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'post-forward)
 
 ;; Auto indent on new line
 (electric-indent-mode t)
@@ -83,9 +57,6 @@
 (setq select-active-regions t)                 ; active region sets primary X11 selection
 (global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
 
-;; Highlight Indentation mode
-(add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)
-
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
@@ -105,12 +76,6 @@
 ;; Expand region
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-;; Powerline
-(powerline-default-theme)
-
-;; Clean empty indentation
-(add-hook 'prog-mode-hook 'clean-aindent-mode)
-
 ;; Shell
 (global-set-key (kbd "C-c RET") 'shell)
 
@@ -125,15 +90,6 @@
 
 ;; Auto Complete
 (global-auto-complete-mode)
-
-;; Rainbow Mode
-(add-hook 'prog-mode-hook 'rainbow-mode)
-
-;; 80 Columns Indicator
-(setq-default fci-rule-column 80)
-(setq fci-handle-truncate-lines nil)
-(setq fci-rule-use-dashes t)
-(add-hook 'prog-mode-hook 'turn-on-fci-mode)
 
 ;; Google translate
 (setq google-translate-default-source-language "en")
