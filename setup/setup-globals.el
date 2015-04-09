@@ -3,8 +3,11 @@
 ;;; Code:
 
 (defun noop () "Does nothing." (interactive) nil)
+(defalias 'yes-or-no-p 'y-or-n-p)
 
-;; Custom variables
+(setq backup-inhibited t)
+(setq auto-save-default nil)
+(icomplete-mode)
 (custom-set-variables
  '(inhibit-startup-screen t)
  '(initial-buffer-choice t)
@@ -12,10 +15,6 @@
  '(initial-scratch-message "")
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
-;; Change yes/no questions to y/n only
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-(icomplete-mode)
 (ido-mode t)
 
 ;; CUA mode
@@ -24,21 +23,12 @@
 (cua-mode t)
 (setq cua-enable-cua-keys nil)
 
-;; Disable backup
-(setq backup-inhibited t)
-
-;; Disable auto save
-(setq auto-save-default nil)
-
-;; Auto indent on new line
-(electric-indent-mode t)
-
 ;; Copy - Paste
-(setq mouse-drag-copy-region nil)              ; stops selection with a mouse being immediately injected to the kill ring
-(setq x-select-enable-primary nil)             ; stops killing/yanking interacting with primary X11 selection
-(setq x-select-enable-clipboard t)             ; makes killing/yanking interact with clipboard X11 selection
-(setq select-active-regions t)                 ; active region sets primary X11 selection
-(global-set-key [mouse-2] 'mouse-yank-primary) ; make mouse middle-click only paste from primary X11 selection, not clipboard and kill ring.
+(setq mouse-drag-copy-region nil) ; stops mouse selection to the kill ring
+(setq x-select-enable-primary nil) ; stops copy/paste to primary selection
+(setq x-select-enable-clipboard t) ; copy/paste with clipboard
+(setq select-active-regions t) ; active region sets primary selection
+(global-set-key [mouse-2] 'mouse-yank-primary) ; paste with middle-click
 
 ;; Switch list-buffer binding to bs-show
 (global-set-key (kbd "C-x C-b") 'bs-show)
@@ -53,14 +43,17 @@
 ;; Fly chceck
 (add-hook 'after-init-hook 'global-flycheck-mode)
 
-;; Expand region
-(global-set-key (kbd "C-=") 'er/expand-region)
-
 ;; Shell
 (global-set-key (kbd "C-c RET") 'shell)
 
 ;; Smartparens
 (smartparens-global-mode t)
+
+;; Auto indent on new line
+(electric-indent-mode t)
+
+;; Expand region
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; UndoTree
 (global-undo-tree-mode)
