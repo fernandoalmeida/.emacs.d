@@ -22,7 +22,9 @@
 (require 'setup-text-scale)
 (require 'setup-whitespace)
 (require 'setup-diminish)
-(require 'setup-theme)
+(require 'setup-ui)
+(require 'setup-navigation)
+(require 'setup-git)
 
 (provide 'init)
 ;;; init.el ends here
