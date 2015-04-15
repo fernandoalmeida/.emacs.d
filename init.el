@@ -25,6 +25,7 @@
 (require 'setup-ui)
 (require 'setup-navigation)
 (require 'setup-git)
+(require 'setup-smartparens)
 
 (provide 'init)
 ;;; init.el ends here
