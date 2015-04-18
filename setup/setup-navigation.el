@@ -28,7 +28,9 @@
   "Emacs quick move minor mode"
   t)
 
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(setq ace-jump-mode-move-keys  (append "asdfghjklqweiop" nil))
+(define-key global-map (kbd "C-;") 'ace-jump-mode)
+(setq ace-jump-word-mode-use-query-char nil)
 
 (autoload
   'ace-jump-mode-pop-mark
