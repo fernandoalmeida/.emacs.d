@@ -58,6 +58,7 @@
     highlight-indentation
     fill-column-indicator
     google-translate
+    ace-jump-mode
     ) "Required Packages list")
 
 ; check if all packages are installed
