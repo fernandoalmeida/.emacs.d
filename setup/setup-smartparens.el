@@ -23,6 +23,8 @@
 (define-key sp-keymap (kbd "C-M-k") 'sp-kill-sexp)
 (define-key sp-keymap (kbd "C-M-w") 'sp-copy-sexp)
 
+(define-key sp-keymap (kbd "C-M-;") 'sp-rewrap-sexp)
+
 ;;; markdown-mode
 (sp-with-modes '(markdown-mode gfm-mode rst-mode)
   (sp-local-pair "*" "*" :bind "C-*"))
