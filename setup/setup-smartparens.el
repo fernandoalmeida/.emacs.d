@@ -26,7 +26,7 @@
 (define-key sp-keymap (kbd "C-M-;") 'sp-rewrap-sexp)
 
 ;;; markdown-mode
-(sp-with-modes '(markdown-mode gfm-mode rst-mode)
+(sp-with-modes '(markdown-mode gfm-mode rst-mode org-mode)
   (sp-local-pair "*" "*" :bind "C-*"))
 
 (provide 'setup-smartparens)
