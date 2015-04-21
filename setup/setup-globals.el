@@ -61,8 +61,8 @@
 ;; Yasnippet
 (yas-global-mode 1)
 
-;; Auto Complete
-(global-auto-complete-mode)
+;; Company
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Rainbow Mode
 (add-hook 'prog-mode-hook 'rainbow-mode)

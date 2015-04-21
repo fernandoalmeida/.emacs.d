@@ -10,7 +10,6 @@
 (eval-after-load "rainbow-mode" '(diminish 'rainbow-mode))
 (eval-after-load "magit" '(diminish 'magit-auto-revert-mode))
 (diminish 'yas-minor-mode)
-(diminish 'auto-complete-mode)
 (diminish 'undo-tree-mode)
 (diminish 'smartparens-mode)
 

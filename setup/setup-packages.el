@@ -53,7 +53,7 @@
     yasnippet
     ido
     undo-tree
-    auto-complete
+    company
     rainbow-mode
     highlight-indentation
     fill-column-indicator
