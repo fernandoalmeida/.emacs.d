@@ -86,5 +86,7 @@
 (global-set-key (kbd "C-c t t") 'google-translate-at-point)
 (global-set-key (kbd "C-c t r") 'google-translate-at-point-reverse)
 
+;; HideShow mode
+(add-hook 'prog-mode-hook 'hs-minor-mode)
 (provide 'setup-globals)
 ;;; setup-globals ends here
