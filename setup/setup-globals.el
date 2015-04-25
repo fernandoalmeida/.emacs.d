@@ -88,5 +88,11 @@
 
 ;; HideShow mode
 (add-hook 'prog-mode-hook 'hs-minor-mode)
+(global-set-key (kbd "C-c C-h C-h") 'hs-toggle-hiding)
+(global-set-key (kbd "C-c C-h C-b") 'hs-hide-block)
+(global-set-key (kbd "C-c C-h C-S-b") 'hs-show-block)
+(global-set-key (kbd "C-c C-h C-a") 'hs-hide-all)
+(global-set-key (kbd "C-c C-h C-S-a") 'hs-show-all)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
