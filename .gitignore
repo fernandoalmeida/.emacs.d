@@ -14,3 +14,5 @@ projectile.cache
 projectile-bookmarks.eld
 /.mc-lists.el
 /org/**/*[^.keep]
+.last-package-update-day
+url
