@@ -84,5 +84,8 @@
 (global-set-key (kbd "C-c C-h C-a") 'hs-hide-all)
 (global-set-key (kbd "C-c C-h C-S-a") 'hs-show-all)
 
+;; Turn on line truncation to better visual identation
+(setq default-truncate-lines t)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
