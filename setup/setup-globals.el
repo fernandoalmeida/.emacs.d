@@ -87,5 +87,7 @@
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
