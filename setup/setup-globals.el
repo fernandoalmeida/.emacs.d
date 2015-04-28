@@ -70,16 +70,6 @@
   (define-key company-active-map (kbd "C-l") 'company-show-location)
   (define-key company-active-map (kbd "<tab>") 'company-complete))
 
-;; Rainbow Mode
-(add-hook 'prog-mode-hook 'rainbow-mode)
-
-;; 80 Columns Indicator
-(setq-default fci-rule-column 80)
-(setq fci-handle-truncate-lines nil)
-(setq fci-rule-use-dashes t)
-(setq fci-rule-color "#444444")
-(add-hook 'prog-mode-hook 'turn-on-fci-mode)
-
 ;; Google translate
 (setq google-translate-default-source-language "en")
 (setq google-translate-default-target-language "pt")
