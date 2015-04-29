@@ -87,7 +87,11 @@
 ;; Turn on line truncation to better visual identation
 (setq default-truncate-lines t)
 
+;; Disable auto insert encoding magic comment
 (setq ruby-insert-encoding-magic-comment nil)
+
+;; Remove trailling whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'setup-globals)
 ;;; setup-globals ends here
