@@ -9,6 +9,8 @@
 (eval-after-load "rspec-mode" '(diminish 'rspec-mode))
 (eval-after-load "rainbow-mode" '(diminish 'rainbow-mode))
 (eval-after-load "magit" '(diminish 'magit-auto-revert-mode))
+(eval-after-load "hideshow" '(diminish 'hs-minor-mode))
+
 (diminish 'yas-minor-mode)
 (diminish 'undo-tree-mode)
 (diminish 'smartparens-mode)
