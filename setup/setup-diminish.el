@@ -14,6 +14,7 @@
 (diminish 'yas-minor-mode)
 (diminish 'undo-tree-mode)
 (diminish 'smartparens-mode)
+(diminish 'company-mode)
 
 (provide 'setup-diminish)
 ;;; setup-diminish ends here
