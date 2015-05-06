@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: it { expect(...).to ... }
+# --
+it { $0 }

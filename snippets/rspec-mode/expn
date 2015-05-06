@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: expect(...).not_to ...
+# --
+expect($1).not_to $0
