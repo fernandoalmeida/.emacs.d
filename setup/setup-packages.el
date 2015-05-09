@@ -18,7 +18,6 @@
     helm-projectile
     helm-swoop
     rbenv
-    robe
     rspec-mode
     rhtml-mode
     rubocop

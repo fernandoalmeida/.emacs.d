@@ -10,8 +10,6 @@
 
 ;; Robe / Inf Ruby
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; Rbenv
 (global-rbenv-mode)
