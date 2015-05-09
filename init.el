@@ -9,6 +9,7 @@
 
 (require 'setup-packages)
 (require 'setup-globals)
+(require 'setup-dired)
 (require 'setup-anzu)
 (require 'setup-dpkg-dev)
 (require 'setup-evernote)
