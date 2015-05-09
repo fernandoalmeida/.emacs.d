@@ -13,9 +13,6 @@
 (global-set-key [M-S-left] 'other-frame)
 (global-set-key [M-S-right] 'other-frame)
 
-;; Disable paging
-(setenv "PAGER" "cat")
-
 ;; Reuse buffers between frames
 (setq-default display-buffer-reuse-frames t)
 

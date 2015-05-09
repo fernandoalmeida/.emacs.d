@@ -93,5 +93,8 @@
 ;; Remove trailling whitespace on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; Disable paging
+(setenv "PAGER" "cat")
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
