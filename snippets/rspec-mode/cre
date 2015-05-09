@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: create(:factory)
+# --
+create(:${1:factory})
