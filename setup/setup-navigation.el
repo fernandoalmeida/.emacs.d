@@ -2,7 +2,20 @@
 ;;; Commentary:
 ;;; Code:
 
-;; Buffer Navigation
+;; Custom edit bindings
+(global-set-key (kbd "C-j") 'newline-and-indent)
+(global-set-key (kbd "C-S-j") 'custom/newline-before)
+(global-set-key (kbd "C-M-j") 'custom/newline-after)
+(global-set-key (kbd "M-d") 'custom/kill-word)
+(global-set-key (kbd "C-<backspace>") 'custom/backward-kill-word)
+
+;; Content Navigation
+(global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 5)))
+(global-set-key (kbd "M-n") (lambda () (interactive) (next-line 5)))
+(global-set-key (kbd "C-S-n") 'end-of-buffer)
+(global-set-key (kbd "C-S-p") 'beginning-of-buffer)
+
+;; Window Navigation
 (global-set-key [M-left] 'windmove-left)
 (global-set-key [M-right] 'windmove-right)
 (global-set-key [M-down] 'windmove-down)
