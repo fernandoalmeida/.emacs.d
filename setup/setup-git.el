@@ -9,5 +9,9 @@
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; Diff Highlight
+(global-diff-hl-mode)
+(add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+
 (provide 'setup-git)
 ;;; setup-git ends here

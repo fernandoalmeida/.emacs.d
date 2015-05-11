@@ -58,6 +58,7 @@
     fill-column-indicator
     google-translate
     ace-jump-mode
+    diff-hl
     ) "Required Packages list")
 
 ; check if all packages are installed
