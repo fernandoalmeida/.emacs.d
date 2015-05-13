@@ -16,9 +16,6 @@
 (set-face-background 'lazy-highlight "burlywood4")
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
 
-(set-frame-parameter (selected-frame) 'alpha '(100 65))
-(add-to-list 'default-frame-alist '(alpha 100 65))
-
 (require 'highlight-indentation)
 (add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)
 (set-face-background 'highlight-indentation-face "#e3e3e3")
