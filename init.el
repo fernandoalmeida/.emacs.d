@@ -11,6 +11,7 @@
 (require 'setup-packages)
 (require 'edit-functions)
 (require 'setup-globals)
+(require 'setup-company)
 (require 'setup-dired)
 (require 'setup-anzu)
 (require 'setup-dpkg-dev)
