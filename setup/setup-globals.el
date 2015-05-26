@@ -75,9 +75,6 @@
 (global-set-key (kbd "C-c C-h C-a") 'hs-hide-all)
 (global-set-key (kbd "C-c C-h C-S-a") 'hs-show-all)
 
-;; Turn on line truncation to better visual identation
-(setq default-truncate-lines t)
-
 ;; Disable auto insert encoding magic comment
 (setq ruby-insert-encoding-magic-comment nil)
 
