@@ -6,6 +6,7 @@
 (add-hook 'magit-mode-hook 'rspec-mode)
 (add-hook 'shell-mode-hook 'rspec-mode)
 (add-hook 'prog-mode-hook 'rspec-mode)
+(add-hook 'inf-ruby-mode-hook 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
 
 ;; Robe / Inf Ruby
