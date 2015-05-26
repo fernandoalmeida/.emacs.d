@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-M-j") 'custom/newline-after)
 (global-set-key (kbd "M-d") 'custom/kill-word)
 (global-set-key (kbd "C-<backspace>") 'custom/backward-kill-word)
+(global-set-key (kbd "C-c j") 'join-line)
 
 ;; Content Navigation
 (global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 5)))
