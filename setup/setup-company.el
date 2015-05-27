@@ -5,8 +5,6 @@
 (require 'company)
 (global-company-mode)
 
-(define-key company-active-map (kbd "C-n") 'company-select-next)
-(define-key company-active-map (kbd "C-p") 'company-select-previous)
 (define-key company-active-map (kbd "C-h") 'company-show-doc-buffer)
 (define-key company-active-map (kbd "C-l") 'company-show-location)
 (define-key company-active-map (kbd "C-j") 'company-complete)
