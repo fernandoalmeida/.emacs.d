@@ -15,6 +15,9 @@
 (global-set-key (kbd "M-n") (lambda () (interactive) (next-line 10)))
 (global-set-key (kbd "C-S-n") 'end-of-buffer)
 (global-set-key (kbd "C-S-p") 'beginning-of-buffer)
+(global-set-key (kbd "<f2>") 'rename-buffer)
+(global-set-key (kbd "<f5>") 'revert-buffer)
+
 
 ;; Window Navigation
 (global-set-key [M-left] 'windmove-left)
