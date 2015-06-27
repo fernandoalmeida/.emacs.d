@@ -86,5 +86,8 @@
 ;; Disable paging
 (setenv "PAGER" "cat")
 
+(put 'narrow-to-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
