@@ -9,6 +9,14 @@
 (global-set-key (kbd "M-d") 'custom/kill-word)
 (global-set-key (kbd "C-<backspace>") 'custom/backward-kill-word)
 (global-set-key (kbd "C-c j") 'join-line)
+(global-set-key (kbd "C-c C-j") (lambda ()
+				  (interactive)
+				  (save-excursion
+				    (forward-line)
+				    (join-line))))
+(global-set-key (kbd "C-c i") (lambda ()
+				(interactive)
+				(indent-region (point-min) (point-max))))
 
 ;; Content Navigation
 (global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 10)))
