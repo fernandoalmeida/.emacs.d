@@ -55,7 +55,7 @@
 (electric-indent-mode t)
 
 ;; Expand region
-(global-set-key (kbd "C-;") 'er/expand-region)
+(global-set-key (kbd "C-M-SPC") 'er/expand-region)
 
 ;; UndoTree
 (global-undo-tree-mode)
