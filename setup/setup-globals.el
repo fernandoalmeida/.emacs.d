@@ -5,7 +5,8 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defun noop () "Does nothing." (interactive) (message "disabled command"))
 
-(global-set-key (kbd "C-z") 'noop)
+(global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-q"))
 
 (setq backup-inhibited t)
 (setq auto-save-default nil)
