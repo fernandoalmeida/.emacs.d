@@ -14,7 +14,7 @@
 (define-key sp-keymap (kbd "C-M-b") 'sp-backward-up-sexp)
 (define-key sp-keymap (kbd "C-M-f") 'sp-down-sexp)
 
-(define-key sp-keymap (kbd "C-M-d") 'sp-splice-sexp-killing-forward)
+(define-key sp-keymap (kbd "C-M-d") 'sp-kill-hybrid-sexp)
 (define-key sp-keymap (kbd "C-M-<backspace>") 'sp-splice-sexp-killing-backward)
 
 (define-key sp-keymap (kbd "C-M-S-d") 'sp-unwrap-sexp)
@@ -24,6 +24,8 @@
 (define-key sp-keymap (kbd "C-M-w") 'sp-copy-sexp)
 
 (define-key sp-keymap (kbd "C-M-;") 'sp-rewrap-sexp)
+
+(define-key sp-keymap (kbd "C-M-t") 'sp-transpose-hybrid-sexp)
 
 ;;; markdown-mode
 (sp-with-modes '(markdown-mode gfm-mode rst-mode org-mode)
