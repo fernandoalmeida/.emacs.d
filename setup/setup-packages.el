@@ -59,6 +59,7 @@
     google-translate
     ace-jump-mode
     diff-hl
+    haskell-mode
     ) "Required Packages list")
 
 ; check if all packages are installed
