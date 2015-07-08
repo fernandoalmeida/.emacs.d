@@ -37,8 +37,8 @@
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
 ;; Find in files (grep)
-(global-set-key (kbd "C-x C-g") 'find-grep)
-(global-set-key (kbd "C-c C-g") 'git-grep)
+(global-set-key (kbd "C-c f") 'find-grep)
+(global-set-key (kbd "C-c g") 'git-grep)
 
 ;; Discover mode
 (global-discover-mode 1)
