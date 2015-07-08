@@ -24,6 +24,7 @@
     expand-region
     fill-column-indicator
     flycheck
+    guide-key
     git-timemachine
     google-translate
     haskell-mode
