@@ -11,55 +11,55 @@
 
 (defvar required-packages
   '(
-    projectile
+    ace-jump-mode
+    anzu
     auto-package-update
-    neotree
+    clean-aindent-mode
+    company
+    csharp-mode
+    diff-hl
+    diminish
+    discover
+    dockerfile-mode
+    expand-region
+    fill-column-indicator
+    flycheck
+    git-timemachine
+    google-translate
+    haskell-mode
+    hc-zenburn-theme
     helm
     helm-projectile
     helm-swoop
-    rbenv
-    rspec-mode
-    rhtml-mode
-    rubocop
-    iedit
-    multiple-cursors
-    expand-region
-    hc-zenburn-theme
-    magit
-    git-timemachine
-    powerline
-    discover
-    anzu
-    smartscan
-    diminish
-    flycheck
-    smartparens
-    csharp-mode
-    markdown-mode
-    textile-mode
-    restclient
-    dockerfile-mode
-    w3m
-    lua-mode
-    clean-aindent-mode
-    zygospore
-    js2-mode
-    yaml-mode
-    php-mode
-    scss-mode
-    less-css-mode
-    puppet-mode
-    yasnippet
-    ido
-    undo-tree
-    company
-    rainbow-mode
     highlight-indentation
-    fill-column-indicator
-    google-translate
-    ace-jump-mode
-    diff-hl
-    haskell-mode
+    ido
+    iedit
+    js2-mode
+    less-css-mode
+    lua-mode
+    magit
+    markdown-mode
+    multiple-cursors
+    neotree
+    php-mode
+    powerline
+    projectile
+    puppet-mode
+    rainbow-mode
+    rbenv
+    restclient
+    rhtml-mode
+    rspec-mode
+    rubocop
+    scss-mode
+    smartparens
+    smartscan
+    textile-mode
+    undo-tree
+    w3m
+    yaml-mode
+    yasnippet
+    zygospore
     ) "Required Packages list")
 
 ; check if all packages are installed
