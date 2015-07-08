@@ -31,6 +31,7 @@
 (require 'setup-navigation)
 (require 'setup-git)
 (require 'setup-smartparens)
+(require 'setup-guide-key)
 
 (provide 'init)
 ;;; init.el ends here
