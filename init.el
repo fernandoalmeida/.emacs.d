@@ -10,6 +10,7 @@
 
 (require 'setup-packages)
 (require 'edit-functions)
+(require 'bundle-functions)
 (require 'setup-globals)
 (require 'setup-company)
 (require 'setup-dired)

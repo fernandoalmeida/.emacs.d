@@ -37,6 +37,8 @@
 (setq ruby-deep-indent-paren-style nil)
 (setq ruby-deep-arglist nil)
 
+(global-set-key (kbd "C-c b") 'custom/bundle-open)
+
 ;; Fix closing parentheses indentation
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
