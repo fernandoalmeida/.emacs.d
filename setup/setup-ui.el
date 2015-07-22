@@ -6,7 +6,6 @@
 (setq scroll-bar-mode-explicit t)
 (set-scroll-bar-mode nil)
 (put 'scroll-left 'disabled nil)
-(global-linum-mode 1)
 (setq-default column-number-mode t)
 (global-hl-line-mode t)
 
@@ -15,6 +14,9 @@
 (set-face-background 'isearch "brown")
 (set-face-background 'lazy-highlight "burlywood4")
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
+
+;; Line numbers
+(add-hook 'prog-mode-hook 'linum-mode)
 
 (require 'highlight-indentation)
 (add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)
