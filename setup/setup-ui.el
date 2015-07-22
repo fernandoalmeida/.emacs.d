@@ -23,12 +23,6 @@
 (set-face-background 'highlight-indentation-face "#e3e3e3")
 (set-face-background 'highlight-indentation-current-column-face "#393939")
 
-;; 80 Columns Indicator
-(setq-default fci-rule-column 80)
-;; (setq fci-handle-truncate-lines nil)
-(setq fci-rule-use-dashes t)
-(add-hook 'prog-mode-hook 'turn-on-fci-mode)
-
 ;; Rainbow Mode
 (add-hook 'prog-mode-hook 'rainbow-mode)
 
@@ -52,8 +46,8 @@
 (setq-default fci-rule-column 80)
 (setq fci-handle-truncate-lines nil)
 (setq fci-rule-use-dashes t)
-(setq fci-rule-color "#444444")
 (add-hook 'prog-mode-hook 'turn-on-fci-mode)
+(setq fci-rule-color "#666666")
 
 (provide 'setup-ui)
 ;;; setup-ui ends here
