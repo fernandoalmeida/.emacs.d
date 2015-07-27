@@ -1,0 +1,4 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: rescue-pry
+# --
+rescue { |x| require 'pry'; binding.pry; }
