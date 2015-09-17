@@ -16,7 +16,6 @@
 (require 'setup-dired)
 (require 'setup-anzu)
 (require 'setup-dpkg-dev)
-(require 'setup-evernote)
 (require 'setup-multiple-cursors)
 (require 'setup-org)
 (require 'setup-ruby)
