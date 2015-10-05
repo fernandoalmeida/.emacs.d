@@ -8,6 +8,7 @@
 (add-hook 'prog-mode-hook 'rspec-mode)
 (add-hook 'inf-ruby-mode-hook 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
+(setq rspec-primary-source-dirs '("app"))
 
 ;; Robe / Inf Ruby
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
