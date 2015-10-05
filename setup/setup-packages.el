@@ -51,6 +51,7 @@
     restclient
     rhtml-mode
     rspec-mode
+    inf-ruby
     rubocop
     scss-mode
     smartparens
