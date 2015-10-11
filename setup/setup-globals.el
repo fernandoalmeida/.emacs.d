@@ -62,7 +62,8 @@
 (global-undo-tree-mode)
 
 ;; Yasnippet
-(yas-global-mode 1)
+(require 'yasnippet)
+(add-hook 'prog-mode-hook 'yas-minor-mode)
 
 ;; Google translate
 (setq google-translate-default-source-language "en")
