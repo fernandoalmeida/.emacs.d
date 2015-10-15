@@ -11,7 +11,7 @@
 
 (defvar required-packages
   '(
-    ace-jump-mode
+    ace-window
     anzu
     auto-package-update
     clean-aindent-mode
