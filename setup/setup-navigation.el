@@ -19,8 +19,8 @@
 				(indent-region (point-min) (point-max))))
 
 ;; Content Navigation
-(global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 10)))
-(global-set-key (kbd "M-n") (lambda () (interactive) (next-line 10)))
+(global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 5)))
+(global-set-key (kbd "M-n") (lambda () (interactive) (next-line 5)))
 (global-set-key (kbd "C-S-n") 'end-of-buffer)
 (global-set-key (kbd "C-S-p") 'beginning-of-buffer)
 (global-set-key (kbd "<f2>") 'rename-buffer)
