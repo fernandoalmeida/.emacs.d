@@ -33,6 +33,12 @@
 (global-set-key [M-down] 'windmove-down)
 (global-set-key [M-up] 'windmove-up)
 
+;; Resize Windows
+(global-set-key (kbd "C-]") (lambda () (interactive) (shrink-window-horizontally -1)))
+(global-set-key (kbd "C-}") 'shrink-window-horizontally)
+(global-set-key (kbd "M-]") (lambda () (interactive) (shrink-window -1)))
+(global-set-key (kbd "M-}") 'shrink-window)
+
 ;; Frame Navigation
 (global-set-key (kbd "C-c o") 'other-frame)
 (global-set-key (kbd "C-x C-o") 'next-multiframe-window)
