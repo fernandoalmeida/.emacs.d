@@ -91,5 +91,9 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
+;; Default browser
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "conkeror")
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
