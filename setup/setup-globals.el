@@ -69,9 +69,9 @@
 (setq google-translate-default-source-language "en")
 (setq google-translate-default-target-language "pt")
 (setq google-translate-translation-directions-alist '(("en" . "pt") ("pt" . "en")))
-(global-set-key (kbd "C-c t t") 'google-translate-at-point)
-(global-set-key (kbd "C-c t r") 'google-translate-at-point-reverse)
-(global-set-key (kbd "C-c t e") 'google-translate-smooth-translate)
+(global-set-key (kbd "C-c t p") 'google-translate-at-point)
+(global-set-key (kbd "C-c t e") 'google-translate-at-point-reverse)
+(global-set-key (kbd "C-c t t") 'google-translate-smooth-translate)
 
 ;; HideShow mode
 (add-hook 'prog-mode-hook 'hs-minor-mode)
