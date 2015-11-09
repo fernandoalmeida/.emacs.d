@@ -50,9 +50,9 @@
       (helm-find-files-up-one-level 1)
     (backward-delete-char 1)))
 
-(global-set-key (kbd "C-c s") 'helm-swoop)
-(global-set-key (kbd "C-c C-s") 'helm-multi-swoop-all)
-(define-key isearch-mode-map (kbd "C-c s") 'helm-swoop-from-isearch)
+(global-set-key (kbd "C-S-s") 'helm-swoop)
+(global-set-key (kbd "C-M-S") 'helm-multi-swoop-all)
+(define-key isearch-mode-map (kbd "C-S-s") 'helm-swoop-from-isearch)
 
 (provide 'setup-helm)
 ;;; setup-helm ends here
