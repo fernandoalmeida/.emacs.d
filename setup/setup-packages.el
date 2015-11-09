@@ -39,6 +39,7 @@
     magit
     markdown-mode
     multiple-cursors
+    n4js ; Neo4j Shell
     php-mode
     powerline
     projectile
