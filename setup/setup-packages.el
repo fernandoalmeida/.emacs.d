@@ -11,13 +11,11 @@
 
 (defvar required-packages
   '(
-    ace-window
-    anzu
+    anzu ; Show number of matches in mode-line while searching
     auto-package-update
-    clean-aindent-mode
     company
     csharp-mode
-    diff-hl
+    diff-hl ; Highlight uncommitted changes
     diminish
     discover
     dockerfile-mode
@@ -34,14 +32,13 @@
     helm-swoop
     highlight-indentation
     ido
-    iedit
+    iedit ; Edit multiple regions in the same way simultaneously.
     js2-mode
     less-css-mode
     lua-mode
     magit
     markdown-mode
     multiple-cursors
-    neotree
     php-mode
     powerline
     projectile
@@ -58,10 +55,9 @@
     smartscan
     textile-mode
     undo-tree
-    w3m
     yaml-mode
     yasnippet
-    zygospore
+    zygospore ; reversible C-x 1 (delete-other-windows)
     ) "Required Packages list")
 
 ; check if all packages are installed
