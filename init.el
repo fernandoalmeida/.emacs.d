@@ -19,6 +19,7 @@
 (require 'setup-multiple-cursors)
 (require 'setup-org)
 (require 'setup-ruby)
+(require 'setup-haskell)
 (require 'setup-smartscan)
 (require 'setup-projectile)
 (require 'setup-helm)
