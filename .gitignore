@@ -16,3 +16,5 @@ projectile-bookmarks.eld
 /org/**/*[^.keep]
 .last-package-update-day
 url
+/recentf
+*.last
