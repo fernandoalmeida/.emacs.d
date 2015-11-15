@@ -22,7 +22,6 @@
 (require 'setup-smartscan)
 (require 'setup-projectile)
 (require 'setup-helm)
-(require 'setup-neotree)
 (require 'setup-text-scale)
 (require 'setup-whitespace)
 (require 'setup-diminish)
