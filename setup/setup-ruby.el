@@ -40,6 +40,14 @@
 
 (global-set-key (kbd "C-c b") 'custom/bundle-open)
 
+;; identation fixes
+(setq
+ ruby-align-chained-calls nil
+ ruby-align-to-stmt-keywords nil
+ ruby-deep-indent-paren nil
+ ruby-deep-indent-paren-style nil
+ ruby-use-smie nil)
+
 ;; Fix closing parentheses indentation
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
