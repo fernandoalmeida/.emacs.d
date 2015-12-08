@@ -97,5 +97,8 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "conkeror")
 
+;; Alarm bell
+(setq ring-bell-function 'ignore)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
