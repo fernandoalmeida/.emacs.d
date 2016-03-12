@@ -101,5 +101,8 @@
 ;; Alarm bell
 (setq ring-bell-function 'ignore)
 
+;; Default fill column
+(setq-default fill-column 80)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here

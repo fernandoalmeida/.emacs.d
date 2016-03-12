@@ -54,5 +54,7 @@
 	("h" "Habit" entry (file org-default-notes-file)
 	 "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a .+1d/3d>>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n")))
 
+(add-hook 'org-mode-hook 'auto-fill-mode)
+
 (provide 'setup-org)
 ;;; setup-org ends here
