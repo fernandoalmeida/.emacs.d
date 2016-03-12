@@ -12,6 +12,7 @@
 (defvar required-packages
   '(
     anzu ; Show number of matches in mode-line while searching
+    auto-dim-other-buffers
     auto-package-update
     company
     csharp-mode

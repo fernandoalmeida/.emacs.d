@@ -15,6 +15,12 @@
 (set-face-background 'lazy-highlight "burlywood4")
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
 
+;; Different backgound color on active/inactive buffers
+(add-hook 'after-init-hook (lambda ()
+  (when (fboundp 'auto-dim-other-buffers-mode)
+    (auto-dim-other-buffers-mode t))))
+(set-face-background 'auto-dim-other-buffers-face "gray10")
+
 ;; Line numbers
 (add-hook 'prog-mode-hook 'linum-mode)
 
