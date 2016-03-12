@@ -49,6 +49,7 @@
     restclient
     rhtml-mode
     rspec-mode
+    minitest
     inf-ruby
     rubocop
     scss-mode
