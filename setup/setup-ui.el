@@ -17,7 +17,10 @@
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
 (set-face-background 'hl-line current-line-background)
 (set-face-background 'helm-selection current-line-background)
-(set-face-background 'magit-diff-file-heading-highlight current-line-background)
+(add-hook 'magit-mode-hook
+	  (lambda ()
+	    (set-face-background 'magit-diff-file-heading-highlight
+				 current-line-background)))
 
 ;; Different backgound color on active/inactive buffers
 (add-hook 'after-init-hook (lambda ()
