@@ -10,16 +10,20 @@
 (global-hl-line-mode t)
 
 (load-theme 'hc-zenburn t)
-(set-face-background 'region "burlywood4")
+(setq current-line-background "dark slate gray")
+(set-face-background 'region "dark cyan")
 (set-face-background 'isearch "brown")
-(set-face-background 'lazy-highlight "burlywood4")
+(set-face-background 'lazy-highlight "dark cyan")
 (add-to-list 'default-frame-alist '(font . "Monospace 9"))
+(set-face-background 'hl-line current-line-background)
+(set-face-background 'helm-selection current-line-background)
+(set-face-background 'magit-diff-file-heading-highlight current-line-background)
 
 ;; Different backgound color on active/inactive buffers
 (add-hook 'after-init-hook (lambda ()
   (when (fboundp 'auto-dim-other-buffers-mode)
-    (auto-dim-other-buffers-mode t))))
-(set-face-background 'auto-dim-other-buffers-face "gray10")
+    (auto-dim-other-buffers-mode t)
+    (set-face-background 'auto-dim-other-buffers-face "gray10"))))
 
 ;; Line numbers
 (add-hook 'prog-mode-hook 'linum-mode)
