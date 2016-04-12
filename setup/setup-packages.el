@@ -34,11 +34,13 @@
     highlight-indentation
     ido
     iedit ; Edit multiple regions in the same way simultaneously.
+    inf-ruby
     js2-mode
     less-css-mode
     lua-mode
     magit
     markdown-mode
+    minitest
     multiple-cursors
     n4js ; Neo4j Shell
     php-mode
@@ -50,12 +52,11 @@
     restclient
     rhtml-mode
     rspec-mode
-    minitest
-    inf-ruby
     rubocop
     scss-mode
     smartparens
     smartscan
+    systemd
     textile-mode
     undo-tree
     yaml-mode
