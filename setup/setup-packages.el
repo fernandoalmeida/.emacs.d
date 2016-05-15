@@ -53,11 +53,13 @@
     rhtml-mode
     rspec-mode
     rubocop
+    rust-mode
     scss-mode
     smartparens
     smartscan
     systemd
     textile-mode
+    toml-mode
     undo-tree
     yaml-mode
     yasnippet
