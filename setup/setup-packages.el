@@ -23,9 +23,12 @@
     expand-region
     fill-column-indicator
     flycheck
-    guide-key
     git-timemachine
+    go-mode
+    company-go
+    gotest
     google-translate
+    guide-key
     haskell-mode
     hc-zenburn-theme
     helm

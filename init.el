@@ -31,6 +31,7 @@
 (require 'setup-git)
 (require 'setup-smartparens)
 (require 'setup-guide-key)
+(require 'setup-go)
 
 (provide 'init)
 ;;; init.el ends here
