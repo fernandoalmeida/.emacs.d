@@ -32,6 +32,7 @@
 (require 'setup-smartparens)
 (require 'setup-guide-key)
 (require 'setup-go)
+(require 'setup-tickscript)
 
 (provide 'init)
 ;;; init.el ends here
