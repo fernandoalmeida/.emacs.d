@@ -11,6 +11,7 @@
 
 (defvar required-packages
   '(
+    alchemist
     anzu ; Show number of matches in mode-line while searching
     auto-dim-other-buffers
     auto-package-update
@@ -20,6 +21,7 @@
     diminish
     discover
     dockerfile-mode
+    elixir-mode
     expand-region
     fill-column-indicator
     flycheck

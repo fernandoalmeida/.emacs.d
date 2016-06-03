@@ -33,6 +33,7 @@
 (require 'setup-guide-key)
 (require 'setup-go)
 (require 'setup-tickscript)
+(require 'setup-elixir)
 
 (provide 'init)
 ;;; init.el ends here
