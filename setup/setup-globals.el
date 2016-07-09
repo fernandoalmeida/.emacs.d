@@ -14,7 +14,7 @@
 (custom-set-variables
  '(inhibit-startup-screen t)
  '(initial-buffer-choice t)
- '(initial-major-mode (quote lisp-interaction-mode))
+ '(initial-major-mode (quote text-mode))
  '(initial-scratch-message "")
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 
