@@ -20,6 +20,8 @@
 
 (ido-mode t)
 
+(global-set-key (kbd "C-c l") 'toggle-truncate-lines)
+
 ;; CUA mode
 ;; - delete-selection and better rectangle-mark-mode only
 ;; - without CUA key bindings (C-x C-c C-v C-z)
