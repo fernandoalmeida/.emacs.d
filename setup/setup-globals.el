@@ -84,6 +84,11 @@
 (global-set-key (kbd "C-c C-h C-a") 'hs-hide-all)
 (global-set-key (kbd "C-c C-h C-S-a") 'hs-show-all)
 
+;; Highlight anything
+(hl-highlight-mode 1)
+(global-set-key (kbd "C-c ; h") 'hl-highlight-thingatpt-local)
+(global-set-key (kbd "C-c ; u") 'hl-unhighlight-all-local)
+
 ;; Disable auto insert encoding magic comment
 (setq ruby-insert-encoding-magic-comment nil)
 

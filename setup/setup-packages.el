@@ -37,6 +37,7 @@
     helm-projectile
     helm-swoop
     highlight-indentation
+    hl-anything
     ido
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby
@@ -62,10 +63,12 @@
     scss-mode
     smartparens
     smartscan
+    sml-mode
     systemd
     textile-mode
     toml-mode
     undo-tree
+    web-mode
     yaml-mode
     yasnippet
     zygospore ; reversible C-x 1 (delete-other-windows)
