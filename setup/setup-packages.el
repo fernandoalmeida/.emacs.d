@@ -21,6 +21,7 @@
     diminish
     discover
     dockerfile-mode
+    editorconfig
     elixir-mode
     expand-region
     fill-column-indicator
