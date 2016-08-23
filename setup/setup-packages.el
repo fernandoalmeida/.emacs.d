@@ -35,6 +35,7 @@
     haskell-mode
     hc-zenburn-theme
     helm
+    helm-ag
     helm-projectile
     helm-swoop
     highlight-indentation

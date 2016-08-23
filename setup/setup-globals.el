@@ -40,7 +40,7 @@
 
 ;; Find in files (grep)
 (global-set-key (kbd "C-c f") 'find-grep)
-(global-set-key (kbd "C-c g") 'git-grep)
+(global-set-key (kbd "C-c g") 'helm-projectile-ag)
 
 ;; Discover mode
 (global-discover-mode 1)
