@@ -85,7 +85,7 @@
 (global-set-key (kbd "C-c C-h C-S-a") 'hs-show-all)
 
 ;; Highlight anything
-(hl-highlight-mode 1)
+;; (hl-highlight-mode 1)
 (global-set-key (kbd "C-c ; h") 'hl-highlight-thingatpt-local)
 (global-set-key (kbd "C-c ; u") 'hl-unhighlight-all-local)
 
