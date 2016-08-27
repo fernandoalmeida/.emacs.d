@@ -67,6 +67,7 @@
     smartscan
     sml-mode
     systemd
+    terraform-mode
     textile-mode
     toml-mode
     undo-tree
