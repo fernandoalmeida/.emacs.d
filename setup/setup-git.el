@@ -13,5 +13,7 @@
 (global-diff-hl-mode)
 (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
 
+(setq smerge-command-prefix (kbd "C-c v"))
+
 (provide 'setup-git)
 ;;; setup-git ends here
