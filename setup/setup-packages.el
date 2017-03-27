@@ -17,6 +17,7 @@
     auto-package-update
     company
     csharp-mode
+    csv-mode
     diff-hl ; Highlight uncommitted changes
     diminish
     discover
