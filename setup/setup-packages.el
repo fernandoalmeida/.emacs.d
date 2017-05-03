@@ -22,6 +22,7 @@
     diminish
     discover
     dockerfile-mode
+    dumb-jump
     editorconfig
     elixir-mode
     expand-region

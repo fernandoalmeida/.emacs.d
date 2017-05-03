@@ -26,7 +26,6 @@
 (global-set-key (kbd "<f2>") 'rename-buffer)
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
-
 ;; Window Navigation
 (global-set-key [M-left] 'windmove-left)
 (global-set-key [M-right] 'windmove-right)
@@ -45,6 +44,13 @@
 (global-set-key (kbd "C-c C-o") 'previous-multiframe-window)
 (global-set-key [M-S-left] 'other-frame)
 (global-set-key [M-S-right] 'other-frame)
+
+;; Jump to definitions
+(require 'dumb-jump)
+(global-set-key (kbd "M-.") 'dumb-jump-go)
+(global-set-key (kbd "C-M-.") 'dumb-jump-go-other-window)
+(global-set-key (kbd "M-,") 'dumb-jump-back)
+(setq dumb-jump-selector 'helm)
 
 ;; Reuse buffers between frames
 (setq-default display-buffer-reuse-frames t)
