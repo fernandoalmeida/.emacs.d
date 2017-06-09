@@ -64,5 +64,15 @@
       (indent-line-to indent)
       (when (> offset 0) (forward-char offset)))))
 
+;; vcr toggle
+(defun custom/vcr-toggle ()
+  (interactive)
+  (if (getenv "VCR_OFF")
+      (progn
+        (setenv "VCR_OFF" nil)
+        (message "VCR is ON"))
+    (setenv "VCR_OFF" "true")
+    (message "VCR is OFF")))
+
 (provide 'setup-ruby)
 ;;; setup-ruby ends here
