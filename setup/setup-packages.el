@@ -58,6 +58,7 @@
     powerline
     projectile
     puppet-mode
+    rainbow-delimiters
     rainbow-mode
     rbenv
     restclient

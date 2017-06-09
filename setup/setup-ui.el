@@ -38,6 +38,13 @@
 
 ;; Rainbow Mode
 (add-hook 'prog-mode-hook 'rainbow-mode)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(custom-set-faces '(rainbow-delimiters-depth-1-face ((t (:foreground "DeepSkyBlue1")))))
+(custom-set-faces '(rainbow-delimiters-depth-2-face ((t (:foreground "YellowGreen")))))
+(custom-set-faces '(rainbow-delimiters-depth-3-face ((t (:foreground "gold1")))))
+(custom-set-faces '(rainbow-delimiters-depth-4-face ((t (:foreground "tomato")))))
+(custom-set-faces '(rainbow-delimiters-depth-5-face ((t (:foreground "DeepPink")))))
+(custom-set-faces '(rainbow-delimiters-depth-6-face ((t (:foreground "white")))))
 
 ;; Powerline
 (powerline-default-theme)
