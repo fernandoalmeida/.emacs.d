@@ -39,9 +39,9 @@
 (global-set-key (kbd "M-}") 'shrink-window)
 
 ;; Frame Navigation
-(global-set-key (kbd "C-c o") 'other-frame)
+(global-set-key (kbd "C-c o") 'other-window)
+(global-set-key (kbd "C-c C-o") 'other-frame)
 (global-set-key (kbd "C-x C-o") 'next-multiframe-window)
-(global-set-key (kbd "C-c C-o") 'previous-multiframe-window)
 (global-set-key [M-S-left] 'other-frame)
 (global-set-key [M-S-right] 'other-frame)
 
