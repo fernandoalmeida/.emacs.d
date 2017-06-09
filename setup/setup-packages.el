@@ -25,6 +25,7 @@
     dumb-jump
     editorconfig
     elixir-mode
+    emmet-mode
     expand-region
     fill-column-indicator
     flycheck
@@ -73,7 +74,6 @@
     textile-mode
     toml-mode
     undo-tree
-    web-mode
     yaml-mode
     yasnippet
     zygospore ; reversible C-x 1 (delete-other-windows)
