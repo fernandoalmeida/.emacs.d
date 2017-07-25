@@ -29,6 +29,7 @@
     expand-region
     fill-column-indicator
     flycheck
+    flycheck-credo
     git-timemachine
     go-mode
     company-go
