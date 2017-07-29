@@ -8,10 +8,12 @@
 (add-hook 'ruby-mode-hook 'rspec-mode)
 (add-hook 'inf-ruby-mode-hook 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
+(setq rspec-use-docker-when-possible t)
 (setq rspec-primary-source-dirs '("app"))
+(setq compilation-scroll-output t)
 
 ;; Robe / Inf Ruby
-(add-hook 'after-init-hook 'inf-ruby-switch-setup)
+;; (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 ;; Rbenv
 (global-rbenv-mode)
@@ -37,8 +39,6 @@
 (setq ruby-deep-indent-paren nil)
 (setq ruby-deep-indent-paren-style nil)
 (setq ruby-deep-arglist nil)
-
-(global-set-key (kbd "C-c b") 'custom/bundle-open)
 
 ;; identation fixes
 (setq
