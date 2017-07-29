@@ -39,8 +39,8 @@
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
 ;; Find in files (grep)
-(global-set-key (kbd "C-c f") 'find-grep)
 (global-set-key (kbd "C-c g") 'helm-projectile-ag)
+(global-set-key (kbd "C-c f") 'helm-do-ag)
 (global-set-key (kbd "C-c C-g") 'git-grep)
 
 ;; Discover mode

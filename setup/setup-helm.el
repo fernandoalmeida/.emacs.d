@@ -3,6 +3,11 @@
 ;;; Code:
 (helm-mode t)
 
+(require 'helm)
+(require 'helm-ag)
+(require 'helm-projectile)
+(require 'helm-swoop)
+
 (setq helm-quick-update t
       helm-buffers-fuzzy-matching t
       helm-move-to-line-cycle-in-source t
@@ -17,6 +22,10 @@
       helm-bookmark-show-location t
       helm-projectile-sources-list '(helm-source-projectile-buffers-list
 				     helm-source-projectile-files-list))
+
+(custom-set-variables
+ '(helm-ag-base-command "ag --nocolor --nogroup --smart-case --hidden --search-binary")
+ '(helm-ag-insert-at-point t))
 
 (autoload 'helm-descbinds      "helm-descbinds" t)
 (autoload 'helm-eshell-history "helm-eshell"    t)
@@ -33,10 +42,9 @@
 (global-set-key   (kbd "C-x b")   'helm-buffers-list)
 (global-set-key   (kbd "C-x f")   'helm-projectile)
 (global-set-key   (kbd "C-x C-f") 'helm-find-files)
-(global-set-key   (kbd "C-x r l") 'helm-filtered-bookmarks)
+(global-set-key   (kbd "C-c b")   'helm-filtered-bookmarks)
 
 (global-set-key   (kbd "C-c h")   'helm-command-prefix)
-(global-set-key   (kbd "C-c r")   'helm-recentf)
 
 (global-set-key   (kbd "C-h a")   'helm-apropos)
 (global-set-key   (kbd "C-h i")   'helm-info-emacs)
@@ -51,7 +59,7 @@
     (backward-delete-char 1)))
 
 (global-set-key (kbd "C-S-s") 'helm-swoop)
-(global-set-key (kbd "C-M-S") 'helm-multi-swoop-all)
+(global-set-key (kbd "C-M-s") 'helm-multi-swoop-all)
 (define-key isearch-mode-map (kbd "C-S-s") 'helm-swoop-from-isearch)
 
 (provide 'setup-helm)
