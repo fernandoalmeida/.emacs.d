@@ -61,7 +61,6 @@
     puppet-mode
     rainbow-delimiters
     rainbow-mode
-    rbenv
     restclient
     rhtml-mode
     rspec-mode

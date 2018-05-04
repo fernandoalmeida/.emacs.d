@@ -15,9 +15,6 @@
 ;; Robe / Inf Ruby
 ;; (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
-;; Rbenv
-(global-rbenv-mode)
-
 ;; Rubocop
 (add-hook 'ruby-mode-hook 'rubocop-mode)
 
