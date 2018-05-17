@@ -23,7 +23,6 @@
     discover
     dockerfile-mode
     dumb-jump
-    editorconfig
     elixir-mode
     emmet-mode
     expand-region
@@ -54,7 +53,6 @@
     markdown-mode
     minitest
     multiple-cursors
-    n4js ; Neo4j Shell
     php-mode
     powerline
     projectile
