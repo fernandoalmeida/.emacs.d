@@ -6,4 +6,4 @@
        url = https://github.com/pymander/evernote-mode.git
 [submodule "vendor/tickscript-mode"]
 	path = vendor/tickscript-mode
-	url = https://github.com/whatyouhide/tickscript-mode
+	url = https://github.com/msherry/tickscript-mode
