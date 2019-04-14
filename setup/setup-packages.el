@@ -73,6 +73,7 @@
     textile-mode
     toml-mode
     undo-tree
+    wakatime-mode
     yaml-mode
     yasnippet
     zygospore ; reversible C-x 1 (delete-other-windows)

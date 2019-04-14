@@ -33,6 +33,7 @@
 (require 'setup-guide-key)
 (require 'setup-go)
 (require 'setup-elixir)
+(require 'setup-wakatime)
 
 (provide 'init)
 ;;; init.el ends here
