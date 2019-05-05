@@ -18,6 +18,7 @@
     company
     csharp-mode
     csv-mode
+    dart-mode
     diff-hl ; Highlight uncommitted changes
     diminish
     discover
