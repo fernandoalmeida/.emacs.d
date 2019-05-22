@@ -3,7 +3,7 @@
 ;;; Code:
 (require 'org)
 
-(setq org-directory "~/Dropbox/fernando/org/")
+(setq org-directory "~/dropbox/fernando/org/")
 (setq org-files-regexp "\\.\\(org\\|org_archive\\|txt\\)$")
 (setq org-user-agenda-files (directory-files org-directory t org-files-regexp))
 (setq org-default-notes-file (concat org-directory "refile.org"))
