@@ -104,7 +104,7 @@
 
 ;; Default browser
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "conkeror")
+      browse-url-generic-program "firefox")
 
 ;; Alarm bell
 (setq ring-bell-function 'ignore)
