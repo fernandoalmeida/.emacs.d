@@ -34,6 +34,7 @@
 (require 'setup-go)
 (require 'setup-elixir)
 (require 'setup-wakatime)
+(require 'setup-javascript)
 
 (provide 'init)
 ;;; init.el ends here

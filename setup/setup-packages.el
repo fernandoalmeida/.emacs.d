@@ -28,8 +28,10 @@
     emmet-mode
     expand-region
     fill-column-indicator
+    flow-js2-mode
     flycheck
     flycheck-credo
+    flycheck-flow
     flycheck-kotlin
     git-timemachine
     go-mode
