@@ -48,23 +48,5 @@
 
 (setq haskell-font-lock-symbols t)
 
-;; Extra font locks - Thanks Renan Ranelli (github.com/rranelli) =)
-(defvar rr/haskell-font-lock-extra-symbols
-  '(("<alpha>" . #X03B1)
-    ("<beta>" . #X03B2)
-    ("<gamma>" . #X03B3)
-    ("<delta>" . #X03B4)
-    ("`elem`" . #X2208)
-    ("elem" . #X2208)
-    ("^" . #X2191)))
-
-(eval-after-load 'haskell-font-lock
-  '(progn
-     (mapcar
-      (lambda (entry) (add-to-list 'haskell-font-lock-symbols-alist entry))
-      rr/haskell-font-lock-extra-symbols)
-     (setq haskell-font-lock-keywords
-	   (haskell-font-lock-keywords-create nil))))
-
 (provide 'setup-haskell)
 ;;; setup-haskell ends here
