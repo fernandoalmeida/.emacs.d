@@ -6,7 +6,6 @@
 
 (setq alchemist-test-mode-highlight-tests nil)
 (setq alchemist-test-status-modeline nil)
-(setq alchemist-key-command-prefix (kbd "C-c ,"))
 
 (eval-after-load 'flycheck '(flycheck-credo-setup))
 (add-hook 'elixir-mode-hook 'flycheck-mode)
