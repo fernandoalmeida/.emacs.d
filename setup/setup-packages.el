@@ -30,6 +30,7 @@
     fill-column-indicator
     flycheck
     flycheck-credo
+    flycheck-kotlin
     git-timemachine
     go-mode
     company-go
@@ -48,6 +49,7 @@
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby
     js2-mode
+    kotlin-mode
     less-css-mode
     lua-mode
     magit
