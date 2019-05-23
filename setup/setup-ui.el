@@ -55,9 +55,6 @@
 ;; Show trailing whitespace by default
 (add-hook 'prog-mode-hook (setq show-trailing-whitespace t))
 
-;; Clean empty indentation
-(add-hook 'prog-mode-hook 'clean-aindent-mode)
-
 ;; Uniquify buffer names
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
