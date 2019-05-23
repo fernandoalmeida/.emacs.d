@@ -19,3 +19,4 @@ url
 /recentf
 *.last
 .hl-save
+/transient
