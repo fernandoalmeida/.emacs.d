@@ -31,7 +31,7 @@
 (require 'setup-git)
 (require 'setup-smartparens)
 (require 'setup-guide-key)
-(require 'setup-go)
+;; (require 'setup-go)
 (require 'setup-elixir)
 (require 'setup-wakatime)
 (require 'setup-javascript)
