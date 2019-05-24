@@ -29,6 +29,7 @@
     expand-region
     fill-column-indicator
     flow-js2-mode
+    flutter
     flycheck
     flycheck-credo
     flycheck-flow
