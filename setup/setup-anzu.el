@@ -12,8 +12,8 @@
  '(anzu-search-threshold 1000)
  '(anzu-replace-to-string-separator " => "))
 
-(global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
-(global-set-key [remap query-replace] 'anzu-query-replace)
+(global-set-key (kbd "M-#") 'anzu-query-replace)
+(global-set-key (kbd "C-M-#") 'anzu-query-replace-regexp)
 
 (provide 'setup-anzu)
 ;;; setup-anzu ends here
