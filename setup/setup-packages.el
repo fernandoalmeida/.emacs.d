@@ -82,6 +82,7 @@
     wakatime-mode
     yaml-mode
     yasnippet
+    yasnippet-snippets
     zygospore ; reversible C-x 1 (delete-other-windows)
     ) "Required Packages list")
 
