@@ -8,7 +8,11 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/setup")
 
+;; order dependent
 (require 'setup-packages)
+
+;; no order dependent
+(require 'setup-dart)
 (require 'edit-functions)
 (require 'bundle-functions)
 (require 'setup-globals)
