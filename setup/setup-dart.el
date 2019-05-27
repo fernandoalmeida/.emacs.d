@@ -11,5 +11,11 @@
 (define-key dart-mode-map (kbd "C-M-.") 'dart-find-refs)
 (define-key dart-mode-map (kbd "C-c i") 'dart-format)
 
+(defun custom/run-dart-code ()
+  "Run a dart code."
+  (interactive)
+  (shell-command (concat dart-sdk-path "/bin/dart " (buffer-file-name))))
+(define-key dart-mode-map (kbd "C-c C-c") 'custom/run-dart-code)
+
 (provide 'setup-dart)
 ;;; setup-dart ends here
