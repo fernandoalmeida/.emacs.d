@@ -6,6 +6,6 @@ class ${1:WidgetName} extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: $0
-    )
+    );
   }
 }
