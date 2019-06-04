@@ -15,6 +15,7 @@
 (require 'setup-dart)
 (require 'edit-functions)
 (require 'bundle-functions)
+(require 'android-functions)
 (require 'setup-globals)
 (require 'setup-company)
 (require 'setup-dired)
