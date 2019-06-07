@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 (require 'org)
+(require 'org-bullets)
 
 (setq org-directory "~/dropbox/fernando/org/")
 (setq org-files-regexp "\\.\\(org\\|org_archive\\|txt\\)$")
@@ -55,6 +56,9 @@
 	 "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a .+1d/3d>>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n")))
 
 (add-hook 'org-mode-hook 'auto-fill-mode)
+(add-hook 'org-mode-hook 'org-bullets-mode)
+(define-key org-mode-map (kbd "C-j") 'org-return)
+(define-key org-mode-map (kbd "C-m") 'org-return-indent)
 
 (provide 'setup-org)
 ;;; setup-org ends here

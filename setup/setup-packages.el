@@ -59,6 +59,7 @@
     markdown-mode
     minitest
     multiple-cursors
+    org-bullets
     php-mode
     powerline
     projectile
