@@ -39,6 +39,7 @@
     company-go
     gotest
     google-translate
+    groovy-mode
     guide-key
     haskell-mode
     hc-zenburn-theme
