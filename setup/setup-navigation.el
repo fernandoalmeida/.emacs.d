@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'markdown-mode)
+
 ;; Custom edit bindings
 (global-set-key (kbd "C-j") 'newline-and-indent)
 (global-set-key (kbd "C-S-j") 'custom/newline-before)
@@ -21,8 +23,8 @@
 ;; Content Navigation
 (global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 5)))
 (global-set-key (kbd "M-n") (lambda () (interactive) (next-line 5)))
-;; (define-key markdown-mode-map (kbd "M-p") (lambda () (interactive) (previous-line 5)))
-;; (define-key markdown-mode-map (kbd "M-n") (lambda () (interactive) (next-line 5)))
+(define-key markdown-mode-map (kbd "M-p") (lambda () (interactive) (previous-line 5)))
+(define-key markdown-mode-map (kbd "M-n") (lambda () (interactive) (next-line 5)))
 (global-set-key (kbd "C-S-n") 'end-of-buffer)
 (global-set-key (kbd "C-S-p") 'beginning-of-buffer)
 (global-set-key (kbd "<f2>") 'rename-buffer)
