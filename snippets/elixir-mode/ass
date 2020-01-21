@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: assert
+# --
+assert ${1:result} ${2:==} ${3:expected}
