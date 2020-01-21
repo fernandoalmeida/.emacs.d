@@ -24,7 +24,7 @@
          (start (region-beginning))
          (end (region-end))
         (selection (delete-and-extract-region start end))
-        (wrapped (concat widget "(\n child: " selection "\n),")))
+        (wrapped (concat widget "(\n child: " selection "\n)")))
     (insert wrapped)
     (dart-format)))
 (define-key dart-mode-map (kbd "C-c .") 'custom/dart-wrap-with)
