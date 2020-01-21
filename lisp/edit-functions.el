@@ -42,5 +42,12 @@
   (interactive "p")
   (delete-region (point) (progn (backward-word arg) (point))))
 
+(defun custom/copy-buffer-file-path ()
+  "Copy buffer file path to kill ring."
+  (interactive)
+  (kill-new (buffer-file-name))
+  (message (concat "Copied path: " (buffer-file-name))))
+(global-set-key (kbd "C-S-w") 'custom/copy-buffer-file-path)
+
 (provide 'edit-functions)
 ;;; edit-functions.el ends here
