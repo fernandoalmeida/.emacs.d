@@ -82,6 +82,7 @@
     terraform-mode
     textile-mode
     toml-mode
+    typescript-mode
     undo-tree
     wakatime-mode
     yaml-mode
