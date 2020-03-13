@@ -104,5 +104,44 @@
 ;; Default fill column
 (setq-default fill-column 80)
 
+;; LSP
+(require 'lsp-mode)
+(require 'lsp-ui)
+(require 'lsp-clients)
+(require 'company-lsp)
+
+(setq-default lsp-ui-sideline-enable nil)
+(setq-default lsp-ui-doc-enable nil)
+(setq-default lsp-ui-peek-enable nil)
+(push 'company-lsp company-backends)
+
+(define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
+(define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
+
+(add-hook 'prog-mode-hook #'lsp)
+
+(defvar-local p-lsp-doc-showing nil)
+
+(defun lsp-doc-toggle ()
+  (interactive)
+  (if p-lsp-doc-showing
+      (progn
+        (lsp-ui-doc-unfocus-frame)
+        (lsp-ui-doc-hide)
+        (setq p-lsp-doc-showing nil))
+    (lsp-ui-doc-show)
+    (setq p-lsp-doc-showing t)))
+
+(defun lsp-doc-toggle-focus ()
+  (interactive)
+  (if p-lsp-doc-showing
+      (progn
+        (lsp-ui-doc-focus-frame))
+    (lsp-ui-doc-unfocus-frame)))
+
+(global-set-key (kbd "C-c C-i C-i") 'lsp-doc-toggle)
+(global-set-key (kbd "C-c C-i C-o") 'lsp-doc-toggle-focus)
+(global-set-key (kbd "C-c C-i C-l") 'lsp-ui-imenu)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here

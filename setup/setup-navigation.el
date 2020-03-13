@@ -49,13 +49,6 @@
 (global-set-key [M-S-left] 'other-frame)
 (global-set-key [M-S-right] 'other-frame)
 
-;; Jump to definitions
-(require 'dumb-jump)
-(global-set-key (kbd "M-.") 'dumb-jump-go)
-(global-set-key (kbd "C-M-.") 'dumb-jump-go-other-window)
-(global-set-key (kbd "M-,") 'dumb-jump-back)
-(setq dumb-jump-selector 'helm)
-
 ;; Reuse buffers between frames
 (setq-default display-buffer-reuse-frames t)
 

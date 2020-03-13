@@ -16,6 +16,7 @@
     auto-dim-other-buffers
     auto-package-update
     company
+    company-lsp
     csharp-mode
     csv-mode
     dart-mode
@@ -23,7 +24,6 @@
     diminish
     discover
     dockerfile-mode
-    dumb-jump
     elixir-mode
     emmet-mode
     expand-region
@@ -55,6 +55,8 @@
     js2-mode
     kotlin-mode
     less-css-mode
+    lsp-mode
+    lsp-ui
     lua-mode
     magit
     markdown-mode
