@@ -40,6 +40,7 @@
 (require 'setup-elixir)
 (require 'setup-wakatime)
 (require 'setup-javascript)
+(require 'setup-safe-local-variables)
 
 (provide 'init)
 ;;; init.el ends here
