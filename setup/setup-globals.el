@@ -96,6 +96,9 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "firefox")
 
+;; Auto revert buffers changed on file system
+(global-auto-revert-mode t)
+
 ;; Alarm bell
 (setq ring-bell-function 'ignore)
 
