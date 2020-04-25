@@ -20,3 +20,7 @@ url
 *.last
 .hl-save
 /transient
+.cache/
+.lsp-session-v1
+emojis/
+srecode-map.el
