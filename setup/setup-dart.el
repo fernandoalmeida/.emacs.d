@@ -29,5 +29,21 @@
     (dart-format)))
 (define-key dart-mode-map (kbd "C-c .") 'custom/dart-wrap-with)
 
+;; WIP
+(defun custom/dart-import-package ()
+  "Auto import the package."
+  (interactive)
+  (let ((identifier (thing-at-point 'word)))
+    (message (concat "identifier " identifier))
+    (dart--analysis-server-send
+     "search.findTopLevelDeclarations"
+     (list (cons "pattern" identifier))
+     (lambda (response)
+       (if response
+           (let ((id (dart--get response 'result 'id)))
+             (message "%s" id))
+         (message "no no no"))))))
+(define-key dart-mode-map (kbd "C-c C-.") 'custom/dart-import-package)
+
 (provide 'setup-dart)
 ;;; setup-dart ends here
