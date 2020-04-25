@@ -46,7 +46,7 @@
 ;; Discover mode
 (global-discover-mode 1)
 
-;; Fly chceck
+;; Fly check
 (add-hook 'after-init-hook 'global-flycheck-mode)
 
 ;; Shell
@@ -69,13 +69,11 @@
 (add-hook 'prog-mode-hook 'yas-minor-mode)
 (yas-reload-all)
 
-;; Google translate
-(setq google-translate-default-source-language "en")
-(setq google-translate-default-target-language "pt")
-(setq google-translate-translation-directions-alist '(("en" . "pt") ("pt" . "en")))
+;; Translate
+(setq-default google-translate-default-source-language "en")
+(setq-default google-translate-default-target-language "pt")
 (global-set-key (kbd "C-c t p") 'google-translate-at-point)
 (global-set-key (kbd "C-c t e") 'google-translate-at-point-reverse)
-(global-set-key (kbd "C-c t t") 'google-translate-smooth-translate)
 
 ;; Highlight anything
 ;; (hl-highlight-mode 1)
