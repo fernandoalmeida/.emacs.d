@@ -26,6 +26,7 @@
     dockerfile-mode
     elixir-mode
     emmet-mode
+    ess ; Emacs Speaks Statistics (required by org-babel/R)
     expand-region
     fill-column-indicator
     flow-js2-mode
@@ -62,6 +63,8 @@
     markdown-mode
     minitest
     multiple-cursors
+    ob-elixir
+    ob-rust
     org-bullets
     php-mode
     powerline

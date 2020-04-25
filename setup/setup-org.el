@@ -17,7 +17,6 @@
 (global-set-key (kbd "C-o l") 'org-store-link)
 (global-set-key (kbd "C-o b") 'org-iswitchb)
 
-
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)"
                         "NEXT(n)"
@@ -59,6 +58,21 @@
 (add-hook 'org-mode-hook 'org-bullets-mode)
 (define-key org-mode-map (kbd "C-j") 'org-return)
 (define-key org-mode-map (kbd "C-m") 'org-return-indent)
+(define-key org-mode-map (kbd "C-c e") 'org-toggle-link-display)
+
+;; Org Babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((elixir . t)
+   (emacs-lisp . t)
+   (python . t)
+   (R . t)
+   (ruby . t)
+   (rust . t)
+   (shell . t)))
+
+(setq org-confirm-babel-evaluate nil)
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
 
 (provide 'setup-org)
 ;;; setup-org ends here
