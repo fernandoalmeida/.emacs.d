@@ -17,6 +17,7 @@
     (newline-and-indent)
     (insert "|> ")))
 (define-key elixir-mode-map (kbd "C-M-j") 'custom/new-pipe)
+(define-key elixir-mode-map (kbd "C-c i") 'elixir-format)
 
 (provide 'setup-elixir)
 ;;; setup-elixir ends here
