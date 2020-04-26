@@ -47,6 +47,7 @@
     hc-zenburn-theme
     helm
     helm-ag
+    helm-lsp
     helm-projectile
     helm-swoop
     highlight-indentation
@@ -60,6 +61,7 @@
     less-css-mode
     lsp-mode
     lsp-ui
+    lsp-java
     lua-mode
     magit
     markdown-mode

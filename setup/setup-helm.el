@@ -7,6 +7,7 @@
 (require 'helm-ag)
 (require 'helm-projectile)
 (require 'helm-swoop)
+(require 'lsp-mode)
 
 (setq helm-quick-update t
       helm-buffers-fuzzy-matching t
@@ -49,6 +50,8 @@
 (global-set-key   (kbd "C-h a")   'helm-apropos)
 (global-set-key   (kbd "C-h i")   'helm-info-emacs)
 (global-set-key   (kbd "C-h b")   'helm-descbinds)
+
+(define-key lsp-mode-map [remap xref-find-apropos] #'helm-lsp-workspace-symbol)
 
 ;; More familiar helm find-file navigation (from Renan Ranelli)
 (defun helm-find-files-sensitive-backspace ()
