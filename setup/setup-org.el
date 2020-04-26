@@ -69,7 +69,8 @@
    (R . t)
    (ruby . t)
    (rust . t)
-   (shell . t)))
+   (shell . t)
+   (jupyter . t)))
 
 (setq org-confirm-babel-evaluate nil)
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)

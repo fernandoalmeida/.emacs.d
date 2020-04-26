@@ -55,6 +55,7 @@
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby
     js2-mode
+    jupyter
     kotlin-mode
     less-css-mode
     lsp-mode
