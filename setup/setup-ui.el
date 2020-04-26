@@ -30,6 +30,7 @@
 
 ;; Line numbers
 (add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'markdown-mode-hook 'linum-mode)
 
 (require 'highlight-indentation)
 (add-hook 'prog-mode-hook 'highlight-indentation-current-column-mode)

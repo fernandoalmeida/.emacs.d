@@ -24,6 +24,7 @@
     diminish
     discover
     dockerfile-mode
+    ein ; Emacs iPython Notebook
     elixir-mode
     emmet-mode
     ess ; Emacs Speaks Statistics (required by org-babel/R)

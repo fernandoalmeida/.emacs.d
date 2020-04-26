@@ -41,6 +41,7 @@
 (require 'setup-wakatime)
 (require 'setup-javascript)
 (require 'setup-safe-local-variables)
+(require 'setup-ein)
 
 (provide 'init)
 ;;; init.el ends here
