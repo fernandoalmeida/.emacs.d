@@ -42,6 +42,7 @@
 (require 'setup-javascript)
 (require 'setup-safe-local-variables)
 (require 'setup-ein)
+(require 'setup-octave)
 
 (provide 'init)
 ;;; init.el ends here
