@@ -60,12 +60,5 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward)
 
-;; 80 Columns Indicator
-(setq-default fci-rule-column 80)
-(setq fci-handle-truncate-lines nil)
-(setq fci-rule-use-dashes t)
-(add-hook 'prog-mode-hook 'turn-on-fci-mode)
-(setq fci-rule-color "#666666")
-
 (provide 'setup-ui)
 ;;; setup-ui ends here

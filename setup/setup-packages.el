@@ -29,7 +29,6 @@
     emmet-mode
     ess ; Emacs Speaks Statistics (required by org-babel/R)
     expand-region
-    fill-column-indicator
     flow-js2-mode
     flutter
     flycheck
