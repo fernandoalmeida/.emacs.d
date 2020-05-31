@@ -92,6 +92,7 @@
     typescript-mode
     undo-tree
     wakatime-mode
+    web-mode
     yaml-mode
     yasnippet
     yasnippet-snippets

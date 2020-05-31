@@ -22,6 +22,11 @@
 
 (global-set-key (kbd "C-c l") 'toggle-truncate-lines)
 
+;; setup web mode
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+
 ;; CUA mode
 ;; - delete-selection and better rectangle-mark-mode only
 ;; - without CUA key bindings (C-x C-c C-v C-z)
