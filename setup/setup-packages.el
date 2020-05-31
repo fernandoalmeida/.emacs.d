@@ -65,6 +65,7 @@
     magit
     markdown-mode
     minitest
+    mix ; better than alchemist with umbrella apps
     multiple-cursors
     ob-elixir
     ob-rust

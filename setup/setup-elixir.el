@@ -5,11 +5,18 @@
 (require 'alchemist)
 (require 'web-mode)
 
+;; setup alchemist
 (setq alchemist-test-mode-highlight-tests nil)
 (setq alchemist-test-status-modeline nil)
+(add-hook 'magit-mode-hook 'alchemist-mode)
 
 (eval-after-load 'flycheck '(flycheck-credo-setup))
 (add-hook 'elixir-mode-hook 'flycheck-mode)
+
+;; setup mix
+(setq compilation-scroll-output nil)
+(add-hook 'elixir-mode-hook 'mix-minor-mode)
+(add-hook 'magit-mode-hook 'mix-minor-mode)
 
 ;; setup web mode
 (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))

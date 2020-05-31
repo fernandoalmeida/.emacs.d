@@ -110,7 +110,7 @@
 ;; Default fill column
 (setq-default fill-column 80)
 
-;; LSP
+;; LSP (language server protocol)
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'lsp-clients)
