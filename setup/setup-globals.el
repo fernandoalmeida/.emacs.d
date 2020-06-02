@@ -108,7 +108,7 @@
 (setq ring-bell-function 'ignore)
 
 ;; Default fill column
-(setq-default fill-column 80)
+(setq-default fill-column 98)
 
 ;; LSP (language server protocol)
 (require 'lsp-mode)
