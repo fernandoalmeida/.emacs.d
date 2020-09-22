@@ -9,6 +9,7 @@
 (setq alchemist-test-mode-highlight-tests nil)
 (setq alchemist-test-status-modeline nil)
 (add-hook 'magit-mode-hook 'alchemist-mode)
+(add-hook 'mix-mode-hook 'alchemist-mode)
 
 (eval-after-load 'flycheck '(flycheck-credo-setup))
 (add-hook 'elixir-mode-hook 'flycheck-mode)
@@ -17,9 +18,14 @@
 (setq compilation-scroll-output nil)
 (add-hook 'elixir-mode-hook 'mix-minor-mode)
 (add-hook 'magit-mode-hook 'mix-minor-mode)
+(add-hook 'mix-mode-hook 'mix-minor-mode)
 
 ;; setup web mode
 (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
+
+;; setup formatter
+(add-hook 'elixir-mode-hook
+          (lambda () (add-hook 'before-save-hook 'elixir-format nil 'local)))
 
 (defun custom/new-pipe ()
   "add a new pipe"
