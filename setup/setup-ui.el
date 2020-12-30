@@ -14,7 +14,7 @@
 (set-face-background 'region "dark cyan")
 (set-face-background 'isearch "brown")
 (set-face-background 'lazy-highlight "dark cyan")
-(add-to-list 'default-frame-alist '(font . "FreeMono 8.5"))
+(add-to-list 'default-frame-alist '(font . "Hack 9"))
 (set-face-background 'hl-line current-line-background)
 (set-face-background 'helm-selection current-line-background)
 (add-hook 'magit-mode-hook
