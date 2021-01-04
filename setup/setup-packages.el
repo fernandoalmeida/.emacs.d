@@ -72,6 +72,7 @@
     org-bullets
     php-mode
     powerline
+    prettier
     projectile
     puppet-mode
     rainbow-delimiters
