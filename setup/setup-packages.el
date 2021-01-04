@@ -79,6 +79,7 @@
     rainbow-mode
     restclient
     rhtml-mode
+    rjsx-mode
     rspec-mode
     rubocop
     rust-mode
