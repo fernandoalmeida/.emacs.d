@@ -98,6 +98,7 @@
     yaml-mode
     yasnippet
     yasnippet-snippets
+    zetteldeft
     zygospore ; reversible C-x 1 (delete-other-windows)
     ) "Required Packages list")
 

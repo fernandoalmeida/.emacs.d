@@ -3,8 +3,9 @@
 ;;; Code:
 (require 'org)
 (require 'org-bullets)
+(require 'zetteldeft)
 
-(setq org-directory "~/dropbox/fernando/notes/")
+(setq org-directory "~/Dropbox/fernando/notes/")
 (setq org-agenda-files (directory-files-recursively org-directory "\.org$"))
 (setq org-files-regexp "\\.\\(org\\|org_archive\\|txt\\)$")
 (setq org-user-agenda-files (directory-files org-directory t org-files-regexp))
@@ -75,6 +76,15 @@
 
 (setq org-confirm-babel-evaluate nil)
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
+
+;; Zetteldeft Zettelkasten method
+(setq deft-extensions '("md" "org" "txt"))
+(setq deft-directory "~/Dropbox/fernando/notes/")
+(setq deft-use-filename-as-title t)
+(setq deft-default-extension "org")
+(setq zetteldeft-id-filename-separator "-")
+(setq deft-auto-save-interval 0)
+(zetteldeft-set-classic-keybindings)
 
 (provide 'setup-org)
 ;;; setup-org ends here
