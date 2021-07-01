@@ -149,5 +149,8 @@
 (global-set-key (kbd "C-c C-i C-o") 'lsp-doc-toggle-focus)
 (global-set-key (kbd "C-c C-i C-l") 'lsp-ui-imenu)
 
+
+(add-to-list 'auto-mode-alist '("\\.ofx$" . xml-mode))
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
