@@ -27,6 +27,7 @@
     ein ; Emacs iPython Notebook
     elixir-mode
     emmet-mode
+    emojify
     ess ; Emacs Speaks Statistics (required by org-babel/R)
     expand-region
     flow-js2-mode

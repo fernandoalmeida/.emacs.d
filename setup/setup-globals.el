@@ -152,5 +152,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.ofx$" . xml-mode))
 
+(add-hook 'after-init-hook #'global-emojify-mode)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
