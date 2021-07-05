@@ -18,7 +18,7 @@
       helm-exit-idle-delay 0.01
       helm-ff-transformer-show-only-basename nil
       helm-ls-git-show-abs-or-relative 'relative
-      helm-full-frame nil
+      helm-full-frame t
       helm-buffer-max-length 50
       helm-bookmark-show-location t
       helm-projectile-sources-list '(helm-source-projectile-buffers-list
