@@ -1,7 +1,11 @@
 ;;; setup-projectile --- Setup projectile package
 ;;; Commentary:
 ;;; Code:
-(projectile-global-mode)
+(require 'projectile)
+
+(projectile-mode)
+
+(add-to-list 'projectile-globally-ignored-directories ".log")
 
 (setq projectile-enable-caching t)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
