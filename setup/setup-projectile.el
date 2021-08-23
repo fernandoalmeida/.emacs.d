@@ -5,6 +5,8 @@
 
 (projectile-mode)
 
+;; Ignore `.log` directory and `openapi.json` file by default
+(add-to-list 'projectile-globally-ignored-files "*/*/openapi.json")
 (add-to-list 'projectile-globally-ignored-directories ".log")
 
 (setq projectile-enable-caching t)
