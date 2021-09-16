@@ -5,7 +5,7 @@
 (require 'org-bullets)
 (require 'zetteldeft)
 
-(setq org-directory "~/Dropbox/fernando/notes/")
+(setq org-directory "~/Dropbox/fernando/notes/org")
 (setq org-agenda-files (directory-files-recursively org-directory "\.org$"))
 (setq org-files-regexp "\\.\\(org\\|org_archive\\|txt\\)$")
 (setq org-user-agenda-files (directory-files org-directory t org-files-regexp))
@@ -79,7 +79,7 @@
 
 ;; Zetteldeft Zettelkasten method
 (setq deft-extensions '("md" "org" "txt"))
-(setq deft-directory "~/Dropbox/fernando/notes/")
+(setq deft-directory "~/Dropbox/fernando/notes/zetteldeft")
 (setq deft-use-filename-as-title t)
 (setq deft-default-extension "org")
 (setq zetteldeft-id-filename-separator "-")
