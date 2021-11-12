@@ -119,7 +119,7 @@
 (setq-default lsp-ui-sideline-enable nil)
 (setq-default lsp-ui-doc-enable nil)
 (setq-default lsp-ui-peek-enable nil)
-(push 'company-lsp company-backends)
+(setq lsp-completion-provider :capf)
 
 (define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
 (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)

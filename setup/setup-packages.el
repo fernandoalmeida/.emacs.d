@@ -16,7 +16,6 @@
     auto-dim-other-buffers
     auto-package-update
     company
-    company-lsp
     csharp-mode
     csv-mode
     dart-mode
@@ -76,6 +75,7 @@
     prettier
     projectile
     puppet-mode
+    racer ; rust code completion and navigation
     rainbow-delimiters
     rainbow-mode
     restclient
