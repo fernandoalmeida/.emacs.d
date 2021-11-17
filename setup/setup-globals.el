@@ -151,6 +151,7 @@
 
 
 (add-to-list 'auto-mode-alist '("\\.ofx$" . xml-mode))
+(add-to-list 'auto-mode-alist '("\\.env*" . shell-script-mode))
 
 (add-hook 'after-init-hook #'global-emojify-mode)
 

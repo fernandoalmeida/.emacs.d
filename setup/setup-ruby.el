@@ -30,7 +30,6 @@
 (add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.rjs\\'" . rhtml-mode))
-(add-to-list 'auto-mode-alist '("\\.env$" . shell-script-mode))
 
 ;; Hash/array indentation
 (setq ruby-deep-indent-paren nil)
