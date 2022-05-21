@@ -155,5 +155,8 @@
 
 (add-hook 'after-init-hook #'global-emojify-mode)
 
+(global-set-key (kbd "C-M-l")
+		'(lambda () (interactive) (recenter-top-bottom 1)))
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
