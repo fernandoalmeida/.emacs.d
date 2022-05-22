@@ -75,6 +75,9 @@
 (yas-reload-all)
 
 ;; Translate
+(defun google-translate--search-tkk ()
+  "Search TKK."
+  (list 430675 2721866130))
 (setq-default google-translate-default-source-language "en")
 (setq-default google-translate-default-target-language "pt")
 (global-set-key (kbd "C-c t p") 'google-translate-at-point)
