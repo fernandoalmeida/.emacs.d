@@ -15,6 +15,7 @@
     anzu ; Show number of matches in mode-line while searching
     auto-dim-other-buffers
     auto-package-update
+    blacken
     company
     csharp-mode
     csv-mode
@@ -54,12 +55,14 @@
     ido
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby
+    jedi
     js2-mode
     jupyter
     kotlin-mode
     less-css-mode
     lsp-mode
     lsp-ui
+    lsp-jedi
     lsp-java
     lua-mode
     magit
@@ -75,6 +78,8 @@
     prettier
     projectile
     puppet-mode
+    pyvenv
+    pyvenv-auto
     racer ; rust code completion and navigation
     rainbow-delimiters
     rainbow-mode
