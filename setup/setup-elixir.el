@@ -22,6 +22,19 @@
 
 ;; setup web mode
 (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.heex\\'" . web-mode))
+(sp-with-modes '(web-mode)
+  (sp-local-pair "<" nil :actions nil)
+  (sp-local-pair "% " " %"
+                 :unless '(sp-in-string-p)
+                 :post-handlers '(((lambda (&rest _ignored)
+                                     (just-one-space)
+                                     (save-excursion (insert " ")))
+                                   "SPC" "=" "#")))
+  (sp-local-pair "<% " " %>" :insert "C-c %")
+  (sp-local-pair "<%= " " %>" :insert "C-c =")
+  (sp-local-pair "<%# " " %>" :insert "C-c #")
+  (sp-local-pair "<-" ""))
 
 ;; setup formatter
 (add-hook 'elixir-mode-hook
