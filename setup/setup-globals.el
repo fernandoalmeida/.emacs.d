@@ -1,6 +1,12 @@
 ;;; setup-globals --- Setup global configurations
 ;;; Commentary:
 ;;; Code:
+(require 'yasnippet)
+(require 'web-mode)
+(require 'lsp-mode)
+(require 'lsp-ui)
+;; (require 'lsp-tailwindcss)
+(require 'company-lsp)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defun noop () "Does nothing." (interactive) (message "disabled command"))
@@ -73,8 +79,8 @@
 (global-undo-tree-mode)
 
 ;; Yasnippet
-(require 'yasnippet)
 (add-hook 'prog-mode-hook 'yas-minor-mode)
+(add-hook 'org-mode-hook 'yas-minor-mode)
 (yas-reload-all)
 
 ;; Translate
@@ -87,9 +93,11 @@
 (global-set-key (kbd "C-c t e") 'google-translate-at-point-reverse)
 
 ;; Highlight anything
-;; (hl-highlight-mode 1)
-(global-set-key (kbd "C-c ; h") 'hl-highlight-thingatpt-local)
-(global-set-key (kbd "C-c ; u") 'hl-unhighlight-all-local)
+(hl-highlight-mode 1)
+(diminish 'hl-highlight-mode)
+
+;; (global-set-key (kbd "C-c ; h") 'hl-highlight-thingatpt-local)
+;; (global-set-key (kbd "C-c ; u") 'hl-unhighlight-all-local)
 
 ;; Disable auto insert encoding magic comment
 (setq ruby-insert-encoding-magic-comment nil)
@@ -117,11 +125,6 @@
 (setq-default fill-column 98)
 
 ;; LSP (language server protocol)
-(require 'lsp-mode)
-(require 'lsp-ui)
-(require 'lsp-clients)
-(require 'company-lsp)
-
 (setq-default lsp-ui-sideline-enable nil)
 (setq-default lsp-ui-doc-enable nil)
 (setq-default lsp-ui-peek-enable nil)

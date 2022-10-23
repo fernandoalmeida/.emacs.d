@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ul
+# --
+<ul>
+  <li>${}</li>
+</ul>

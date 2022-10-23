@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: tag
+# --
+#+TAGS: #${1:tag}
