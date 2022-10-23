@@ -9,7 +9,7 @@
 (setq-default js2-basic-offset 2)
 (setq js-indent-level 2)
 
-(add-hook 'after-init-hook #'global-prettier-mode)
+;; (add-hook 'after-init-hook #'global-prettier-mode)
 
 (provide 'setup-javascript)
 ;;; setup-javascript ends here
