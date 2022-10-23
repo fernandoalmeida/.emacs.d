@@ -30,7 +30,6 @@
 (require 'setup-helm)
 (require 'setup-text-scale)
 (require 'setup-whitespace)
-(require 'setup-diminish)
 (require 'setup-ui)
 (require 'setup-navigation)
 (require 'setup-git)
@@ -38,11 +37,13 @@
 (require 'setup-guide-key)
 ;; (require 'setup-go)
 (require 'setup-elixir)
-(require 'setup-wakatime)
+;; (require 'setup-wakatime)
 (require 'setup-javascript)
 (require 'setup-safe-local-variables)
 (require 'setup-ein)
 (require 'setup-octave)
+(require 'setup-python)
+(require 'setup-diminish)
 
 (provide 'init)
 ;;; init.el ends here

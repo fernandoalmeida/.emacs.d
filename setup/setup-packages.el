@@ -26,6 +26,7 @@
     dockerfile-mode
     ein ; Emacs iPython Notebook
     elixir-mode
+    elpy
     emmet-mode
     emojify
     ess ; Emacs Speaks Statistics (required by org-babel/R)
@@ -36,6 +37,9 @@
     flycheck-credo
     flycheck-flow
     flycheck-kotlin
+    flycheck-mypy
+    ;; flycheck-mypy-auto
+    flycheck-pycheckers
     git-timemachine
     go-mode
     company-go
@@ -51,16 +55,21 @@
     helm-projectile
     helm-swoop
     highlight-indentation
-    hl-anything
+    ;; hl-anything
     ido
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby
     jedi
     js2-mode
+    json-mode
     jupyter
     kotlin-mode
     less-css-mode
     lsp-mode
+    ;; lsp-pylsp
+    ;; lsp-pyre
+    ;; lsp-pyright
+    ;; lsp-tailwindcss
     lsp-ui
     lsp-jedi
     lsp-java
@@ -99,7 +108,7 @@
     toml-mode
     typescript-mode
     undo-tree
-    wakatime-mode
+    ;; wakatime-mode
     web-mode
     yaml-mode
     yasnippet

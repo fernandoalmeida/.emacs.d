@@ -1,3 +1,4 @@
+
 ;;; setup-python --- Setup python package
 ;;; Commentary:
 ;;; Code:
@@ -23,7 +24,7 @@
 (setq jedi:tooltip-method nil)
 
 ;; setup black
-(add-hook 'python-mode-hook 'blacken-mode)
+;; (add-hook 'python-mode-hook 'blacken-mode)
 
 (provide 'setup-python)
 ;;; setup-python ends here
