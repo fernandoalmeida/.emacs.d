@@ -55,7 +55,7 @@
     helm-projectile
     helm-swoop
     highlight-indentation
-    ;; hl-anything
+    hl-anything
     ido
     iedit ; Edit multiple regions in the same way simultaneously.
     inf-ruby

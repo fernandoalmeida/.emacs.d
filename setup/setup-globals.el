@@ -5,8 +5,6 @@
 (require 'web-mode)
 (require 'lsp-mode)
 (require 'lsp-ui)
-;; (require 'lsp-tailwindcss)
-(require 'company-lsp)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defun noop () "Does nothing." (interactive) (message "disabled command"))
