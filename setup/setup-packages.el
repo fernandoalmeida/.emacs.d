@@ -80,6 +80,7 @@
     minitest
     mix ; better than alchemist with umbrella apps
     multiple-cursors
+    nix-mode
     ob-elixir
     ob-rust
     org-bullets
