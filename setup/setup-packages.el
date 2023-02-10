@@ -11,6 +11,7 @@
 
 (defvar required-packages
   '(
+    ac-octave
     alchemist
     anzu ; Show number of matches in mode-line while searching
     auto-dim-other-buffers

@@ -7,4 +7,4 @@
           '(lambda () (ac-octave-setup)))
 
 (provide 'setup-octave)
-;;; setup-octave ends here
+;;; setup-octave.el ends here
