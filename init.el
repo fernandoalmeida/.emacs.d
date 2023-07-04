@@ -14,6 +14,9 @@
       (goto-char (point-max))
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
+
+(straight-use-package 'use-package)
+
 (let ((default-directory "~/.emacs.d/vendor/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
@@ -25,6 +28,7 @@
 (require 'setup-packages)
 
 ;; no order dependent
+(require 'use-package)
 (require 'setup-dart)
 (require 'edit-functions)
 (require 'bundle-functions)
