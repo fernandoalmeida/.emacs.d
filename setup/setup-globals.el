@@ -5,6 +5,7 @@
 (require 'web-mode)
 (require 'lsp-mode)
 (require 'lsp-ui)
+(require 'undo-tree)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defun noop () "Does nothing." (interactive) (message "disabled command"))
@@ -75,6 +76,7 @@
 
 ;; UndoTree
 (global-undo-tree-mode)
+(setq undo-tree-auto-save-history nil)
 
 ;; Yasnippet
 (add-hook 'prog-mode-hook 'yas-minor-mode)
