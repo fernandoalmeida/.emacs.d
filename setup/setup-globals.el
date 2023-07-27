@@ -167,5 +167,7 @@
 (global-set-key (kbd "C-M-l")
 		'(lambda () (interactive) (recenter-top-bottom 1)))
 
+(custom/asdf-enable)
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
