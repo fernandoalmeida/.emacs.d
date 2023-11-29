@@ -46,8 +46,15 @@
   "Copy buffer file path to kill ring."
   (interactive)
   (kill-new (buffer-file-name))
-  (message (concat "Copied path: " (buffer-file-name))))
+  (message (concat "Copied file path: " (buffer-file-name))))
 (global-set-key (kbd "C-S-w") 'custom/copy-buffer-file-path)
+
+(defun custom/copy-buffer-file-name ()
+  "Copy buffer file name to kill ring."
+  (interactive)
+  (kill-new (buffer-name))
+  (message (concat "Copied file name: " (buffer-name))))
+(global-set-key (kbd "C-S-M-w") 'custom/copy-buffer-file-name)
 
 (provide 'edit-functions)
 ;;; edit-functions.el ends here
