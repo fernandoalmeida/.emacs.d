@@ -18,7 +18,8 @@
   (let ((shims-path (substitute-env-vars (concat asdf-path "/shims")))
         (bin-path (directory-file-name (file-name-directory (substitute-env-vars asdf-binary)))))
     (setenv "PATH" (concat shims-path ":" bin-path ":" (getenv "PATH")))
-    (setq exec-path (nconc (list shims-path bin-path) exec-path))))
+    (setq exec-path (nconc (list shims-path bin-path) exec-path))
+    (message "asdf enabled")))
 
 (provide 'asdf-functions)
 ;;; asdf-functions.el ends here

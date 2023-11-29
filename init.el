@@ -33,6 +33,7 @@
 (require 'edit-functions)
 (require 'bundle-functions)
 (require 'android-functions)
+(require 'asdf-functions)
 (require 'setup-globals)
 (require 'setup-company)
 (require 'setup-dired)
