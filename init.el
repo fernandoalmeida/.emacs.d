@@ -29,6 +29,7 @@
 
 ;; no order dependent
 (require 'use-package)
+(require 'setup-lsp)
 (require 'setup-dart)
 (require 'edit-functions)
 (require 'bundle-functions)
