@@ -25,6 +25,7 @@
     diminish
     discover
     dockerfile-mode
+    edbi ; Emacs DB interface
     ein ; Emacs iPython Notebook
     elixir-mode
     elpy
