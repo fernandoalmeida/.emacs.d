@@ -5,6 +5,8 @@
 (require 'alchemist)
 (require 'web-mode)
 
+
+
 ;; setup alchemist
 (setq alchemist-test-mode-highlight-tests nil)
 (setq alchemist-test-status-modeline nil)
@@ -21,6 +23,27 @@
 (add-hook 'mix-mode-hook 'mix-minor-mode)
 
 ;; setup web mode
+;; (use-package polymode
+;;   :straight t
+;;   :ensure t
+;;   :mode ("\.ex$" . poly-elixir-web-mode)
+;;   :config
+;;   (define-hostmode poly-elixir-hostmode :mode 'elixir-mode)
+;;   (define-innermode poly-liveview-expr-elixir-innermode
+;;     :mode 'web-mode
+;;     :head-matcher (rx line-start (* space) "~H" (= 3 (char "\"'")) line-end)
+;;     :tail-matcher (rx line-start (* space) (= 3 (char "\"'")) line-end)
+;;     :head-mode 'host
+;;     :tail-mode 'host
+;;     :allow-nested nil
+;;     :keep-in-mode 'host
+;;     :fallback-mode 'host)
+;;   (define-polymode poly-elixir-web-mode
+;;     :hostmode 'poly-elixir-hostmode
+;;     :innermodes '(poly-liveview-expr-elixir-innermode))
+;;   )
+;; (setq web-mode-engines-alist '(("elixir" . "\\.ex\\'")))
+
 (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.heex\\'" . web-mode))
 (sp-with-modes '(web-mode)
