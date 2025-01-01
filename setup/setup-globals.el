@@ -172,5 +172,8 @@
 
 (custom/asdf-enable)
 
+;; rest client mode
+(add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))
+
 (provide 'setup-globals)
 ;;; setup-globals ends here
