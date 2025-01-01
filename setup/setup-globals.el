@@ -6,6 +6,7 @@
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'undo-tree)
+(require 'flycheck-grammarly)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defun noop () "Does nothing." (interactive) (message "disabled command"))
@@ -61,6 +62,8 @@
 
 ;; Fly check
 (add-hook 'after-init-hook 'global-flycheck-mode)
+(with-eval-after-load 'flycheck (flycheck-grammarly-setup))
+;; (setq flycheck-grammarly-check-time 0.8) ;; increase this number if performance issue
 
 ;; Shell
 (global-set-key (kbd "C-c RET") 'shell)

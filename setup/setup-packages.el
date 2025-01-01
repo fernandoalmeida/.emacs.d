@@ -1,7 +1,7 @@
 ;;; setup-packages --- Configure required packages
 ;;; Commentary:
 ;;; Code:
-(require 'cl)
+(require 'cl-lib)
 (require 'package)
 
 (add-to-list 'package-archives
@@ -38,6 +38,7 @@
     flycheck
     flycheck-credo
     flycheck-flow
+    flycheck-grammarly
     flycheck-kotlin
     flycheck-mypy
     ;; flycheck-mypy-auto
@@ -118,12 +119,12 @@
     yasnippet-snippets
     zetteldeft
     zygospore ; reversible C-x 1 (delete-other-windows)
-    ) "Required Packages list")
+    ) "Required Packages list.")
 
 ; check if all packages are installed
 (defun packages-installed-p ()
-  (loop for p in required-packages
-        when (not (package-installed-p p)) do (return nil)
+  (cl-loop for p in required-packages
+        when (not (package-installed-p p)) do (cl-return nil)
         finally (return t)))
 
 ; install packages on startup
@@ -134,4 +135,4 @@
       (package-install p))))
 
 (provide 'setup-packages)
-;;; setup-packages ends here
+;;; setup-packages.el ends here
