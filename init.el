@@ -63,6 +63,7 @@
 (require 'setup-octave)
 (require 'setup-python)
 (require 'setup-diminish)
+(require 'xml-functions)
 
 (provide 'init)
 ;;; init.el ends here
